@@ -3,10 +3,7 @@
 
 :sectnums:
 
-# General MLPerf Submission Rules Strawperson v0.1
-
-SNAPSHOT AS OF 9/23. MOVING TO GITHUB.
-
+# General MLPerf Submission Rules v0.2
 
 [TOC]
 
