@@ -3,6 +3,1518 @@
 
 :sectnums:
 
+# General MLPerf Submission Rules Strawperson v0.1
+
+SNAPSHOT AS OF 9/23. MOVING TO GITHUB.
+
+
+[TOC]
+
+
+
+# 1 Basics
+
+Unless otherwise stated all rules apply to closed and open.
+
+
+# 2 Review committee
+
+The MLPerf submission, review, and publication process is overseen by a review committee. 
+
+
+## 2.1 Structure
+
+The review committee consists of the following people:
+
+
+
+*   The chair or chairs of the following working groups:
+    *   [ Inference or training, whichever is being submitted ] results
+    *   [ Inference or training, whichever is being submitted ] submitters
+    *   [ Inference or training, whichever is being submitted ] special topics
+    *   Power
+*   Until such time a permanent host organization exists:
+    *   The general chair
+*   When a permanent host organization exists:
+    *   The executive director
+    *   The chairperson of the board
+*   For v0.5 only, and only for the review process: One representative of each accelerator vendor (as opposed an OEM or system vendor) who submitted and is not otherwise represented above, provide that in the opinion of the majority of the above said representative is a significant contributor to MLPerf through active participation in one or more working groups.
+
+If representatives of a single organization, its parents, subsidiaries, affiliates, or contractors hold multiple positions on this list, only one such representative is eligible to serve on the review committee. 
+
+The review committee is chaired by the relevant results working group chair, e.g. training results working chair during a training submission review. For this reason, the results working groups may never have multiple chairs. 
+
+
+## 2.2 Meetings
+
+The review committee makes decisions during properly scheduled meetings. The base meeting schedule is dictated by the review process. The review committee chair may schedule additional meetings during the review process in the course of any meeting or by emailing all committee members (e.g. mlperf-chairs mailing list) at least 24 hours in advance.
+
+The review committee has a quorum if it includes an eligible chair and at four other eligible members.
+
+Review committee meetings are typically held at a specific location determined by the review committee chair and in-person attendance is encouraged, but virtual attendance is to be enabled and allowed. 
+
+Review committee meetings are open only to the review committee and all submitters in the current submission round.
+
+
+## 2.3 Agenda and decisions
+
+The review committee agenda is set by, and decisions are tracked, using issues filed against the Github submission repo. In general, issues must be filed as dictated by the review process schedule. Exceptions are discouraged but may be allowed during a meeting by a vote of the review committee. In general, issues are decided in the order filed, but the chair may choose a different order if circumstances warrant.
+
+The review committee should attempt to decide issues through discussion and grudging consensus whenever possible. However, if the review committee and all submitters are unable to reach a grudging consensus, the review committee will vote to decide the issue.
+
+Review committee votes are determined by a majority of eligible review committee members attending a meeting. In the event of a tie, the committee chair has the casting vote. Votes are initiated by the chair, and are cast openly and may be cast verbally or using a shared spreadsheet or other voting software.
+
+The review committee operates on balance of interests rather than by avoiding conflict of interest. Members may cast votes on all matters, including those directly affecting benchmark submissions made by their organization, as a practical response to the fact that competitors are also on the review committee.
+
+
+## 2.4 Confidential and not precedent setting 
+
+Because the submission round is confidential to the submitters, the review committee agenda, deliberations, and specific decisions are confidential and shared only with committee members and submitters for that round. The general nature of decisions may be shared outside the review process because such decisions may expose the need for rules changes. 
+
+The private submission repo will be deleted when the next MLPerf submission repo is created, or after 90 days.
+
+Review committee decisions do not create precedents. Instead, the decisions should be explicitly incorporated into the rules through the normal process. 
+
+
+# 3 Operating principles
+
+MLPerf’s purpose is to produce fair and useful benchmark results.
+
+The MLPerf review committee reserves the right to amend these rules and/or exclude submissions that conflict with this purpose with a two-thirds (rounded up) vote. For instance, if the schedule is discovered to be untenable in practice, it may be amended. If a submission is judged to be deceptive or not of interest to the community, it may be excluded. 
+
+The role of the review process is to ensure fairness of submissions, not to litigate details in an effort to disquality competitors. For example:
+
+
+
+*   Reviewing submitters should discuss issues with owning submitters after filing objections, and attempt to resolve the issue if possible.
+*   If an objection is supported by the review committee, the objecting submitter should communicate with the owning submitter to ensure a satisfactory fix. 
+*   Issues in submission that are agreed to require correction, but that do not meaningfully impact performance (less than 2% cumulative performance difference) or competitive ordering may be waived by the review committee, subject to its discretion, and with the understanding that the submitter will correct the issue in future submissions.
+
+
+# 4 Schedule
+
+MLPerf has several submission rounds each year. Each submission round follows a detailed schedule.
+
+
+## 4.1 Schedule of submission rounds
+
+The submission schedule is to be set yearly, and must be approved by both the inference and training submitters meetings. The following is the remaining 2019 submission schedule.
+
+
+<table>
+  <tr>
+   <td><strong>Submission round</strong>
+   </td>
+   <td><strong>Submission date</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Inference v0.5
+   </td>
+   <td>October 11th
+   </td>
+  </tr>
+</table>
+
+
+The following is the draft 2020 submission schedule:
+
+
+<table>
+  <tr>
+   <td><strong>Submission round</strong>
+   </td>
+   <td><strong>Submission date</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Training v0.7 
+   </td>
+   <td>February 21st  [tentative]
+   </td>
+  </tr>
+  <tr>
+   <td>Inference v0.7 
+<p>
+(numbering adjusted to align, replaces v0.6)
+   </td>
+   <td>May, first Friday [tentative]
+   </td>
+  </tr>
+  <tr>
+   <td>Training v0.8
+   </td>
+   <td>August, first Friday [tentative]
+   </td>
+  </tr>
+  <tr>
+   <td>Inference v0.8
+   </td>
+   <td>November, first Friday [tentative]
+   </td>
+  </tr>
+</table>
+
+
+
+## 4.2 Single submission round schedule
+
+Each submission round has the following detailed schedule, which has three major phases:
+
+
+
+1. Submission
+2. Review
+    1. Objection filing
+    2. Objection review
+    3. Objection revision
+3. Publication
+
+Each of these phases is described in more detail later in this document.
+
+
+<table>
+  <tr>
+   <td>Day
+   </td>
+   <td>Meeting or deadline (all deadlines are 11:59pm San Jose unless otherwise specified) 
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week -2 (submission)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Wednesday
+   </td>
+   <td>Submitters must sign CLA and provide primary and secondary POCs with Github handles and email addresses
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>Result chair/General chair creates submission repo. Gives all submitters access. Send submitter POCs test email requesting they make a test submission to confirm access. 
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week -1 (submission)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>All “due in advance” writeups due (e.g. for inference calibration / weight transformation [link to inference rules, example]), submit as PR to repo
+<p>
+(<a href="https://github.com/mlperf/inference/blob/master/calibration/doc/example%20writeup.adoc">sample quantization writeup</a>)
+<p>
+Receive random seed(s) for inference load generation, if applicable. [TODO remove from section 2.5 of inference doc.]
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week 0 (submission)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Thursday
+   </td>
+   <td>Last opportunity to notify chair that you will not submit
+   </td>
+  </tr>
+  <tr>
+   <td>Friday 
+<p>
+[ TODO: consider Thursday for v0.6+]
+   </td>
+   <td>3:30pm San Jose: Human readable results due by email to designated coordinator
+<p>
+4:00pm San Jose: Code due, submit as PR to repo
+<p>
+4:00pm San Jose: Human readable results summary distributed by designated coordinator 
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week 1 (review: objection filing)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Monday
+   </td>
+   <td>Begin drafting neutral press release [general chair until org, then executive director]
+   </td>
+  </tr>
+  <tr>
+   <td>Tuesday
+   </td>
+   <td><strong>Review committee meeting</strong>, discuss objections 
+   </td>
+  </tr>
+  <tr>
+   <td>Wednesday
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Thursday
+   </td>
+   <td><strong>Review committee meeting</strong>, discuss objections
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>Objections due in Github
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week 2 (review: objection review)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Monday
+   </td>
+   <td>Submitter response to objections [ For v0.5 folks in Israel have two extra days to respond, and their issues are delayed to 2nd meeting.]
+   </td>
+  </tr>
+  <tr>
+   <td>Tuesday
+   </td>
+   <td><strong>Review committee meeting</strong>, makes easy decisions and requests information about difficult ones. 
+   </td>
+  </tr>
+  <tr>
+   <td>Wednesday
+   </td>
+   <td>Requested information due
+<p>
+Distribute neutral press release for comment by [general chair until org, then executive director]
+   </td>
+  </tr>
+  <tr>
+   <td>Thursday
+   </td>
+   <td><strong>Review committee meeting</strong>, makes any remaining decisions
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week 3 (review: objection revision)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Monday
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Tuesday
+   </td>
+   <td><strong>Review committee meeting</strong>, discusses any fixes
+   </td>
+  </tr>
+  <tr>
+   <td>Wednesday
+   </td>
+   <td>Final code due
+   </td>
+  </tr>
+  <tr>
+   <td>Thursday
+   </td>
+   <td><strong>Review committee meeting</strong>, decides to approve/reject fixes if required
+<p>
+Approve final draft of press release
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>3:30pm San Jose: Final results in human readable form due, opportunity to withdraw  
+<p>
+4:00pm San Jose: Human readable results summary distributed by chair 
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week 4 (publication)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Monday
+   </td>
+   <td>Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release
+<p>
+1:00pm San Jose: Draft of results page available for comment
+   </td>
+  </tr>
+  <tr>
+   <td>Tuesday
+   </td>
+   <td>1:00pm San Jose: Corrections to results page due 
+<p>
+5:00pm San Jose: Results page and press release live on staging site
+   </td>
+  </tr>
+  <tr>
+   <td>Wednesday
+   </td>
+   <td>10:00am San Jose: results and PR public, press embargo ends
+   </td>
+  </tr>
+</table>
+
+
+
+# 5 Submission 
+
+The submission process defines how to submit code and results for review and eventual publication.
+
+
+## 5.1 Registration
+
+Submitters must register with the submitters working group and begin attending meetings at least **eight weeks before the deadline. **In order to register, a submitter or their org must sign the relevant CLA and provide primary and secondary github handles and primary and secondary POC email address.
+
+
+## 5.2 Github repo
+
+MLPerf will provide a private Github repository for submissions. Each submitter will submit one or more pull requests containing their submission to the appropriate Github repo before the submission deadline. Pull requests may be amended up until the deadline. 
+
+
+## 5.3 Licensing
+
+All submissions of code must be made under the MLPerf CLA, which is temporarily the Google open source CLA. Per the CLA, all submissions of code will be Apache 2 compatible. Third party libraries need not be Apache 2 licensed.
+
+
+## 5.4 Submission content
+
+A submission must contain the following:
+
+
+
+*   Metadata for the systems under test
+*   Code that implements the benchmarks
+*   Metadata that describes each system-implementation combination tested
+*   Scripts that setup and execute each system-implementation tested
+*   Result logs for each system-implementation tested
+
+
+## 5.5 Directory structure
+
+A submission is for one code base for the benchmarks submitted. An org may make multiple submissions. A submission should take the form of a directory with the following structure. The structure must be followed regardless of the actual location of the actual code, e.g. in the MLPerf repo or an external code host site. 
+
+
+### 5.5.1 Training
+
+<submitting_organization>/
+
+	systems/
+
+		<system_desc_id>.json
+
+	benchmarks/
+
+
+    <benchmark_name per reference>/ [TODO: rename the reference directories]
+
+
+    	implementations/
+
+			<implementation_id>/
+
+					<arbitrary stuff>
+
+
+    	<system_desc_id>/
+
+
+            <system_desc_id>_<implementation_id>.json
+
+			README.md
+
+				setup.sh (one-time configuration script)
+
+				init_datasets.sh (one-time dataset init script)
+
+				run_and_time.sh (run the benchmark and produce a result)
+
+
+    	…
+
+	...
+
+	results/
+
+	<system_desc_id>/
+
+
+        <benchmark>/
+
+
+        	<scenario>/   # this directory layer is only for inference
+
+
+    			result_0.txt   # log file
+
+					…
+
+					Result_n.txt
+
+System names and implementation names may be arbitrary. 
+
+Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, transformer, gnmt, ncf, minigo **}.
+
+
+### 5.5.2 Inference
+
+<submitting_organization>/
+
+        	systems/
+
+                    	<system_desc_id>.json   # combines hardware and software stack information
+
+        	code/
+
+
+    <benchmark_name per reference>/ 
+
+
+    	<implementation_id>/
+
+                                                <Code interface with loadgen and other arbitrary stuff>
+
+           measurements/		
+
+
+    <system_desc_id>/
+
+
+        <benchmark>/
+
+        				<scenario>
+
+
+                <system_desc_id>_<implementation_id>_<scenario>.json
+
+                                			README.md
+
+                                            		user.conf
+
+					mlperf.conf
+
+
+                calibration_process.adoc
+
+        	results/
+
+        		<system_desc_id>/
+
+
+        <benchmark>/
+
+        				<scenario>
+
+
+                    performance/
+
+
+                    run_x/  # 1 run for single stream and offline, 5 otherwise 
+
+                        					mlperf_log_summary.txt
+
+                    	 					mlperf_log_detail.txt
+
+                        					mlperf_log_trace.json
+
+					accuracy/   
+
+        	           					Mlperf_log_accuracy.json
+
+	compliance_checker_log.txt
+
+System names and implementation names may be arbitrary. 
+
+Inference benchmark directory names must be one of  { **mobilenet, ssd-small, resnet, ssd-large, gnmt **}.
+
+Here is the list of mandatory files for all submissions in any division/category. However, your submission should still include all software information and related information for results replication. 
+
+
+
+*   mlperf_log_summary.txt
+*   mlperf_log_detail.txt
+*   mlperf_log_trace.json
+*   Mlperf_log_accuracy.json [ TODO: handle differently in v0.6?]
+*   user.conf
+*   calibration or weight transformation related code if the original MLPerf models are not used
+*   actual models if the models are not deterministically generated
+*   READMEs to enable users to replicate performance results
+*   code which interfaces with the loadgen 
+*   <system_desc_id>_<implementation_id>_<scenario>.json
+*   <system_desc_id>.json
+*   compliance_checker_log.txt
+
+
+### 5.5.3 <system_desc_id>.json metadata
+
+The file <system_desc_id>.json should contain the following metadata describing the system:
+
+
+<table>
+  <tr>
+   <td><strong>Field</strong>
+   </td>
+   <td><strong>Meaningful response required</strong>
+   </td>
+   <td><strong>Cloud example</strong>
+   </td>
+   <td><strong>On-premise example</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>submitter
+   </td>
+   <td>Yes
+   </td>
+   <td>Google
+   </td>
+   <td>[ TODO David Kanter to add ]
+   </td>
+  </tr>
+  <tr>
+   <td>division
+   </td>
+   <td>Yes
+   </td>
+   <td>closed
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>status
+   </td>
+   <td>Yes
+   </td>
+   <td>available
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>system_name
+   </td>
+   <td>Yes
+   </td>
+   <td>tpu-v3
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>number_of_nodes
+   </td>
+   <td>Yes
+   </td>
+   <td>1
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_processors_per_node
+   </td>
+   <td>Yes
+   </td>
+   <td>1
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_processor_model_name
+   </td>
+   <td>Yes
+   </td>
+   <td>Intel Skylake
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_processor_core_count
+   </td>
+   <td>Yes, or vcpu
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_processor_vcpu_count
+   </td>
+   <td>Yes, or core
+   </td>
+   <td>96
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_processor_frequency
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_processor_caches
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_processor_interconnect
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_memory_capacity
+   </td>
+   <td>Yes
+   </td>
+   <td>128GB
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_storage_type
+   </td>
+   <td>Yes
+   </td>
+   <td>SSD
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_storage_capacity
+   </td>
+   <td>Yes
+   </td>
+   <td>1 200 GB + 1 50 GB
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_networking
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_networking_topology
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>host_memory_configuration
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>accelerators_per_node
+   </td>
+   <td>Yes
+   </td>
+   <td>16
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>accelerator_model_name
+   </td>
+   <td>Yes
+   </td>
+   <td>tpu-v3
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>accelerator_host_interconnect
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>accelerator_frequency
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>accelerator_on-chip_memories
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>accelerator_memory_configuration
+   </td>
+   <td>Yes
+   </td>
+   <td>HBM
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>accelerator_memory_capacity
+   </td>
+   <td>Yes
+   </td>
+   <td>32 GB
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>accelerator_interconnect
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>accelerator_interconnect_topology
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>cooling
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>hw_notes
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>framework
+   </td>
+   <td>Yes
+   </td>
+   <td>TensorFlow 1.14 commit hash = faf9db515c4bf550daacc1c3a22fedf3ff5dde63
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>other_software_stack
+   </td>
+   <td>Yes
+   </td>
+   <td>TPU stack 1.14.1.dev20190518, python 3.6, sacrebleu 1.2.11
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>operating_system
+   </td>
+   <td>Yes
+   </td>
+   <td>Ubuntu 16.04
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>sw_notes
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
+
+
+
+### 5.5.4 <system_desc_id>_<implementation_id>_<scenario>.json metadata
+
+The file <system_desc_id>_<implementation_id>.json should metadata describing use of the specified implementation on the specified system.
+
+
+<table>
+  <tr>
+   <td><strong>Field</strong>
+   </td>
+   <td><strong>Meaningful response required</strong>
+   </td>
+   <td><strong>Example</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Starting weights filename?
+   </td>
+   <td>Yes
+   </td>
+   <td>[ TODO David Kanter to add ]
+   </td>
+  </tr>
+  <tr>
+   <td>Weight transformations?
+   </td>
+   <td>Yes
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Weight data type(s)
+   </td>
+   <td>Yes
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Input data type(s)
+   </td>
+   <td>Yes
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Retraining
+   </td>
+   <td>Yes
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
+
+
+
+### 5.5.5 Logging requirements
+
+For Training, the results logs must be verified and stamped by the training log verification script [TODO log]. The easiest way to produce such a log is to use the 
+
+For Inference, the results logs must have been produced by the [standard load generator](https://github.com/mlperf/inference/tree/master/loadgen). Power information may be appended using the standard power information appending script [TODO link or remove].
+
+
+### 5.5.6 Source code requirements for replication
+
+The following section applies to all submissions in all divisions.
+
+The source code must be sufficient to reproduce the results of the submission, given all source components specified. Any software component that would be required to substantially reproduce the submission must be uniquely identified using one of the following methods:
+
+
+<table>
+  <tr>
+   <td>Source
+   </td>
+   <td>Possible method
+   </td>
+   <td>Considered “Available” for Category purposes (see later section)
+   </td>
+  </tr>
+  <tr>
+   <td>Included in the submission
+   </td>
+   <td>Source code
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Build from any <strong><em>supported</em></strong> public Github repo
+   </td>
+   <td>Commit hash
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Built from a public Github repo plus a PR 
+   </td>
+   <td>Commit hash, PR number
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td><a href="#bookmark=id.bqd1av3dwm0b">Available</a> binary (could be free to download or for purchase / customers only)
+   </td>
+   <td>Name, version, url
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Built from an internal source control system
+   </td>
+   <td>Unique source identifier 
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Private binary
+   </td>
+   <td>Checksum
+   </td>
+   <td>No
+   </td>
+  </tr>
+</table>
+
+
+
+### 5.5.7 Source code requirements for inference inspection
+
+The following section applies to all submissions in the Closed division. We encourage Open division submissions to be as transparent as possible. We will re-examine in v0.6.
+
+For inference, the source code, pseudo-code, or prose description must be sufficient to determine:
+
+
+
+*   The connection to the loadgen
+*   Preprocessing
+*   The architecture of the model, and the operations performed
+*   Weights (please notify results chair if > 2 GB combined)
+*   Weight transformations
+    *   If weight transformations are non-deterministic, then any randomness seeds used must be included in the submission.
+
+For the inference server scenario, the source code, pseudo-code, or prose must be sufficient to determine:
+
+
+
+*   Online batching, meaning how the server batches queries for processing
+
+
+### 5.5.8 Source code requirements for training inspection
+
+TBD
+
+
+## 5.6 Automated compliance checking
+
+Submitters must run the automated compliance checker to verify that their submission contains all content organized and formatted as described. Submission of the output of the compliance checker is required.
+
+
+# 6 Review
+
+
+## 6.1 Visibility of results and code during review
+
+During the review process, only certain groups are allowed to inspect results and code. 
+
+
+<table>
+  <tr>
+   <td><strong>Group</strong>
+   </td>
+   <td><strong>Can Inspect </strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Review committee
+   </td>
+   <td>All results, all code
+   </td>
+  </tr>
+  <tr>
+   <td>Submitters
+   </td>
+   <td>All results, all code
+   </td>
+  </tr>
+  <tr>
+   <td>Public
+   </td>
+   <td>No results, no code
+   </td>
+  </tr>
+</table>
+
+
+
+## 6.2 Auditing
+
+TBD
+
+
+## 6.3 Filing objections
+
+Submitters must officially file objections to other submitter’s code by creating a GitHub issue prior to the “Filing objections” deadline that cites the offending lines, the rules section violated, and, if pertinent, corresponding lines of the reference implementation that are not equivalent.
+
+Each submitter must file objections with a “by <org>” tag and a “against <org>” tag. Multiple organizations may append their “by <org>” to an existing objection if desired. If an objector comes to believe the objection is in error they may remove their “by <org>” tag. All objections with no “by <org>” tags at the end of the filing deadline will be closed.
+
+Submitters should file an objection, then discuss with the submitter to verify if the objection is correct. Following filing of an issue but before resolution, both objecting submitter and owning submitter may add comments to help the review committee understand the problem. 
+
+If the owning submitter acknowledges the problem, they may append the “fix_required” tag and begin to fix the issue.
+
+
+## 6.4 Resolving objections
+
+The review committee will review each objection, and either establish consensus or vote. If the committee votes to support an objection, it will provide some basic guidance on an acceptable fix and append the “fix_required” tag. If the committee votes against an objection, it will close the issue.
+
+
+## 6.5 Fixing objections
+
+Code should be updated via a pull request prior to the “fixing objections” deadline. Following submission of all fixes, the objecting submitter should confirm that the objection has been addressed with the objector(s) and ask them to remove their “by <org> tags.
+
+If the objector is not satisfied by the fix, then the review committee will decide the issue at its final review meeting. The review committee may vote to accept a fix and close the issue, or reject a fix and request the submission be moved to open or withdrawn. 
+
+
+## 6.6 Hyperparameter borrowing (training only)
+
+Hyperparameters may be updated in accordance with the training rules prior to the final code due date.
+
+
+## 6.7 Withdrawing results or changing division
+
+Anytime up until the final human readable deadline, an entry may be withdrawn by amending the pull request. Alternatively, an entry may be voluntarily moved from the closed division to the open division.
+
+
+# 7 Publication 
+
+MLPerf will publish all results simultaneously via an update to the results page. After publication, code and results are public and free for use under the MLPerf Terms of Use.
+
+
+## 7.1 Results tables
+
+There will be two results table published, one for Closed and one for Open.
+
+
+## 7.2 Results table content
+
+Each results table will contain the following information: 
+
+
+<table>
+  <tr>
+   <td><strong>Field</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>TBD
+   </td>
+   <td>TBD
+   </td>
+  </tr>
+</table>
+
+
+
+## 7.3 Results categories
+
+Results will be divided into categories based on the availability of the hardware and software components
+
+
+<table>
+  <tr>
+   <td><strong>Category</strong>
+   </td>
+   <td><strong>Hardware</strong>
+   </td>
+   <td><strong>Software</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Available in cloud
+   </td>
+   <td>Available for rent in the cloud
+   </td>
+   <td>Available
+   </td>
+  </tr>
+  <tr>
+   <td>Available on premise
+   </td>
+   <td>Available for purchase 
+   </td>
+   <td>Available
+   </td>
+  </tr>
+  <tr>
+   <td>Preview
+   </td>
+   <td>Must be available for rent or purchase in time for the next submission or within 180 days whichever is longer
+   </td>
+   <td>Available except for software required to support substantially new hardware 
+   </td>
+  </tr>
+  <tr>
+   <td>Research, Development, or Internal 
+   </td>
+   <td colspan="2" >Does not meet the above requirements
+   </td>
+  </tr>
+</table>
+
+
+
+### 7.3.1 Available Systems
+
+_Available_ cloud systems must (1) have available pricing (either publicly advertised or available by request), (2) have been rented by at least one third party, (3) have public evidence of availability (web page saying product is available, statement by company, etc), and (4) be “reasonably available” for rent by additional third parties by the submission date. 
+
+An on-premise system is _Available_ if all of its components that substantially determine ML performance are _Available_ either individually or in aggregate (development boards that meet the substantially determine clause are allowed). An _Available_ component or system must (1) have available pricing (either publicly advertised or available by request), (2) have been shipped to at least one third party, (3) have public evidence of availability (web page saying product is available, statement by company, etc), and (4) be “reasonably available” for purchase by additional third parties by the submission date.  In addition, submissions for on-premise systems must describe the system and its components in sufficient detail to enable third parties to build a similar system. 
+
+In both cases, “reasonably available” means:
+
+
+
+1. Supply and lead times are appropriate for system scale, i.e. on-demand and in quantity for the smallest systems and a few months and with limited supply for the largest systems.
+2. Access to rent or purchase may be subject to conditions that are common to generally available products (such as financial qualifications, size of customer, support burden, export restrictions, etc.) but is not otherwise restricted (i.e. no “early access” approval requirements).
+
+However, it is allowed for the qualifying pre-submission rentals/purchases to have been made with restrictions such as “early access” approval.
+
+_Available_ systems must use an _Available_ software stack. A software stack consists of the set of software components that substantially determine ML performance but are not in the uploaded source code. For instance, for training this includes at a minimum any required ML framework (e.g. TensorFlow, pyTorch) and ML accelerator library (e.g. cuDNN, MKL). An _Available_ software stack consists of only _Available_ software components.
+
+An Available software component must be well supported for general use. For open source software, you must base the software on any commit in an "official" repo plus a PR to support a particular architecture. For binaries, the binary must be made available as release, or as a "beta" release with the requirement that optimizations will be included in a future "official" release. The beta must be made available to customers as a clear part of the release sequence. The software must be available at the time of submission.
+
+
+### 7.3.2 Preview Systems
+
+A _Preview_ system is a system which will meet the requirements of an _Available_ system within 180 days of the submission date, or by the next MLPerf submission date, whichever is more, and which the submitter commits to submitting as an _Available_ system by that time. If it is not submitted in that submission round with equal or better performance (allowing for noise), the _Preview_ submission will be marked as invalid. Systems are exempt from this requirement if the submitted benchmarks are retired or changed to such a degree as no longer reasonably runnable on that system.
+
+ 
+
+If a _Preview_ system contains a newly developed hardware component (e.g. a new ML accelerator) that is a substantial contributor to the determination of ML performance, then for that submission only, the “Available software stack” requirement is waived for software that is necessary to support that component. Otherwise, _Preview_ systems must meet the same _Available_ software stack requirements as an _Available_ system. For example, the first shipping version of a new accelerator need not meet the _Available _software stack requirements, but subsequent SKUs of that accelerator are not considered newly developed, and must meet _Available_ software stack requirements.
+
+
+### 7.3.3 Research, Development, or Internal Systems
+
+A research, development, or internal (RDI) component  does not meet the requirements for an available or preview component. An RDI system is a system containing one or more RDI components. The RDI components may not be submitted as _Available_ components  until the submission cycle after next or 181 days whichever is longer
+
+
+# 8 After publication
+
+
+## 8.1 Terms of use
+
+Any use of published results in connection with the MLPerf trademark must follow the [terms of use.](https://github.com/mlperf/training_policies/blob/master/TERMS%20OF%20USE.md)
+
+
+## 8.2 Issues discovered after publication
+
+If a substantial issue (>5% cumulative change) with a closed division result is discovered after publication and confirmed by the review committee, the result may be fixed if possible in a two week timeframe, otherwise moved to the open division if possible, or marked non-compliant if necessary.
+
+
+# 9 Appendices
+
+
+## 9.1 Committee non-disclosure
+
+[TODO]
+
+
+## 9.2 Submitter non-disclosure
+
+[TODO]
+
+
+## 9.3 Submission checklist
+
+[TODO]
+
+[TODO]
+
+
+## 9.4 Power
+
+[TODO]
+
+
+## 9.5 Results working group chair todo
+
+[Section in progress.]
+
+
+<table>
+  <tr>
+   <td>Day
+   </td>
+   <td>Meeting or deadline (all deadlines are 11:59pm San Jose unless otherwise specified) 
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week -2 (submission)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Wednesday
+   </td>
+   <td>Submitters must sign CLA and provide primary and secondary POCs with Github handles and email addresses
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>Result chair/General chair creates submission repo. Gives all submitters access. Send submitter POCs test email requesting they make a test submission to confirm access. 
+<p>
+Delete any old expired submission repos.
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week -1 (submission)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>All “due in advance” writeups due, submit as PR to repo
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week 0 (submission)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>3:30pm San Jose: Human readable results due by email to designated coordinator
+<p>
+4:00pm San Jose: Code due, submit as PR to repo
+<p>
+4:00pm San Jose: Human readable results summary distributed by designated coordinator 
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week 1 (review: objection filing)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Monday
+   </td>
+   <td>Begin drafting neutral press release [general chair until org, then executive director]
+   </td>
+  </tr>
+  <tr>
+   <td>Tuesday
+   </td>
+   <td><strong>Review committee meeting</strong>, discuss objections 
+   </td>
+  </tr>
+  <tr>
+   <td>Wednesday
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Thursday
+   </td>
+   <td><strong>Review committee meeting</strong>, discuss objections
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>Objections due in Github
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week 2 (review: objection review)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Monday
+   </td>
+   <td>Submitter response to objections
+   </td>
+  </tr>
+  <tr>
+   <td>Tuesday
+   </td>
+   <td><strong>Review committee meeting</strong>, makes easy decisions and requests information about difficult ones
+   </td>
+  </tr>
+  <tr>
+   <td>Wednesday
+   </td>
+   <td>Requested information due
+<p>
+Distribute neutral press release for comment by [general chair until org, then executive director]
+   </td>
+  </tr>
+  <tr>
+   <td>Thursday
+   </td>
+   <td><strong>Review committee meeting</strong>, makes any remaining decisions
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week 3 (review: objection revision)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Monday
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Tuesday
+   </td>
+   <td><strong>Review committee meeting</strong>, discusses any fixes
+   </td>
+  </tr>
+  <tr>
+   <td>Wednesday
+   </td>
+   <td>Final code due
+   </td>
+  </tr>
+  <tr>
+   <td>Thursday
+   </td>
+   <td><strong>Review committee meeting</strong>, decides to approve/reject fixes if required
+<p>
+Approve final draft of press release
+   </td>
+  </tr>
+  <tr>
+   <td>Friday
+   </td>
+   <td>3:30pm San Jose: Final results in human readable form due, opportunity to withdraw  
+<p>
+4:00pm San Jose: Human readable results summary distributed by chair 
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Week 4 (publication)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Monday
+   </td>
+   <td>Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release
+<p>
+1:00pm San Jose: Draft of results page available for comment
+   </td>
+  </tr>
+  <tr>
+   <td>Tuesday
+   </td>
+   <td>1:00pm San Jose: Corrections to results page due 
+<p>
+5:00pm San Jose: Results page and press release live on staging site
+   </td>
+  </tr>
+  <tr>
+   <td>Wednesday
+   </td>
+   <td>10:00am San Jose: results and PR public, press embargo ends
+   </td>
+  </tr>
+</table>
+
+
+
+<!-- Docs to Markdown version 1.0β17 -->
+
+
 = MLPerf Submission Rules (Training and Inference)
 May 2nd, 2018
 
