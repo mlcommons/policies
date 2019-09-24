@@ -26,15 +26,15 @@ The review committee consists of the following people:
 
 
 *   The chair or chairs of the following working groups:
-    *   [ Inference or training, whichever is being submitted ] results
-    *   [ Inference or training, whichever is being submitted ] submitters
-    *   [ Inference or training, whichever is being submitted ] special topics
-    *   Power
+    **   [ Inference or training, whichever is being submitted ] results
+    **   [ Inference or training, whichever is being submitted ] submitters
+    **   [ Inference or training, whichever is being submitted ] special topics
+    **   Power
 *   Until such time a permanent host organization exists:
-    *   The general chair
+    **   The general chair
 *   When a permanent host organization exists:
-    *   The executive director
-    *   The chairperson of the board
+    **   The executive director
+    **   The chairperson of the board
 *   For v0.5 only, and only for the review process: One representative of each accelerator vendor (as opposed an OEM or system vendor) who submitted and is not otherwise represented above, provide that in the opinion of the majority of the above said representative is a significant contributor to MLPerf through active participation in one or more working groups.
 
 If representatives of a single organization, its parents, subsidiaries, affiliates, or contractors hold multiple positions on this list, only one such representative is eligible to serve on the review committee. 
@@ -122,12 +122,12 @@ Each submission round has the following detailed schedule, which has three major
 
 
 
-1. Submission
-2. Review
-    1. Objection filing
-    2. Objection review
-    3. Objection revision
-3. Publication
+. Submission
+. Review
+.. Objection filing
+.. Objection review
+.. Objection revision
+. Publication
 
 Each of these phases is described in more detail later in this document.
 
@@ -226,59 +226,24 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 
 ### 5.5.1 Training
 
-<submitting_organization>/
-
-	systems/
-
-		<system_desc_id>.json
-
-	benchmarks/
-
-
-    <benchmark_name per reference>/ [TODO: rename the reference directories]
-
-
-    	implementations/
-
-			<implementation_id>/
-
-					<arbitrary stuff>
-
-
-    	<system_desc_id>/
-
-
-            <system_desc_id>_<implementation_id>.json
-
-			README.md
-
-				setup.sh (one-time configuration script)
-
-				init_datasets.sh (one-time dataset init script)
-
-				run_and_time.sh (run the benchmark and produce a result)
-
-
-    	…
-
-	...
-
-	results/
-
-	<system_desc_id>/
-
-
-        <benchmark>/
-
-
-        	<scenario>/   # this directory layer is only for inference
-
-
-    			result_0.txt   # log file
-
-					…
-
-					Result_n.txt
+* <submitting_organization>/
+** systems/
+*** <system_desc_id>.json
+** benchmarks/
+*** <benchmark_name per reference>/ [TODO: rename the reference directories]
+**** implementations/
+***** <implementation_id>/
+****** <arbitrary stuff>
+***** <system_desc_id>/
+****** <system_desc_id>_<implementation_id>.json
+****** README.md
+****** setup.sh (one-time configuration script)
+****** init_datasets.sh (one-time dataset init script)
+****** run_and_time.sh (run the benchmark and produce a result)
+** results/
+*** <system_desc_id>/
+**** <benchmark>/
+***** result_<i>.txt   # log file
 
 System names and implementation names may be arbitrary. 
 
@@ -287,77 +252,40 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 
 ### 5.5.2 Inference
 
-<submitting_organization>/
-
-        	systems/
-
-                    	<system_desc_id>.json   # combines hardware and software stack information
-
-        	code/
-
-
-    <benchmark_name per reference>/ 
-
-
-    	<implementation_id>/
-
-                                                <Code interface with loadgen and other arbitrary stuff>
-
-           measurements/		
-
-
-    <system_desc_id>/
-
-
-        <benchmark>/
-
-        				<scenario>
-
-
-                <system_desc_id>_<implementation_id>_<scenario>.json
-
-                                			README.md
-
-                                            		user.conf
-
-					mlperf.conf
-
-
-                calibration_process.adoc
-
-        	results/
-
-        		<system_desc_id>/
-
-
-        <benchmark>/
-
-        				<scenario>
-
-
-                    performance/
-
-
-                    run_x/  # 1 run for single stream and offline, 5 otherwise 
-
-                        					mlperf_log_summary.txt
-
-                    	 					mlperf_log_detail.txt
-
-                        					mlperf_log_trace.json
-
-					accuracy/   
-
-        	           					Mlperf_log_accuracy.json
-
-	compliance_checker_log.txt
+* <submitting_organization>/
+** systems/
+*** <system_desc_id>.json   # combines hardware and software stack information
+** code/
+*** <benchmark_name per reference>/ 
+**** <implementation_id>/
+***** <Code interface with loadgen and other arbitrary stuff>
+** measurements/		
+*** <system_desc_id>/
+**** <benchmark>/
+***** <scenario>
+****** <system_desc_id>_<implementation_id>_<scenario>.json
+****** README.md
+****** user.conf
+****** mlperf.conf
+****** calibration_process.adoc
+** results/
+*** <system_desc_id>/
+**** <benchmark>/
+***** <scenario>
+****** performance/
+******* run_x/  # 1 run for single stream and offline, 5 otherwise 
+******** mlperf_log_summary.txt
+******** mlperf_log_detail.txt
+******** mlperf_log_trace.json
+****** accuracy/   
+******** mlperf_log_accuracy.json
+*** compliance_checker_log.txt
 
 System names and implementation names may be arbitrary. 
 
 Inference benchmark directory names must be one of  { **mobilenet, ssd-small, resnet, ssd-large, gnmt **}.
 
 Here is the list of mandatory files for all submissions in any division/category. However, your submission should still include all software information and related information for results replication. 
-
 
 
 *   mlperf_log_summary.txt
@@ -470,7 +398,7 @@ For inference, the source code, pseudo-code, or prose description must be suffic
 *   The architecture of the model, and the operations performed
 *   Weights (please notify results chair if > 2 GB combined)
 *   Weight transformations
-    *   If weight transformations are non-deterministic, then any randomness seeds used must be included in the submission.
+**   If weight transformations are non-deterministic, then any randomness seeds used must be included in the submission.
 
 For the inference server scenario, the source code, pseudo-code, or prose must be sufficient to determine:
 
