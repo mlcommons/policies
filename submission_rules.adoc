@@ -412,6 +412,7 @@ The file <system_desc_id>.json should contain the following metadata describing 
 | other_software_stack | Yes | TPU stack 1.14.1.dev20190518, python 3.6, sacrebleu 1.2.11 | 
 | operating_system | Yes | Ubuntu 16.04 | 
 | sw_notes |  |  | 
+|===
 
 
 ### 5.5.4 <system_desc_id>_<implementation_id>_<scenario>.json metadata
