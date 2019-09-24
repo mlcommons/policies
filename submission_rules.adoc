@@ -97,62 +97,20 @@ MLPerf has several submission rounds each year. Each submission round follows a 
 
 The submission schedule is to be set yearly, and must be approved by both the inference and training submitters meetings. The following is the remaining 2019 submission schedule.
 
-
-<table>
-  <tr>
-   <td><strong>Submission round</strong>
-   </td>
-   <td><strong>Submission date</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Inference v0.5
-   </td>
-   <td>October 11th
-   </td>
-  </tr>
-</table>
-
+|===
+| Submission round | Submission date
+| Inference v0.5 | October 11th
 
 The following is the draft 2020 submission schedule:
 
-
-<table>
-  <tr>
-   <td><strong>Submission round</strong>
-   </td>
-   <td><strong>Submission date</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Training v0.7 
-   </td>
-   <td>February 21st  [tentative]
-   </td>
-  </tr>
-  <tr>
-   <td>Inference v0.7 
-<p>
-(numbering adjusted to align, replaces v0.6)
-   </td>
-   <td>May, first Friday [tentative]
-   </td>
-  </tr>
-  <tr>
-   <td>Training v0.8
-   </td>
-   <td>August, first Friday [tentative]
-   </td>
-  </tr>
-  <tr>
-   <td>Inference v0.8
-   </td>
-   <td>November, first Friday [tentative]
-   </td>
-  </tr>
-</table>
-
-
+|===
+| Submission date
+| Submission round | Submission date
+| Training v0.7 | February 21st [tentative]
+| Inference v0.7 (numbering adjusted to align, replaces v0.6) | May, first Friday [tentative]
+| Training v0.8 | August, first Friday [tentative]
+| Inference v0.8 | November, first Friday [tentative]
+|===
 
 ## 4.2 Single submission round schedule
 
