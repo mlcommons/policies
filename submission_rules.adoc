@@ -302,7 +302,7 @@ Here is the list of mandatory files for all submissions in any division/category
 *   compliance_checker_log.txt
 
 
-#### <system_desc_id>.json metadata
+### <system_desc_id>.json metadata
 
 The file <system_desc_id>.json should contain the following metadata describing the system:
 |===
@@ -345,7 +345,7 @@ The file <system_desc_id>.json should contain the following metadata describing 
 |===
 
 
-#### <system_desc_id>_<implementation_id>_<scenario>.json metadata
+### <system_desc_id>_<implementation_id>_<scenario>.json metadata
 
 The file <system_desc_id>_<implementation_id>.json should metadata describing use of the specified implementation on the specified system.
 
@@ -360,14 +360,14 @@ The file <system_desc_id>_<implementation_id>.json should metadata describing us
 |===
 
 
-#### Logging requirements
+### Logging requirements
 
 For Training, the results logs must be verified and stamped by the training log verification script [TODO log]. The easiest way to produce such a log is to use the 
 
 For Inference, the results logs must have been produced by the [standard load generator](https://github.com/mlperf/inference/tree/master/loadgen). Power information may be appended using the standard power information appending script [TODO link or remove].
 
 
-#### Source code requirements for replication
+### Source code requirements for replication
 
 The following section applies to all submissions in all divisions.
 
@@ -385,7 +385,7 @@ The source code must be sufficient to reproduce the results of the submission, g
 |===
 
 
-#### Source code requirements for inference inspection
+### Source code requirements for inference inspection
 
 The following section applies to all submissions in the Closed division. We encourage Open division submissions to be as transparent as possible. We will re-examine in v0.6.
 
@@ -407,7 +407,7 @@ For the inference server scenario, the source code, pseudo-code, or prose must b
 *   Online batching, meaning how the server batches queries for processing
 
 
-#### Source code requirements for training inspection
+### Source code requirements for training inspection
 
 TBD
 
@@ -560,29 +560,27 @@ The appendices contain additional information.
 
 ### Committee non-disclosure
 
-[TODO]
+This section in progress [TODO].
 
 
 ### Submitter non-disclosure
 
-[TODO]
+This section in progress [TODO].
 
 
 ### Submission checklist
 
-[TODO]
-
-[TODO]
+This section in progress [TODO].
 
 
 ### Power
 
-[TODO]
+This section in progress [TODO].
 
 
-### Results working group chair todo
+### Review chair checklist
 
-[Section in progress.]
+This section in progress [TODO].
 
 
 |===
