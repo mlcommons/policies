@@ -152,14 +152,16 @@ Each of these phases is described in more detail later in this document.
 | *Week 2* | *Review: objection review*
 | Monday | Submitter response to objections
 | Tuesday | Review committee meeting, makes easy decisions and requests information about difficult ones
-| Wednesday | Requested information due Distribute neutral press release for comment by [general chair until org, then executive director]
+| Wednesday | Requested information due 
+| | Distribute neutral press release for comment by [general chair until org, then executive director]
 | Thursday | Review committee meeting, makes any remaining decisions
 | Friday | 
 | *Week 3* | *Review: objection revision*
 | Monday | 
 | Tuesday | Review committee meeting, discusses any fixes
 | Wednesday | Final code due
-| Thursday | Review committee meeting, decides to approve/reject fixes if required Approve final draft of press release
+| Thursday | Review committee meeting, decides to approve/reject fixes if required 
+| | Approve final draft of press release
 | Friday | 3:30pm San Jose: Final results in human readable form due, opportunity to withdraw
 | | 4:00pm San Jose: Human readable results summary distributed by chair
 | *Week 4* | *Publication*
