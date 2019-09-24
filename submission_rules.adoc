@@ -134,55 +134,57 @@ Each of these phases is described in more detail later in this document.
 
 |===
 | Day | Meeting or deadline (all deadlines are 11:59pm San Jose unless otherwise specified)
-| *Week -2* | *Presubmission* 
-| Monday |
-| Tuesday |
+| *Week -2* | *Presubmission*  
+| Monday | 
+| Tuesday | 
 | Wednesday | Submitters must sign CLA and provide primary and secondary POCs with Github handles and email addresses
-| Thursday |
-| Friday | Result chair/General chair creates submission repo. Gives all submitters access. Send submitter POCs test email requesting they make a test submission to confirm access. 
-| *Week -1* | *Presubmission* 
-| Monday |
-| Tuesday |
+| Thursday | 
+| Friday | Result chair/General chair creates submission repo. Gives all submitters access. Send submitter POCs test email requesting they make a test submission to confirm access.
+| *Week -1* | *Presubmission*
+| Monday | 
+| Tuesday | 
 | Wednesday | 
-| Thursday |
-| Friday | All “due in advance” writeups due, submit as PR to repo
-| *Week 0* | *Submission* 
-| Monday |
-| Tuesday |
+| Thursday | 
+| Friday | All “due in advance” writeups due (e.g. for inference calibration / weight transformation [link to inference rules, example]), submit as PR to repo
+(sample quantization writeup)"
+|  | Receive random seed(s) for inference load generation, if applicable. [TODO remove from section 2.5 of inference doc.]
+| *Week 0* | *Submission*
+| Monday | 
+| Tuesday | 
 | Wednesday | 
-| Thursday |
-| Friday | 3:30pm San Jose: Human readable results due by email to designated coordinator 
-| | 4:00pm San Jose: Code due, submit as PR to repo 
-| | 4:00pm San Jose: Human readable results summary distributed by designated coordinator
+| Thursday | Last opportunity to notify chair that you will not submit
+| Friday
+[ TODO: consider Thursday for v0.6+] | 3:30pm San Jose: Human readable results due by email to designated coordinator"
+|  | 4:00pm San Jose: Code due, submit as PR to repo
+|  | 4:00pm San Jose: Human readable results summary distributed by designated coordinator
 | *Week 1* | *Review: objection filing*
 | Monday | Begin drafting neutral press release [general chair until org, then executive director]
 | Tuesday | Review committee meeting, discuss objections
-| Wednesday |
+| Wednesday | 
 | Thursday | Review committee meeting, discuss objections
 | Friday | Objections due in Github
-| *Week 2* | *Review: objection review*
-| Monday | Submitter response to objections
-| Tuesday | Review committee meeting, makes easy decisions and requests information about difficult ones
-| Wednesday | Requested information due 
-| | Distribute neutral press release for comment by [general chair until org, then executive director]
+| *Week 2* | Review: objection review* 
+| Monday | Submitter response to objections [ For v0.5 folks in Israel have two extra days to respond, and their issues are delayed to 2nd meeting.]
+| Tuesday | Review committee meeting, makes easy decisions and requests information about difficult ones.
+| Wednesday | Requested information due
+|  | Distribute neutral press release for comment by [general chair until org, then executive director]
 | Thursday | Review committee meeting, makes any remaining decisions
 | Friday | 
 | *Week 3* | *Review: objection revision*
 | Monday | 
 | Tuesday | Review committee meeting, discusses any fixes
 | Wednesday | Final code due
-| Thursday | Review committee meeting, decides to approve/reject fixes if required 
-| | Approve final draft of press release
+| Thursday | Review committee meeting, decides to approve/reject fixes if required
+|  | Approve final draft of press release"
 | Friday | 3:30pm San Jose: Final results in human readable form due, opportunity to withdraw
-| | 4:00pm San Jose: Human readable results summary distributed by chair
+|  | 4:00pm San Jose: Human readable results summary distributed by chair
 | *Week 4* | *Publication*
-| Monday | Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release 
-| | 1:00pm San Jose: Draft of results page available for comment
-| Tuesday | 1:00pm San Jose: Corrections to results page due 
-| | 5:00pm San Jose: Results page and press release live on staging site
+| Monday | Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release
+|  | 1:00pm San Jose: Draft of results page available for comment
+| Tuesday | 1:00pm San Jose: Corrections to results page due
+|  | 5:00pm San Jose: Results page and press release live on staging site
 | Wednesday | 10:00am San Jose: results and PR public, press embargo ends
 |===
-
 
 # 5 Submission 
 
