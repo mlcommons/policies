@@ -9,17 +9,17 @@
 
 
 
-# 1 Basics
+# Basics
 
 Unless otherwise stated all rules apply to closed and open.
 
 
-# 2 Review committee
+# Review committee
 
 The MLPerf submission, review, and publication process is overseen by a review committee. 
 
 
-## 2.1 Structure
+## Structure
 
 The review committee consists of the following people:
 
@@ -42,7 +42,7 @@ If representatives of a single organization, its parents, subsidiaries, affiliat
 The review committee is chaired by the relevant results working group chair, e.g. training results working chair during a training submission review. For this reason, the results working groups may never have multiple chairs. 
 
 
-## 2.2 Meetings
+## Meetings
 
 The review committee makes decisions during properly scheduled meetings. The base meeting schedule is dictated by the review process. The review committee chair may schedule additional meetings during the review process in the course of any meeting or by emailing all committee members (e.g. mlperf-chairs mailing list) at least 24 hours in advance.
 
@@ -53,7 +53,7 @@ Review committee meetings are typically held at a specific location determined b
 Review committee meetings are open only to the review committee and all submitters in the current submission round.
 
 
-## 2.3 Agenda and decisions
+## Agenda and decisions
 
 The review committee agenda is set by, and decisions are tracked, using issues filed against the Github submission repo. In general, issues must be filed as dictated by the review process schedule. Exceptions are discouraged but may be allowed during a meeting by a vote of the review committee. In general, issues are decided in the order filed, but the chair may choose a different order if circumstances warrant.
 
@@ -64,7 +64,7 @@ Review committee votes are determined by a majority of eligible review committee
 The review committee operates on balance of interests rather than by avoiding conflict of interest. Members may cast votes on all matters, including those directly affecting benchmark submissions made by their organization, as a practical response to the fact that competitors are also on the review committee.
 
 
-## 2.4 Confidential and not precedent setting 
+## Confidential and not precedent setting 
 
 Because the submission round is confidential to the submitters, the review committee agenda, deliberations, and specific decisions are confidential and shared only with committee members and submitters for that round. The general nature of decisions may be shared outside the review process because such decisions may expose the need for rules changes. 
 
@@ -73,7 +73,7 @@ The private submission repo will be deleted when the next MLPerf submission repo
 Review committee decisions do not create precedents. Instead, the decisions should be explicitly incorporated into the rules through the normal process. 
 
 
-# 3 Operating principles
+# Operating principles
 
 MLPerf’s purpose is to produce fair and useful benchmark results.
 
@@ -88,12 +88,12 @@ The role of the review process is to ensure fairness of submissions, not to liti
 *   Issues in submission that are agreed to require correction, but that do not meaningfully impact performance (less than 2% cumulative performance difference) or competitive ordering may be waived by the review committee, subject to its discretion, and with the understanding that the submitter will correct the issue in future submissions.
 
 
-# 4 Schedule
+# Schedule
 
 MLPerf has several submission rounds each year. Each submission round follows a detailed schedule.
 
 
-## 4.1 Schedule of submission rounds
+## Schedule of submission rounds
 
 The submission schedule is to be set yearly, and must be approved by both the inference and training submitters meetings. The following is the remaining 2019 submission schedule.
 
@@ -116,7 +116,7 @@ The following is the draft 2020 submission schedule:
 |===
 
 
-## 4.2 Single submission round schedule
+## Single submission round schedule
 
 Each submission round has the following detailed schedule, which has three major phases:
 
@@ -186,27 +186,27 @@ Each of these phases is described in more detail later in this document.
 | Wednesday | 10:00am San Jose: results and PR public, press embargo ends
 |===
 
-# 5 Submission 
+# Submission 
 
 The submission process defines how to submit code and results for review and eventual publication.
 
 
-## 5.1 Registration
+## Registration
 
 Submitters must register with the submitters working group and begin attending meetings at least **eight weeks before the deadline. **In order to register, a submitter or their org must sign the relevant CLA and provide primary and secondary github handles and primary and secondary POC email address.
 
 
-## 5.2 Github repo
+## Github repo
 
 MLPerf will provide a private Github repository for submissions. Each submitter will submit one or more pull requests containing their submission to the appropriate Github repo before the submission deadline. Pull requests may be amended up until the deadline. 
 
 
-## 5.3 Licensing
+## Licensing
 
 All submissions of code must be made under the MLPerf CLA, which is temporarily the Google open source CLA. Per the CLA, all submissions of code will be Apache 2 compatible. Third party libraries need not be Apache 2 licensed.
 
 
-## 5.4 Submission content
+## Submission content
 
 A submission must contain the following:
 
@@ -219,12 +219,12 @@ A submission must contain the following:
 *   Result logs for each system-implementation tested
 
 
-## 5.5 Directory structure
+## Directory structure
 
 A submission is for one code base for the benchmarks submitted. An org may make multiple submissions. A submission should take the form of a directory with the following structure. The structure must be followed regardless of the actual location of the actual code, e.g. in the MLPerf repo or an external code host site. 
 
 
-### 5.5.1 Training
+### Training
 
 * <submitting_organization>/
 ** systems/
@@ -250,7 +250,7 @@ System names and implementation names may be arbitrary.
 Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, transformer, gnmt, ncf, minigo **}.
 
 
-### 5.5.2 Inference
+### Inference
 
 * <submitting_organization>/
 ** systems/
@@ -302,7 +302,7 @@ Here is the list of mandatory files for all submissions in any division/category
 *   compliance_checker_log.txt
 
 
-### 5.5.3 <system_desc_id>.json metadata
+### <system_desc_id>.json metadata
 
 The file <system_desc_id>.json should contain the following metadata describing the system:
 |===
@@ -345,7 +345,7 @@ The file <system_desc_id>.json should contain the following metadata describing 
 |===
 
 
-### 5.5.4 <system_desc_id>_<implementation_id>_<scenario>.json metadata
+### <system_desc_id>_<implementation_id>_<scenario>.json metadata
 
 The file <system_desc_id>_<implementation_id>.json should metadata describing use of the specified implementation on the specified system.
 
@@ -360,14 +360,14 @@ The file <system_desc_id>_<implementation_id>.json should metadata describing us
 |===
 
 
-### 5.5.5 Logging requirements
+### Logging requirements
 
 For Training, the results logs must be verified and stamped by the training log verification script [TODO log]. The easiest way to produce such a log is to use the 
 
 For Inference, the results logs must have been produced by the [standard load generator](https://github.com/mlperf/inference/tree/master/loadgen). Power information may be appended using the standard power information appending script [TODO link or remove].
 
 
-### 5.5.6 Source code requirements for replication
+### Source code requirements for replication
 
 The following section applies to all submissions in all divisions.
 
@@ -385,7 +385,7 @@ The source code must be sufficient to reproduce the results of the submission, g
 |===
 
 
-### 5.5.7 Source code requirements for inference inspection
+### Source code requirements for inference inspection
 
 The following section applies to all submissions in the Closed division. We encourage Open division submissions to be as transparent as possible. We will re-examine in v0.6.
 
@@ -407,20 +407,20 @@ For the inference server scenario, the source code, pseudo-code, or prose must b
 *   Online batching, meaning how the server batches queries for processing
 
 
-### 5.5.8 Source code requirements for training inspection
+### Source code requirements for training inspection
 
 TBD
 
 
-## 5.6 Automated compliance checking
+## Automated compliance checking
 
 Submitters must run the automated compliance checker to verify that their submission contains all content organized and formatted as described. Submission of the output of the compliance checker is required.
 
 
-# 6 Review
+# Review
 
 
-## 6.1 Visibility of results and code during review
+## Visibility of results and code during review
 
 During the review process, only certain groups are allowed to inspect results and code. 
 
@@ -433,12 +433,12 @@ During the review process, only certain groups are allowed to inspect results an
 |===
 
 
-## 6.2 Auditing
+## Auditing
 
 TBD
 
 
-## 6.3 Filing objections
+## Filing objections
 
 Submitters must officially file objections to other submitter’s code by creating a GitHub issue prior to the “Filing objections” deadline that cites the offending lines, the rules section violated, and, if pertinent, corresponding lines of the reference implementation that are not equivalent.
 
@@ -449,39 +449,39 @@ Submitters should file an objection, then discuss with the submitter to verify i
 If the owning submitter acknowledges the problem, they may append the “fix_required” tag and begin to fix the issue.
 
 
-## 6.4 Resolving objections
+## Resolving objections
 
 The review committee will review each objection, and either establish consensus or vote. If the committee votes to support an objection, it will provide some basic guidance on an acceptable fix and append the “fix_required” tag. If the committee votes against an objection, it will close the issue.
 
 
-## 6.5 Fixing objections
+## Fixing objections
 
 Code should be updated via a pull request prior to the “fixing objections” deadline. Following submission of all fixes, the objecting submitter should confirm that the objection has been addressed with the objector(s) and ask them to remove their “by <org> tags.
 
 If the objector is not satisfied by the fix, then the review committee will decide the issue at its final review meeting. The review committee may vote to accept a fix and close the issue, or reject a fix and request the submission be moved to open or withdrawn. 
 
 
-## 6.6 Hyperparameter borrowing (training only)
+## Hyperparameter borrowing (training only)
 
 Hyperparameters may be updated in accordance with the training rules prior to the final code due date.
 
 
-## 6.7 Withdrawing results or changing division
+## Withdrawing results or changing division
 
 Anytime up until the final human readable deadline, an entry may be withdrawn by amending the pull request. Alternatively, an entry may be voluntarily moved from the closed division to the open division.
 
 
-# 7 Publication 
+# Publication 
 
 MLPerf will publish all results simultaneously via an update to the results page. After publication, code and results are public and free for use under the MLPerf Terms of Use.
 
 
-## 7.1 Results tables
+## Results tables
 
 There will be two results table published, one for Closed and one for Open.
 
 
-## 7.2 Results table content
+## Results table content
 
 Each results table will contain the following information: 
 
@@ -492,7 +492,7 @@ Each results table will contain the following information:
 |===
 
 
-## 7.3 Results categories
+## Results categories
 
 Results will be divided into categories based on the availability of the hardware and software components
 
@@ -506,7 +506,7 @@ Results will be divided into categories based on the availability of the hardwar
 |===
 
 
-### 7.3.1 Available Systems
+### Available Systems
 
 _Available_ cloud systems must (1) have available pricing (either publicly advertised or available by request), (2) have been rented by at least one third party, (3) have public evidence of availability (web page saying product is available, statement by company, etc), and (4) be “reasonably available” for rent by additional third parties by the submission date. 
 
@@ -526,7 +526,7 @@ _Available_ systems must use an _Available_ software stack. A software stack con
 An Available software component must be well supported for general use. For open source software, you must base the software on any commit in an "official" repo plus a PR to support a particular architecture. For binaries, the binary must be made available as release, or as a "beta" release with the requirement that optimizations will be included in a future "official" release. The beta must be made available to customers as a clear part of the release sequence. The software must be available at the time of submission.
 
 
-### 7.3.2 Preview Systems
+### Preview Systems
 
 A _Preview_ system is a system which will meet the requirements of an _Available_ system within 180 days of the submission date, or by the next MLPerf submission date, whichever is more, and which the submitter commits to submitting as an _Available_ system by that time. If it is not submitted in that submission round with equal or better performance (allowing for noise), the _Preview_ submission will be marked as invalid. Systems are exempt from this requirement if the submitted benchmarks are retired or changed to such a degree as no longer reasonably runnable on that system.
 
@@ -535,50 +535,50 @@ A _Preview_ system is a system which will meet the requirements of an _Available
 If a _Preview_ system contains a newly developed hardware component (e.g. a new ML accelerator) that is a substantial contributor to the determination of ML performance, then for that submission only, the “Available software stack” requirement is waived for software that is necessary to support that component. Otherwise, _Preview_ systems must meet the same _Available_ software stack requirements as an _Available_ system. For example, the first shipping version of a new accelerator need not meet the _Available _software stack requirements, but subsequent SKUs of that accelerator are not considered newly developed, and must meet _Available_ software stack requirements.
 
 
-### 7.3.3 Research, Development, or Internal Systems
+### Research, Development, or Internal Systems
 
 A research, development, or internal (RDI) component  does not meet the requirements for an available or preview component. An RDI system is a system containing one or more RDI components. The RDI components may not be submitted as _Available_ components  until the submission cycle after next or 181 days whichever is longer
 
 
-# 8 After publication
+# After publication
 
 
-## 8.1 Terms of use
+## Terms of use
 
 Any use of published results in connection with the MLPerf trademark must follow the [terms of use.](https://github.com/mlperf/training_policies/blob/master/TERMS%20OF%20USE.md)
 
 
-## 8.2 Issues discovered after publication
+## Issues discovered after publication
 
 If a substantial issue (>5% cumulative change) with a closed division result is discovered after publication and confirmed by the review committee, the result may be fixed if possible in a two week timeframe, otherwise moved to the open division if possible, or marked non-compliant if necessary.
 
 
-# 9 Appendices
+# Appendices
 
 
-## 9.1 Committee non-disclosure
-
-[TODO]
-
-
-## 9.2 Submitter non-disclosure
+## Committee non-disclosure
 
 [TODO]
 
 
-## 9.3 Submission checklist
+## Submitter non-disclosure
+
+[TODO]
+
+
+## Submission checklist
 
 [TODO]
 
 [TODO]
 
 
-## 9.4 Power
+## Power
 
 [TODO]
 
 
-## 9.5 Results working group chair todo
+## Results working group chair todo
 
 [Section in progress.]
 
