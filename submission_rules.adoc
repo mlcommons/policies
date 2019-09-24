@@ -97,20 +97,24 @@ MLPerf has several submission rounds each year. Each submission round follows a 
 
 The submission schedule is to be set yearly, and must be approved by both the inference and training submitters meetings. The following is the remaining 2019 submission schedule.
 
+
 |===
 | Submission round | Submission date
 | Inference v0.5 | October 11th
+|===
+
 
 The following is the draft 2020 submission schedule:
 
+
 |===
-| Submission date
 | Submission round | Submission date
 | Training v0.7 | February 21st [tentative]
 | Inference v0.7 (numbering adjusted to align, replaces v0.6) | May, first Friday [tentative]
 | Training v0.8 | August, first Friday [tentative]
 | Inference v0.8 | November, first Friday [tentative]
 |===
+
 
 ## 4.2 Single submission round schedule
 
@@ -128,201 +132,38 @@ Each submission round has the following detailed schedule, which has three major
 Each of these phases is described in more detail later in this document.
 
 
-<table>
-  <tr>
-   <td>Day
-   </td>
-   <td>Meeting or deadline (all deadlines are 11:59pm San Jose unless otherwise specified) 
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>Week -2 (submission)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Wednesday
-   </td>
-   <td>Submitters must sign CLA and provide primary and secondary POCs with Github handles and email addresses
-   </td>
-  </tr>
-  <tr>
-   <td>Friday
-   </td>
-   <td>Result chair/General chair creates submission repo. Gives all submitters access. Send submitter POCs test email requesting they make a test submission to confirm access. 
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>Week -1 (submission)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Friday
-   </td>
-   <td>All “due in advance” writeups due (e.g. for inference calibration / weight transformation [link to inference rules, example]), submit as PR to repo
-<p>
-(<a href="https://github.com/mlperf/inference/blob/master/calibration/doc/example%20writeup.adoc">sample quantization writeup</a>)
-<p>
-Receive random seed(s) for inference load generation, if applicable. [TODO remove from section 2.5 of inference doc.]
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>Week 0 (submission)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Thursday
-   </td>
-   <td>Last opportunity to notify chair that you will not submit
-   </td>
-  </tr>
-  <tr>
-   <td>Friday 
-<p>
-[ TODO: consider Thursday for v0.6+]
-   </td>
-   <td>3:30pm San Jose: Human readable results due by email to designated coordinator
-<p>
-4:00pm San Jose: Code due, submit as PR to repo
-<p>
-4:00pm San Jose: Human readable results summary distributed by designated coordinator 
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>Week 1 (review: objection filing)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Monday
-   </td>
-   <td>Begin drafting neutral press release [general chair until org, then executive director]
-   </td>
-  </tr>
-  <tr>
-   <td>Tuesday
-   </td>
-   <td><strong>Review committee meeting</strong>, discuss objections 
-   </td>
-  </tr>
-  <tr>
-   <td>Wednesday
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Thursday
-   </td>
-   <td><strong>Review committee meeting</strong>, discuss objections
-   </td>
-  </tr>
-  <tr>
-   <td>Friday
-   </td>
-   <td>Objections due in Github
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>Week 2 (review: objection review)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Monday
-   </td>
-   <td>Submitter response to objections [ For v0.5 folks in Israel have two extra days to respond, and their issues are delayed to 2nd meeting.]
-   </td>
-  </tr>
-  <tr>
-   <td>Tuesday
-   </td>
-   <td><strong>Review committee meeting</strong>, makes easy decisions and requests information about difficult ones. 
-   </td>
-  </tr>
-  <tr>
-   <td>Wednesday
-   </td>
-   <td>Requested information due
-<p>
-Distribute neutral press release for comment by [general chair until org, then executive director]
-   </td>
-  </tr>
-  <tr>
-   <td>Thursday
-   </td>
-   <td><strong>Review committee meeting</strong>, makes any remaining decisions
-   </td>
-  </tr>
-  <tr>
-   <td>Friday
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>Week 3 (review: objection revision)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Monday
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Tuesday
-   </td>
-   <td><strong>Review committee meeting</strong>, discusses any fixes
-   </td>
-  </tr>
-  <tr>
-   <td>Wednesday
-   </td>
-   <td>Final code due
-   </td>
-  </tr>
-  <tr>
-   <td>Thursday
-   </td>
-   <td><strong>Review committee meeting</strong>, decides to approve/reject fixes if required
-<p>
-Approve final draft of press release
-   </td>
-  </tr>
-  <tr>
-   <td>Friday
-   </td>
-   <td>3:30pm San Jose: Final results in human readable form due, opportunity to withdraw  
-<p>
-4:00pm San Jose: Human readable results summary distributed by chair 
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>Week 4 (publication)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Monday
-   </td>
-   <td>Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release
-<p>
-1:00pm San Jose: Draft of results page available for comment
-   </td>
-  </tr>
-  <tr>
-   <td>Tuesday
-   </td>
-   <td>1:00pm San Jose: Corrections to results page due 
-<p>
-5:00pm San Jose: Results page and press release live on staging site
-   </td>
-  </tr>
-  <tr>
-   <td>Wednesday
-   </td>
-   <td>10:00am San Jose: results and PR public, press embargo ends
-   </td>
-  </tr>
-</table>
-
+|===
+| Day | Meeting or deadline (all deadlines are 11:59pm San Jose unless otherwise specified)
+| Week -2 (submission) | 
+| Wednesday | Submitters must sign CLA and provide primary and secondary POCs with Github handles and email addresses
+| Friday | Result chair/General chair creates submission repo. Gives all submitters access. Send submitter POCs test email requesting they make a test submission to confirm access. Delete any old expired submission repos.
+| Week -1 (submission) |
+| Friday | All “due in advance” writeups due, submit as PR to repo
+| Week 0 (submission) | 
+| Friday | 3:30pm San Jose: Human readable results due by email to designated coordinator 4:00pm San Jose: Code due, submit as PR to repo 4:00pm San Jose: Human readable results summary distributed by designated coordinator"
+| Week 1 (review: objection filing) | 
+| Monday | Begin drafting neutral press release [general chair until org, then executive director]
+| Tuesday | Review committee meeting, discuss objections
+| Wednesday |
+| Thursday | Review committee meeting, discuss objections
+| Friday | Objections due in Github
+| Week 2 (review: objection review) | 
+| Monday | Submitter response to objections
+| Tuesday | Review committee meeting, makes easy decisions and requests information about difficult ones
+| Wednesday | Requested information due Distribute neutral press release for comment by [general chair until org, then executive director]"
+| Thursday | Review committee meeting, makes any remaining decisions
+| Friday | 
+| Week 3 (review: objection revision) | 
+| Monday | 
+| Tuesday | Review committee meeting, discusses any fixes
+| Wednesday | Final code due
+| Thursday | Review committee meeting, decides to approve/reject fixes if required Approve final draft of press release
+| Friday | 3:30pm San Jose: Final results in human readable form due, opportunity to withdraw 4:00pm San Jose: Human readable results summary distributed by chair"
+| Week 4 (publication) | 
+| Monday | Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release 1:00pm San Jose: Draft of results page available for comment"
+| Tuesday | 1:00pm San Jose: Corrections to results page due 5:00pm San Jose: Results page and press release live on staging site
+| Wednesday | 10:00am San Jose: results and PR public, press embargo ends
+|===
 
 
 # 5 Submission 
