@@ -135,11 +135,22 @@ Each of these phases is described in more detail later in this document.
 |===
 | Day | Meeting or deadline (all deadlines are 11:59pm San Jose unless otherwise specified)
 | *Week -2* | *Presubmission* 
+| Monday |
+| Tuesday |
 | Wednesday | Submitters must sign CLA and provide primary and secondary POCs with Github handles and email addresses
+| Thursday |
 | Friday | Result chair/General chair creates submission repo. Gives all submitters access. Send submitter POCs test email requesting they make a test submission to confirm access. 
 | *Week -1* | *Presubmission* 
+| Monday |
+| Tuesday |
+| Wednesday | 
+| Thursday |
 | Friday | All “due in advance” writeups due, submit as PR to repo
 | *Week 0* | *Submission* 
+| Monday |
+| Tuesday |
+| Wednesday | 
+| Thursday |
 | Friday | 3:30pm San Jose: Human readable results due by email to designated coordinator 
 | | 4:00pm San Jose: Code due, submit as PR to repo 
 | | 4:00pm San Jose: Human readable results summary distributed by designated coordinator
