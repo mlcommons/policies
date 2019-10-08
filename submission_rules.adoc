@@ -154,9 +154,9 @@ Each of these phases is described in more detail later in this document.
 | Wednesday | 
 | Thursday | Last opportunity to notify chair that you will not submit
 | Friday
-[ TODO: consider Thursday for v0.6+] | 3:30pm San Jose: Human readable results due by email to designated coordinator"
-|  | 4:00pm San Jose: Code due, submit as PR to repo
-|  | 4:00pm San Jose: Human readable results summary distributed by designated coordinator
+[ TODO: consider Thursday for v0.6+] | 1:00pm San Jose: Human readable results due by email to designated coordinator"
+|  | 1:30pm San Jose: Code due, submit as PR to repo
+|  | 1:30pm San Jose: Human readable results summary distributed by designated coordinator
 | *Week 1* | *Review: objection filing*
 | Monday | Begin drafting neutral press release [general chair until org, then executive director]
 | Tuesday | Review committee meeting, discuss objections
@@ -176,8 +176,8 @@ Each of these phases is described in more detail later in this document.
 | Wednesday | Final code due
 | Thursday | Review committee meeting, decides to approve/reject fixes if required
 |  | Approve final draft of press release"
-| Friday | 3:30pm San Jose: Final results in human readable form due, opportunity to withdraw
-|  | 4:00pm San Jose: Human readable results summary distributed by chair
+| Friday | 12:30pm San Jose: Final results in human readable form due, opportunity to withdraw
+|  | 1:00pm San Jose: Human readable results summary distributed by chair
 | *Week 4* | *Publication*
 | Monday | Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release
 |  | 1:00pm San Jose: Draft of results page available for comment
