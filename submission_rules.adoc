@@ -602,9 +602,9 @@ This section in progress [TODO].
 | Tuesday |
 | Wednesday | 
 | Thursday |
-| Friday | 3:30pm San Jose: Human readable results due by email to designated coordinator 
-| | 4:00pm San Jose: Code due, submit as PR to repo 
-| | 4:00pm San Jose: Human readable results summary distributed by designated coordinator
+| Friday | 1:00pm San Jose: Human readable results due by email to designated coordinator 
+| | 1:30pm San Jose: Code due, submit as PR to repo 
+| | 1:30pm San Jose: Human readable results summary distributed by designated coordinator
 | *Week 1* | *Review: objection filing*
 | Monday | Begin drafting neutral press release [general chair until org, then executive director]
 | Tuesday | Review committee meeting, discuss objections
