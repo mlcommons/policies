@@ -162,7 +162,7 @@ Each of these phases is described in more detail later in this document.
 | Tuesday | Review committee meeting, discuss objections
 | Wednesday | 
 | Thursday | Review committee meeting, discuss objections
-| Friday | Objections due in Github, audit results due in GitHub
+| Friday | Objections due in Github, audit results due in GitHub for open and closed
 | *Week 2* | Review: objection review* 
 | Monday | Submitter response to objections [ For v0.5 folks in Israel have two extra days to respond, and their issues are delayed to 2nd meeting.]
 | Tuesday | Review committee meeting, makes easy decisions and requests information about difficult ones.
