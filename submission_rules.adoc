@@ -162,7 +162,7 @@ Each of these phases is described in more detail later in this document.
 | Tuesday | Review committee meeting, discuss objections
 | Wednesday | 
 | Thursday | Review committee meeting, discuss objections
-| Friday | Objections due in Github
+| Friday | Objections due in Github, audit results due in GitHub for open and closed
 | *Week 2* | Review: objection review* 
 | Monday | Submitter response to objections [ For v0.5 folks in Israel have two extra days to respond, and their issues are delayed to 2nd meeting.]
 | Tuesday | Review committee meeting, makes easy decisions and requests information about difficult ones.
@@ -280,6 +280,20 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 ****** accuracy/   
 ******** mlperf_log_accuracy.json
 *** compliance_checker_log.txt
+* audit/
+** <system_desc_id>/
+*** <benchmark>/
+**** <scenario>
+***** <test_id>
+****** performance/
+******* run_1/ # 1 run for every scenario
+******** mlperf_log_summary.txt
+******** mlperf_log_detail.txt
+****** accuracy/
+******* mlperf_log_accuracy.json
+****** <verify_performance.py stdout>
+****** <verify_accuracy.py stdout>
+
 
 System names and implementation names may be arbitrary. 
 
