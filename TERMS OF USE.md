@@ -37,7 +37,7 @@ Comparisons between benchmarks across submissions in the open and closed divisio
 
 ## Results in different submission categories must be clearly distinguished
 
-Comparisons between benchmarks across Available, Preview and RDI submission categories must clearly specify the category for each result.
+Comparisons between benchmarks across available, preview and RDI submission categories must clearly specify the category for each result.
 
 
 ## MLPerf allows but does not endorse combining results of benchmarks
