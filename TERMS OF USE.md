@@ -31,6 +31,15 @@ _SmartAI Corp announced an unverified score of 0.3 on the MLPerf v0.5 Training C
 
 _[1] Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
 
+## Open results must be clearly distinguished from closed results
+
+Comparisons between benchmarks across submissions in the open and closed divisions must clearly specify which results are open and which are closed.
+
+## Results in different submission categories must be clearly distinguished
+
+Comparisons between benchmarks across Available, Preview and RDI submission categories must clearly specify the category for each result.
+
+
 ## MLPerf allows but does not endorse combining results of benchmarks
 
 Users may see fit to combine or aggregate results from multiple MLPerf benchmark tests and/or other 3rd party results. If publicly disclosed, these composite results must cite MLPerf as required above and clearly describe the method of combination. However the composite result is not sanctioned by MLPerf and may not be represented as an official MLPerf result or score.
