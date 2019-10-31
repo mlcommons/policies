@@ -6,22 +6,31 @@ These are the Terms of Use for MLPerf, including benchmark results and the MLPer
 
 The MLPerf name and logo are trademarks. Any use of the MLPerf trademark must conform to these terms of use. The MLPerf organization reserves the right to solely determine if a use of its name or logo is acceptable. If you use a benchmark result in a manner referencing an MLPerf trademark, you must conform to the following guidelines. 
 
-## The nature and source of cited MLPerf results must be clear 
+## MLPerf results must clearly identify basic details in the main text, table, or figure
 
-All results used in conjunction with the MLPerf trademark must include the following:
-In primary citation: submitting organization, benchmark name*, and system under test**. For example:
+Any use of results must clearly identify the following in the main text, table, or figure: submitting organization, benchmark name, and system under test. For example:
 
-_SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchmark using a 10 SmartChip cluster._
+_SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchmark using a SmartCluster._
 
-&ast; For Closed Division benchmarks, the model name may be used instead of the benchmark name, e.g. "SSD" instead of "Object Detection (light-weight)".
+For Closed Division benchmarks, the model name may be used instead of the benchmark name, e.g. "SSD" instead of "Object Detection (light-weight)".
 
-&ast;&ast; System description must be consistent with the description in the official MLPerf results. Furthermore, chip count must be included if another submitter’s score for the same benchmark is listed in the document.
+## MLPerf results must include a detailed footnote
 
-In primary citation or footnote: benchmark version and division***, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
+Any use of results of must must include the following in a footnote: benchmark suite, version, and division, benchmark name and scenario if applicable, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
 
-_[1] MLPerf v0.5 Training Closed; Retrieved from www.mlperf.org 21 December 2018, entry 0.5-12. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
+_[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline; Retrieved from www.mlperf.org 21 December 2018, entry 0.5-12. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
 
-&ast;&ast;&ast; These data items must be included in the primary citation if results from different benchmark versions or divisions are being compared.
+## MLPerf results may only be compared against similar MLPerf results
+
+Whether comparing official results or unverified results, comparisons must be made between results of the same benchmark and scenario from compatible versions of an MLPerf benchmark. Compatible revisions are determined by the MLPerf organization. MLPerf results may not be compared against non-MLPerf results.
+
+MLPerf Training v0.5 and v0.6 are not directly compatible and should not be compared between submitters. A given system’s v0.5 and v0.6 submissions may be compared with each other provided that the base hardware is the same and the comparisons are done with sufficient analysis to remove influence of benchmark changes such as overheads and quality targets.
+
+## When comparing MLPerf results, you must identify any benchmark differences
+
+When comparing results the main text, table, or figure must clearly identify and difference in version, division, official or unverified, or chipcount. When comparing Open and Closed division results, and ways in which the Open result would not qualify as a Closed result must be identified. 
+
+_SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchmark using a SmartCluster with 8 chips in the Open Divsion, which is faster than the result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Closed Division with an accuracy that is only 0.01% lower than the Closed requirement._
 
 ## Official results must be clearly distinguished from unofficial results
 
@@ -43,14 +52,6 @@ _Prestigious Research University has created a new neural network model called M
 100% accurate for Top-1 image classification on the MLPerf v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]._
 
 _[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are registered trademarks. See www.mlperf.org for more information._
-
-## Comparisons between major revisions of an MLPerf benchmark are not allowed 
-
-Whether comparing official results or estimates between submitters, comparisons must be made between results of compatible revisions of an MLPerf benchmark. Compatible revisions are determined by the MLPerf organization.
-
-MLPerf Training v0.5 and v0.6 are not directly compatible and should not be compared between submitters.
-
-A given system’s v0.5 and v0.6 submissions may be compared with each other provided that the base hardware is the same and the comparisons are done with sufficient analysis to remove influence of benchmark changes such as overheads and quality targets.
 
 ## The MLPerf website is hosted by Google; the following terms apply
 
