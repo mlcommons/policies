@@ -28,9 +28,9 @@ MLPerf Training v0.5 and v0.6 are not directly compatible and should not be comp
 
 ## When comparing MLPerf results, you must identify any benchmark differences
 
-When comparing results the main text, table, or figure must clearly identify and difference in version, division, official or unverified, or chipcount. When comparing Open and Closed division results, and ways in which the Open result would not qualify as a Closed result must be identified. 
+When comparing results the main text, table, or figure must clearly identify and difference in version, division, official or unverified status, or chipcount. When comparing Open and Closed division results any ways in which the Open result would not qualify as a Closed result must be identified. 
 
-_SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchmark using a SmartCluster with 8 chips in the Open Divsion, which is faster than the result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Closed Division with an accuracy that is only 0.01% lower than the Closed requirement._
+_SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchmark using a SmartCluster with 8 chips in the Open Divsion with an accuracy that is only 0.01% lower than the Closed requirement, which is faster than the result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Closed Division._
 
 ## Official results must be clearly distinguished from unofficial results
 
