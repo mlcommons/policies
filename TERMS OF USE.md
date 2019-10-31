@@ -16,7 +16,7 @@ For Closed Division benchmarks, the model name may be used instead of the benchm
 
 ## MLPerf results must include a detailed footnote
 
-Any use of results of must must include the following in a footnote: benchmark suite, version, and division, benchmark name and scenario if applicable, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
+Any use of results of must include the following in a footnote: benchmark suite, version, and division, benchmark name and scenario if applicable, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
 
 _[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline; Retrieved from www.mlperf.org 21 December 2018, entry 0.5-12. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
 
@@ -28,7 +28,7 @@ MLPerf Training v0.5 and v0.6 are not directly compatible and should not be comp
 
 ## When comparing MLPerf results, you must identify any benchmark differences
 
-When comparing results the main text, table, or figure must clearly identify and difference in version, division, official or unverified status, or chipcount. When comparing Open and Closed division results any ways in which the Open result would not qualify as a Closed result must be identified. 
+When comparing results the main text, table, or figure must clearly identify any difference in version, division, category, official or unverified status, or chipcount. When comparing Open and Closed division results any ways in which the Open result would not qualify as a Closed result must be identified. 
 
 _SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchmark using a SmartCluster with 8 chips in the Open Divsion with an accuracy that is only 0.01% lower than the Closed requirement, which is faster than the result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Closed Division._
 
