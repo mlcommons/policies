@@ -22,7 +22,7 @@ _[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline; Retrieved from www.mlperf
 
 ## MLPerf results may only be compared against similar MLPerf results
 
-Whether comparing official results or unverified results, comparisons must be made between results of the same benchmark and scenario from compatible versions of an MLPerf benchmark. Compatible revisions are determined by the MLPerf organization. MLPerf results may not be compared against non-MLPerf results.
+Whether comparing official results or unverified results, comparisons must be made between results of the same benchmark and scenario from compatible versions of an MLPerf benchmark. Compatible versions are determined by the MLPerf organization. MLPerf results may not be compared against non-MLPerf results.
 
 MLPerf Training v0.5 and v0.6 are not directly compatible and should not be compared between submitters. A given system’s v0.5 and v0.6 submissions may be compared with each other provided that the base hardware is the same and the comparisons are done with sufficient analysis to remove influence of benchmark changes such as overheads and quality targets.
 
@@ -36,9 +36,9 @@ _SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchma
 
 You may cite either official results obtained from the MLPerf results page or unofficial results measured independently. If you cite an unofficial result you must clearly specify that the result is “Unverified” in text and clearly state “Result not verified by MLPerf” in a footnote. The result must comply with the letter and spirit of the relevant MLPerf rules. For example:
 
-_SmartAI Corp announced an unverified score of 0.3 on the MLPerf v0.5 Training Closed Division - Image Classification benchmark using a cluster of 20 SmartChips running MLFramework v4.1 [1]._
+_SmartAI Corp announced an unverified score of 0.3 on the MLPerf Image Classification benchmark using a SmartCluster running MLFramework v4.1 [1]._
 
-_[1] Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
+_[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
 
 ## MLPerf allows but does not endorse combining results of benchmarks
 
