@@ -393,7 +393,7 @@ The source code must be sufficient to reproduce the results of the submission, g
 | Source code or binary included in the submission repo | --- | Yes
 | Depends on building from a public Github repo | Commit hash or tag | Yes
 | Depends on building from a public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes
-| Depends on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes
+| Depends on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes, if the binary is a Beta or Production release
 | Depends on building private source code from an internal source control system | Unique source identifier [i.e., gitlab has, p4 CL, etc] | No
 | Private binary | Checksum | No
 |===
