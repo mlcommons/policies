@@ -391,8 +391,8 @@ The source code must be sufficient to reproduce the results of the submission, g
 |===
 | Source | Possible method | Considered “Available” for Category purposes (see later section)
 | Included in the submission | Source code | Yes
-| Build from anysupportedpublic Github repo | Commit hash | Yes
-| Built from a public Github repo plus a PR | Commit hash, PR number | Yes
+| Build from anysupportedpublic Github repo | Commit hash | Yes (if commit exactly corresponds to a Beta or Production release of the repo??)
+| Built from a public Github repo plus a PR | Commit hash, PR number | Yes (??)
 | Availablebinary (could be free to download or for purchase / customers only) | Name, version, url | Yes
 | Built from an internal source control system | Unique source identifier | No
 | Private binary | Checksum | No
