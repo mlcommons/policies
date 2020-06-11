@@ -389,12 +389,12 @@ The source code must be sufficient to reproduce the results of the submission, g
 
 
 |===
-| Source | Possible method | Considered “Available” for Category purposes (see later section)
-| Included in the submission | Source code | Yes
-| Build from anysupportedpublic Github repo | Commit hash | Yes
-| Built from a public Github repo plus a PR | Commit hash, PR number | Yes
-| Availablebinary (could be free to download or for purchase / customers only) | Name, version, url | Yes
-| Built from an internal source control system | Unique source identifier | No
+| Software Component | Possible methods for replication | Considered “Available” for Category purposes (see later section)
+| Source code or binary included in the submission repo | --- | Yes
+| Depends only on public Github repo | Commit hash or tag | Yes
+| Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes
+| Depends only on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes, if the binary is a Beta or Production release
+| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No
 | Private binary | Checksum | No
 |===
 
