@@ -205,6 +205,14 @@ MLPerf will provide a private Github repository for submissions. Each submitter 
 
 All submissions of code must be made under the MLPerf CLA, which is temporarily the Google open source CLA. Per the CLA, all submissions of code will be Apache 2 compatible. Third party libraries need not be Apache 2 licensed.
 
+### Verification
+
+A submission must pass the package checker script and the result summarizer script must be capable of extracting the correct results. Specifically, the following commands must not generate errors: 
+
+----
+python3 -m mlperf_logging.package_checker <YOUR SUBMISSION_FOLDER> training 0.7.0
+python3 -m mlperf_logging.result_summarizer <YOUR SUBMISSION_FOLDER> training 0.7.0
+----
 
 ### Submission content
 
