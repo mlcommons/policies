@@ -11,8 +11,13 @@
 
 ## Basics
 
-Unless otherwise stated all rules apply to closed and open.
+These rules describe the submission, review, and publication process for all MLPerf benchmark suites. There are separate rules that govern what to submit for each MLPerf benchmark suite, including:
 
+* https://github.com/mlperf/training_policies/blob/master/training_rules.adoc[Training Rules]
+
+* https://github.com/mlperf/inference_policies/blob/master/inference_rules.adoc[Inference Rules]
+
+Unless otherwise stated all rules apply to closed and open.
 
 ## Review committee
 
