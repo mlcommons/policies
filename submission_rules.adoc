@@ -445,7 +445,7 @@ For training, the source code must be sufficient to verify all aspects of a Clos
 * Evaluation frequency
 * Evaluation method
 
-This requirment applies even to Open submissions, though the aspects do not need to match the reference.
+This requirement applies even to Open submissions, though the aspects do not need to match the reference.
 
 ### Automated compliance checking
 
