@@ -160,7 +160,6 @@ Each of these phases is described in more detail later in this document.
 | Thursday | Last opportunity to notify chair that you will not submit
 | Friday
 [ TODO: consider Thursday for v0.6+] | 1:00pm San Jose: Human readable results due by email to designated coordinator"
-|  | 1:30pm San Jose: Code due, submit as PR to repo
 |  | 1:30pm San Jose: Human readable results summary distributed by designated coordinator
 | *Week 1* | *Review: objection filing*
 | Monday | Begin drafting neutral press release [general chair until org, then executive director]
@@ -436,8 +435,17 @@ For the inference server scenario, the source code, pseudo-code, or prose must b
 
 ### Source code requirements for training inspection
 
-TBD
+For training, the source code must be sufficient to verify all aspects of a Closed submission including but not limited to:
+* Data preprocessing
+* Data traversal order
+* Model 
+* Model initialization
+* Optimizer used
+* Hyperparameters used
+* Evaluation frequency
+* Evaluation method
 
+This requirment applies even to Open submissions, though the aspects do not need to match the reference.
 
 ### Automated compliance checking
 
