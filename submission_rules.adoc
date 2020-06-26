@@ -467,6 +467,13 @@ During the review process, only certain groups are allowed to inspect results an
 | Public | No results, no code
 |===
 
+### Required reviews
+
+Each submitter is required to review at least one other submission. Required reviews are assigned as follows:
+
+. Stack rank submissions by number of results.
+. Assign reviewers in pairs walking down the stack rank
+. If an odd number of reviewers, the bottom 3 in the stack rank will review each other.
 
 ### Auditing
 
