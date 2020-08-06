@@ -115,7 +115,7 @@ The following is the draft 2020 submission schedule:
 |===
 | Submission round | Submission date
 | Training v0.7 | June 26
-| Inference v0.7 September 4
+| Inference v0.7 | September 4
 | Training v0.8 | November 13 [tentative]
 |===
 
