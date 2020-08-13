@@ -314,7 +314,8 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 
 System names and implementation names may be arbitrary. 
 
-Inference benchmark directory names must be one of  { **mobilenet, ssd-small, resnet, ssd-large, gnmt **}.
+Inference benchmark directory names must be one of  { **ssd-small, resnet, ssd-large, rnnt, bert-99, bert-99.9, dlrm-99, dlrm-99.9, 3d-unet-99, 3d-unet-99.9"
+ **}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy.
 
 Here is the list of mandatory files for all submissions in any division/category. However, your submission should still include all software information and related information for results replication. 
 
@@ -340,6 +341,7 @@ The file <system_desc_id>.json should contain the following metadata describing 
 | Field | Meaningful response required | Cloud example | On-premise example1 | On-premise example2
 | submitter | Yes | Google | David Kanter | David Kanter
 | division | Yes | closed | Closed | Open
+| system_type | Yes | datacenter | datacenter | edge
 | status | Yes | available | available | available
 |  |  |  |  |
 | system_name | Yes | tpu-v3 | 8ball | 8ball
