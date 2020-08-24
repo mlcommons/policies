@@ -297,7 +297,7 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 ****** accuracy/   
 ******** mlperf_log_accuracy.json
 *** compliance_checker_log.txt
-* audit/
+* compliance/
 ** <system_desc_id>/
 *** <benchmark>/
 **** <scenario>
