@@ -307,6 +307,7 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 ********* mlperf_log_summary.txt
 ********* mlperf_log_detail.txt
 ******* accuracy/
+******** accuracy.txt # for TEST01 only, generated from truncate_accuracy_log.py
 ******** mlperf_log_accuracy.json
 ******* <verify_performance.py stdout>
 ******* <verify_accuracy.py stdout>
