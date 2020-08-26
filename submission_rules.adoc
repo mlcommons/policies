@@ -334,11 +334,10 @@ Here is the list of mandatory files for all submissions in any division/category
 *   compliance_checker_log.txt
 
 For some models mlperf_log_accuracy.json can get very large. Because of this we truncate mlperf_log_accuracy.log in submissions
-using this [tool](https://github.com/mlperf/inference/blob/master/tools/submission/truncate_accuracy_log.py).
-The tool will take a hash of the original mlperf_log_accuracy.log, add the hash to accuracy.txt and than truncate mlperf_log_accuracy.log.
-A submiter would run the tool before submitting to mlperf and ***keep*** the original mlperf_log_accuracy.log files inside their organization.
+using a tool.
+A submiter will run the tool before submitting to mlperf and ***keep*** the original mlperf_log_accuracy.log files inside their organization.
 The original files might be requested by mlperf during submission review so you need to store them.
-Run the tool the following way assuming SOURCE is your local subumission tree and DEST the location of the github submission repo:
+Run the tool as follows, assuming <SOURCE> is your local subumission tree and <DEST> the location of the github submission repo:
 
 ```
 # from top of the inference source tree
