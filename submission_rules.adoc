@@ -297,19 +297,19 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 ****** accuracy/   
 ******** mlperf_log_accuracy.json
 *** compliance_checker_log.txt
-* compliance/
-** <system_desc_id>/
-*** <benchmark>/
-**** <scenario>
-***** <test_id>
-****** performance/
-******* run_1/ # 1 run for every scenario
-******** mlperf_log_summary.txt
-******** mlperf_log_detail.txt
-****** accuracy/
-******* mlperf_log_accuracy.json
-****** <verify_performance.py stdout>
-****** <verify_accuracy.py stdout>
+** compliance/
+*** <system_desc_id>/
+**** <benchmark>/
+***** <scenario>
+****** <test_id>
+******* performance/
+******** run_1/ # 1 run for every scenario
+********* mlperf_log_summary.txt
+********* mlperf_log_detail.txt
+******* accuracy/
+******** mlperf_log_accuracy.json
+******* <verify_performance.py stdout>
+******* <verify_accuracy.py stdout>
 
 
 System names and implementation names may be arbitrary. 
