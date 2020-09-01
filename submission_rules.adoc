@@ -319,7 +319,7 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 
 System names and implementation names may be arbitrary. 
 
-<benchmark> must be one of {**resnet, ssd-small, ssd-large, rnnt, bert-99, bert-99.9, dlrm-99, dlrm-99.9, 3d-unet-99, 3d-unet-99.9**}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy. 
+<benchmark> must be one of {**resnet50, ssd-mobilenet, ssd-resnet34, rnnt, bert-99, bert-99.9, dlrm-99, dlrm-99.9, 3d-unet-99, 3d-unet-99.9**}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy. 
 
 <scenario> must be one of {**Offline, Server, SingleStream, MultiStream**}. 
 
