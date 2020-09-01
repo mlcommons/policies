@@ -276,7 +276,7 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 *** <benchmark_name per reference>/ 
 **** <implementation_id>/
 ***** <Code interface with loadgen and other arbitrary stuff>
-** measurements/		
+** measurements/
 *** <system_desc_id>/
 **** <benchmark>/
 ***** <scenario>
@@ -290,12 +290,14 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 **** <benchmark>/
 ***** <scenario>
 ****** performance/
-******* run_x/  # 1 run for single stream and offline, 5 otherwise 
+******* run_x/ # 5 runs for Server scenario, 1 run for the other scenarios
 ******** mlperf_log_summary.txt
 ******** mlperf_log_detail.txt
-******** mlperf_log_trace.json
-****** accuracy/   
-******** mlperf_log_accuracy.json
+****** accuracy/
+******* mlperf_log_summary.txt
+******* mlperf_log_detail.txt
+******* mlperf_log_accuracy.json # truncated by truncate_accuracy_log.py if too large
+******* accuracy.txt # stdout of reference accuracy scripts
 *** compliance_checker_log.txt
 ** compliance/
 *** <system_desc_id>/
@@ -317,13 +319,17 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 
 System names and implementation names may be arbitrary. 
 
-<benchmark> must be one of {**resnet, ssd-small, ssd-large, rnnt, bert-99, bert-99.9, dlrm-99, dlrm-99.9, 3d-unet-99, 3d-unet-99.9**}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy. <scenario> must be one of {**Offline, Server, SingleStream, MultiStream**}. <test_id> must be one of {**TEST01, TEST04-A, TEST04-B, TEST05**}.
+<benchmark> must be one of {**resnet, ssd-small, ssd-large, rnnt, bert-99, bert-99.9, dlrm-99, dlrm-99.9, 3d-unet-99, 3d-unet-99.9**}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy. 
+
+<scenario> must be one of {**Offline, Server, SingleStream, MultiStream**}. 
+
+<test_id> must be one of {**TEST01, TEST04-A, TEST04-B, TEST05**}.
+
 Here is the list of mandatory files for all submissions in any division/category. However, your submission should still include all software information and related information for results replication. 
 
 
 *   mlperf_log_summary.txt
 *   mlperf_log_detail.txt
-*   mlperf_log_trace.json
 *   Mlperf_log_accuracy.json [ TODO: handle differently in v0.6?]
 *   user.conf
 *   calibration or weight transformation related code if the original MLPerf models are not used
