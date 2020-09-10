@@ -327,7 +327,6 @@ System names and implementation names may be arbitrary.
 
 Here is the list of mandatory files for all submissions in any division/category. However, your submission should still include all software information and related information for results replication. 
 
-
 *   mlperf_log_summary.txt
 *   mlperf_log_detail.txt
 *   mlperf_log_accuracy.json # truncated by truncate_accuracy_log.py if too large
@@ -341,6 +340,16 @@ Here is the list of mandatory files for all submissions in any division/category
 *   <system_desc_id>.json
 *   submission_checker_log.txt # stdout of submission-checker.py
 
+For some models mlperf_log_accuracy.json can get very large. Because of this we truncate mlperf_log_accuracy.log in submissions
+using a tool.
+A submiter will run the tool before submitting to mlperf and ***keep*** the original mlperf_log_accuracy.log files inside their organization.
+The original files might be requested by mlperf during submission review so you need to store them.
+Run the tool as follows, assuming <SOURCE> is your local subumission tree and <DEST> the location of the github submission repo:
+
+```
+# from top of the inference source tree
+python3 tools/submission/truncate_accuracy_log.py --input <SOURCE> --output <DEST>
+```
 
 ### <system_desc_id>.json metadata
 
@@ -472,7 +481,7 @@ This section in progress [TODO].
 
 #### Inference
 
-Refer to the documentation found under https://github.com/mlperf/inference/tree/master/v0.7/compliance/nvidia
+Refer to the documentation found under https://github.com/mlperf/inference/tree/master/compliance/nvidia
 
 
 ## Review
