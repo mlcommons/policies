@@ -12,7 +12,7 @@ For Closed Division benchmarks, the model name may be used instead of the benchm
 
 Any use of results of must include the following in a footnote: benchmark suite, version, and division, benchmark name and scenario if applicable, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
 
-_[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from www.mlperf.org 21 December 2018, entry 0.5-12. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
+_[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from www.mlcommons.org 21 December 2018, entry 0.5-12. MLPerf name and logo are trademarks. See www.mlcommons.org for more information._
 
 ## MLPerf results may only be compared against similar MLPerf results
 
@@ -32,7 +32,7 @@ You may cite either official results obtained from the MLPerf results page or un
 
 _SmartAI Corp announced an unverified score of 0.3 on the MLPerf Image Classification benchmark using a SmartCluster running MLFramework v4.1 [1]._
 
-_[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
+_[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlcommons.org for more information._
 
 ## MLPerf allows but does not endorse combining results of benchmarks
 
@@ -45,4 +45,4 @@ Each MLPerf benchmark has a primary metric, for instance time-to-train for Train
 _Prestigious Research University has created a new neural network model called MagicEightBall that is
 100% accurate for Top-1 image classification on the MLPerf v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]._
 
-_[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are registered trademarks. See www.mlperf.org for more information._
+_[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are registered trademarks. See www.mlcommons.org for more information._
