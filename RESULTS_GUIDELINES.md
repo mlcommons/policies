@@ -12,7 +12,7 @@ For Closed Division benchmarks, the model name may be used instead of the benchm
 
 Any use of results of must include the following in a footnote: benchmark suite, version, and division, benchmark name and scenario if applicable, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
 
-_[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from www.mlcommons.org 21 December 2018, entry 0.5-12. MLPerf name and logo are trademarks. See www.mlcommons.org for more information._
+_[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from www.mlperf.org 21 December 2018, entry 0.5-12. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
 
 ## MLPerf results may only be compared against similar MLPerf results
 
@@ -32,7 +32,7 @@ You may cite either official results obtained from the MLPerf results page or un
 
 _SmartAI Corp announced an unverified score of 0.3 on the MLPerf Image Classification benchmark using a SmartCluster running MLFramework v4.1 [1]._
 
-_[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlcommons.org for more information._
+_[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
 
 ## MLPerf allows but does not endorse combining results of benchmarks
 
@@ -42,7 +42,17 @@ Users may see fit to combine or aggregate results from multiple MLPerf benchmark
 
 Each MLPerf benchmark has a primary metric, for instance time-to-train for Training Image Classification. Any comparison based on different or derived metric such as power, cost, model size/architecture, accuracy, etc. must make the basis for comparison clear in the text and in a footnote. Secondary and derived metrics must not be presented as official MLPerf metrics.
 
-_Prestigious Research University has created a new neural network model called MagicEightBall that is
-100% accurate for Top-1 image classification on the MLPerf v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]._
+_Prestigious Research University has created a new neural network model called MagicEightBall that is 100% accurate for Top-1 image classification on the MLPerf v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]._
 
-_[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are registered trademarks. See www.mlcommons.org for more information._
+_[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are registered trademarks. See www.mlperf.org for more information._
+
+THE SERVICE AND SOFTWARE ARE PROVIDED TO YOU "AS IS" WITHOUT ANY WARRANTY OR IMPLIED WARRANTY. NEITHER MLCOMMONS NOR ITS PARENT, SUBSIDIARIES, OR AFFILIATES (“MLCOMMONS”) TAKE ANY RESPONSIBILITY FOR ANY DIFFICULTIES YOU MAY ENCOUNTER WITH THE SERVICE OR SOFTWARE. MLPERF DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE OR OTHER PRODUCTS WILL MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE OR OTHER PRODUCTS WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION, BENCHMARKS, BENCHMARK RESULTS, OR ADVICE GIVEN BY MLPERF (THE “MLCOMMONS CONTENT”) SHALL CREATE ANY WARRANTY.
+
+MLCOMMONS IS NOT RESPONSIBLE FOR ANY PRODUCTS YOU MAY CHOOSE TO PURCHASE OR CHOOSE NOT TO PURCHASE AS A RESULT OF THE MLPERF CONTENT. MLCOMMONS DISCLAIMS ANY AND ALL LOSS OR LIABILITY RELATED TO YOUR USE OF THE WEBSITE, THE MLCOMMONS CONTENT GIVEN TO YOU ON THE WEBSITE OR SOFTWARE FROM THE WEBSITE, OR THIS AGREEMENT.
+
+MLCommons is not liable for, among other things, any loss of data, hardware or software, or any liability resulting from: access delays; access interruptions; viruses; hackers; crackers; data non-delivery or mis-delivery; negligent acts, grossly negligent acts, or omissions by MLCommons; errors in any information, goods, or documents obtained due to the MLCommons Content; or force majeure, or any damages whatsoever resulting from loss of use, data or profits, whether in an action of contract, negligence or other action, arising out of or in connection with the use or performance of the Website, the MLCommons Content, the Service or the Software.
+
+MLCommons makes no representations whatsoever about any other website that you may access through the Website. MLCommons has no control over the content or claims of websites outside the MLPerf domain, and does not endorse or accept any responsibility for the content of such websites.
+
+MLCOMMONS, ITS REPRESENTATIVES, LICENSORS, AND PARTNERS WILL NOT BE LIABLE FOR ANY DAMAGES (INCLUDING DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE).
+
