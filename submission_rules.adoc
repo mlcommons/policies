@@ -623,7 +623,26 @@ Any use of published results in connection with the MLPerf trademark must follow
 
 ### Issues discovered after publication
 
-If a substantial issue (>5% cumulative change) with a closed division result is discovered after publication and confirmed by the review committee, the result may be fixed if possible in a two week timeframe, otherwise moved to the open division if possible, or marked non-compliant if necessary.
+#### Use case scenario
+
+The results on mlperf.org are non-compliant to the rules and they are suspiciously good (>5% cumulative change).
+
+
+#### Process flow
+
+You may submit your objection to any training/inference published results via email to any MLPerf chair.
+Once the objection is received, an objection review committee (minimally four MLPerf chairs) will review the content of the objection.
+If the objection rationale does not pass the initial screening, one of the chairs will respond to the objection originator with a brief reasoning.
+
+The objection review committee designates one investigator or chair with no conflict of interest to do an initial investigation and produce a short 1-page report about the findings based on all the available information. The investigator or chair may contact the provider of the result-in-question to get more information to add on to the 1-pager. This 1-pager is confidential to the objection review committee during the investigation period. The objection review committee will respond to the objection originator based on the information from the 1-pager, or start further investigation on a case-by-case basis.
+
+#### Possible investigation outcomes
+
+1. The objection is not valid.
+2. The result-in-question is moved to open for noncompliance with the rules.
+3. The result-in-question is removed due to intentional cheating.
+
+
 
 
 ## Appendices
