@@ -627,7 +627,7 @@ Any use of published results in connection with the MLPerf trademark must follow
 Results posted on mlperf.org have been generated from a non-compliant submission, and the fix results in >5% cumulative reduction in performance.
 
 #### Process flow
-Any MLCommons member may raise an objection to any published results via email to any MLPerf chair. An objection review committee (minimally four MLPerf chairs) will screen the objection. If rejected at this stage, the committee chair will respond to the objector with the reasoning.
+Any MLCommons member may raise an objection to any published results via email to any MLCommons WG chair. An objection review committee (minimally four MLPerf chairs) will screen the objection. If rejected at this stage, the committee chair will respond to the objector with the reasoning.
 
 Otherwise, the committee will designate an investigator with no conflict of interest to produce a brief (e.g. 1 page) report confidential to the committee, which will include a response from the submitter of the disputed result. Based on the report, the committee will respond to the objector or start further investigation on a case-by-case basis.
 
