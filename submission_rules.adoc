@@ -482,6 +482,29 @@ This section in progress [TODO].
 
 Refer to the documentation found under https://github.com/mlperf/inference/tree/master/compliance/nvidia
 
+### Submission Privacy
+
+Submitters may adopt the following procedure to ensure that their submission is shared only with others who have made valid submissions:
+
+By the submission deadline, the submitter will submit 4 things to the results chair to show Proof of Work:
+
+- A URL to the location in public blob storage of an encrypted tarball containing the open/* and closed/* submission files. The blob storage can be one that is set up by MLPerf beforehand specifically for the submission or any public blob storage, as long as downloading can be automated (i.e. with curl)
+- A password to the encrypted tarball
+- A sha1sum of the tarball
+
+When the deadline is reached, repository access will be removed for everyone EXCEPT the following parties:
+
+- Chairs
+- Submitters who have submitted valid submissions
+
+For each submitted tarball, the results chair will then:
+
+- download the encrypted tarball
+- verify it matches the hash
+- decrypt the tarball
+- verify that it is a valid submission
+- add the submission to the repository
+- provide repository access to the submitter
 
 ## Review
 
