@@ -290,7 +290,7 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 **** <benchmark>/
 ***** <scenario>
 ****** performance/
-******* run_x/ # 5 runs for Server scenario, 1 run for the other scenarios
+******* run_x/ # 1 run for all scenarios
 ******** mlperf_log_summary.txt
 ******** mlperf_log_detail.txt
 ****** accuracy/
