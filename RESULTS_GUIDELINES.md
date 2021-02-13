@@ -1,6 +1,6 @@
-# MLPerf Results Guidelines
+# MLPerf Terms of Use
 
-The MLPerf name and logo are trademarks. Any use of the MLPerf trademark must conform to these terms of use. The MLPerf organization reserves the right to solely determine if a use of its name or logo is acceptable. Any use of the benchmark results under the MLPerf trademark must conform to the guidelines in this document.
+The MLPerf name and logo are trademarks. Any use of the MLPerf trademark must conform to these terms of use. The MLCommons organization reserves the right to solely determine if a use of its name or logo, or the MLPerf trademark, is acceptable. Any use of the benchmark results under the MLPerf trademark must conform to the guidelines in this document.
 
 ## MLPerf results must clearly identify basic details in the main text, table, or figure
 
@@ -40,9 +40,11 @@ _By modifying the benchmark network architecture to be more efficient, an 8 chip
 
 ## Official results must be clearly distinguished from unofficial results
 
-You may cite either official results obtained from the MLPerf results page or unofficial results measured independently. If you cite an unofficial result you must clearly specify that the result is “Unverified” in text and clearly state “Result not verified by MLPerf” in a footnote. The result must comply with the letter and spirit of the relevant MLPerf rules. For example:
+You may cite either official results obtained from the MLPerf results page or unofficial results measured independently. If you cite an unofficial result you must clearly specify that the result is “Unverified” in text and clearly state “Result not verified by MLPerf” in a footnote. The result must comply with the letter and spirit of the relevant MLPerf rules.
 
 You may not claim a result as an unofficial MLPerf result without permission of the System and Accelerator vendor.
+
+For example:
 
 _SmartAI Corp announced an unverified score of 0.3 on the MLPerf Image Classification benchmark using a SmartCluster running MLFramework v4.1 [1]._
 
