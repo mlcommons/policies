@@ -472,13 +472,13 @@ This requirement applies even to Open submissions, though the aspects do not nee
 
 ### Compliance Testing
 
-Submitters must run the compliance tests to verify that their submission achieves a basic level of compliance with a subset of the MLPerf rules. If compliance testing identifies a potential issue with the submission, the onus is on the submitter to provide an adequate explanation to the working group.
-
 #### Training
 
 This section in progress [TODO].
 
 #### Inference
+
+Submitters must run the compliance tests for their closed division submissions to verify that their submission achieves a basic level of compliance with a subset of the MLPerf rules. If compliance testing identifies a potential issue with the submission, the onus is on the submitter to provide an adequate explanation to the results review committee.
 
 Refer to the documentation found under https://github.com/mlperf/inference/tree/master/compliance/nvidia
 
