@@ -294,16 +294,16 @@ Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, tr
 ******** mlperf_log_summary.txt
 ******** mlperf_log_detail.txt
 ******** spl.txt # only needed for power submission
-********* power/ # only needed for power submission
-********** ranging/
-*********** mlperf_log_detail.txt # logs from raning run in power submission
-*********** mlperf_log_summary.txt # logs from raning run in power submission
-*********** spl.txt # logs from raning run in power submission
-********** client.json
-********** client.log
-********** ptd_logs.txt
-********** server.json
-********** server.log
+******* ranging/ # only needed for power submission
+******** mlperf_log_detail.txt # logs from ranging run in power submission
+******** mlperf_log_summary.txt # logs from ranging run in power submission
+******** spl.txt # logs from ranging run in power submission
+******* power/ # only needed for power submission
+******** client.json
+******** client.log
+******** ptd_logs.txt
+******** server.json
+******** server.log
 ****** accuracy/
 ******* mlperf_log_summary.txt
 ******* mlperf_log_detail.txt
