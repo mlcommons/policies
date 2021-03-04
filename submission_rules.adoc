@@ -213,6 +213,7 @@ A submission must pass the package checker script and the result summarizer scri
 
 #### Training
 ----
+python3 -m pip install https://github.com/mlcommons/logging/archive/0.7.1.zip
 python3 -m mlperf_logging.package_checker <YOUR SUBMISSION_FOLDER> training 0.7.0
 python3 -m mlperf_logging.result_summarizer <YOUR SUBMISSION_FOLDER> training 0.7.0
 ----
