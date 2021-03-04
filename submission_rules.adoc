@@ -461,15 +461,15 @@ For the inference server scenario, the source code, pseudo-code, or prose must b
 
 For training, the source code must be sufficient to verify all aspects of a Closed submission including but not limited to:
 
--   Readme detailing run command with command line flags, if any
--   Data preprocessing
--   Data traversal order
--   Model 
--   Model initialization
--   Optimizer used
--   Hyperparameters used
--   Evaluation frequency
--   Evaluation method
+*   Readme detailing run command with command line flags, if any
+*   Data preprocessing
+*   Data traversal order
+*   Model 
+*   Model initialization
+*   Optimizer used
+*   Hyperparameters used
+*   Evaluation frequency
+*   Evaluation method
 
 This requirement applies even to Open submissions, though the aspects do not need to match the reference.
 
