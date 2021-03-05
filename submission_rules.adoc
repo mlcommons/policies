@@ -424,7 +424,7 @@ The source code must be sufficient to reproduce the results of the submission, g
 
 
 |===
-| Software Component | Possible methods for replication | Considered “Available” for Category purposes (see later section) | Considered "Preview" or "RDI" for Category purposes
+| Software Component | Possible methods for replication | Considered “Available” for Category purposes (see later sections) | Considered "Preview" or "RDI" for Category purposes (see later sections)
 | Source code or binary included in the submission repo | --- | Yes | Depends on Hardware
 | Depends only on public Github repo | Commit hash or tag | Yes | Depends on Hardware
 | Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes | Depends on Hardware
