@@ -424,13 +424,13 @@ The source code must be sufficient to reproduce the results of the submission, g
 
 
 |===
-| Software Component | Possible methods for replication | Considered “Available” for Category purposes (see later sections) | Considered "Preview" or "RDI" for Category purposes (see later sections)
-| Source code or binary included in the submission repo | --- | Yes | Depends on Hardware
-| Depends only on public Github repo | Commit hash or tag | Yes | Depends on Hardware
-| Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes | Depends on Hardware
-| Depends only on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes, if the binary is a Beta or Production release | Depends on Hardware
-| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes, given components specificed in below sections are in submission repo
-| Private binary | Checksum | No | Yes, given components specificed in below sections are in submission repo
+| Software Component | Possible methods for replication | Software considered "Available" | Software considered "Preview" or "RDI"
+| Source code or binary included in the submission repo | --- | Yes | No
+| Depends only on public Github repo | Commit hash or tag | Yes | No
+| Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes | No
+| Depends only on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes, if the binary is a Beta or Production release | No
+| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes
+| Private binary | Checksum | No | Yes
 |===
 
 
