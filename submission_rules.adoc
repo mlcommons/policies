@@ -424,13 +424,13 @@ The source code must be sufficient to reproduce the results of the submission, g
 
 
 |===
-| Software Component | Possible methods for replication | Software considered "Available" | Software considered "Preview" or "RDI"
-| Source code or binary included in the submission repo | --- | Yes | No
-| Depends only on public Github repo | Commit hash or tag | Yes | No
-| Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes | No
-| Depends only on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes, if the binary is a Beta or Production release | No
-| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes
-| Private binary | Checksum | No | Yes
+| Possible methods to provide Software (meet atleast 1 criteria) | Methods for replication | "Available" Category | "Preview" Category |  "RDI" Category
+| Source code or binary included in the submission repo | --- | Yes | Optional | Optional
+| Depends only on public Github repo | Commit hash or tag | Yes | Optional | Optional
+| Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes | Optional | Optional
+| Depends only on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes, if the binary is a Beta or Production release | Optional | Optional
+| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is more | Yes
+| Private binary | Checksum | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is more | Yes
 |===
 
 
