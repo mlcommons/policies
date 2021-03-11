@@ -644,7 +644,7 @@ A research, development, or internal (RDI) component  does not meet the requirem
 
 ### Terms of use
 
-Any use of published results in connection with the MLPerf trademark must follow the [terms of use.](https://github.com/mlperf/policies/blob/master/TERMS%20OF%20USE.md)
+Any use of published results in connection with the MLPerf trademark must follow the Terms of Use found at https://mlcommons.org/en/policies/.
 
 
 ### Issues discovered after publication
