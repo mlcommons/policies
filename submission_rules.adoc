@@ -205,7 +205,7 @@ MLPerf will provide a private Github repository for submissions. Each submitter 
 
 ### Licensing
 
-All submissions of code must be made under the MLPerf CLA, which is temporarily the Google open source CLA. Per the CLA, all submissions of code will be Apache 2 compatible. Third party libraries need not be Apache 2 licensed.
+All submissions of code must be made under the MLCommons CLA. Per the CLA, all submissions of code will be Apache 2 compatible. Third party libraries need not be Apache 2 licensed.
 
 ### Verification
 
