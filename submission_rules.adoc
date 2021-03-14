@@ -396,7 +396,7 @@ The file <system_desc_id>.json should contain the following metadata describing 
 
 ### <system_desc_id>_<implementation_id>_<scenario>.json metadata
 
-The file <system_desc_id>_<implementation_id>.json should metadata describing use of the specified implementation on the specified system.
+The file <system_desc_id>_<implementation_id>.json should contain metadata describing use of the specified implementation on the specified system.
 
 
 |===
