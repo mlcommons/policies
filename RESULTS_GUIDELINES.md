@@ -34,6 +34,8 @@ _SmartAI Corp announced an unverified score of 0.3 on the MLPerf Image Classific
 
 _[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
 
+Submitters are not allowed to publish any results for a given version before its official publication date. Non-submitters are not allowed to publish any unofficial results until two weeks after the official publication date for that version.
+
 ## MLPerf allows but does not endorse combining results of benchmarks
 
 Users may see fit to combine or aggregate results from multiple MLPerf benchmark tests and/or other 3rd party results. If publicly disclosed, these composite results must cite MLPerf as required above and clearly describe the method of combination. However the composite result is not sanctioned by MLPerf and may not be represented as an official MLPerf result or score.
