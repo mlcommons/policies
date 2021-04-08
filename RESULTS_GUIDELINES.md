@@ -42,7 +42,7 @@ _By modifying the benchmark network architecture to be more efficient, an 8 chip
 
 You may cite either official results obtained from the MLPerf results page or unofficial results measured independently. If you cite an unofficial result you must clearly specify that the result is “Unverified” in text and clearly state “Result not verified by MLPerf” in a footnote. The result must comply with the letter and spirit of the relevant MLPerf rules.
 
-You may not claim a result as an unofficial MLPerf result without permission of the System and Accelerator vendor.
+You may not claim a result as an unofficial MLPerf result without permission of the System and Accelerator vendor, unless all differences from vendor's preferred Hardware and Software stack are explicitly mentioned.
 
 For example:
 
