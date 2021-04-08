@@ -424,7 +424,7 @@ The source code must be sufficient to reproduce the results of the submission, g
 
 
 |===
-| Possible methods to provide Software (meet atleast 1 criteria) | Methods for replication | "Available" Category | "Preview" Category |  "RDI" Category
+| Possible methods to provide Software (meet at least 1 criteria) | Methods for replication | "Available" Category | "Preview" Category |  "RDI" Category
 | Source code or binary included in the submission repo | --- | Yes | Optional | Optional
 | Depends only on public Github repo | Commit hash or tag | Yes | Optional | Optional
 | Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes | Optional | Optional
