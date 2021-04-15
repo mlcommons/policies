@@ -551,6 +551,11 @@ The SWG may further request additional information, not listed above, at their d
 
 A submitter requesting approval for their RCP failing submission during the review period shall provide requested information in a timely manner. All evidence supporting the appeal is due at the latest by the end of Review Week 1.  For resubmissions during the review period, all appeal evidence is due at the time of resubmission.
 
+The SWG must come to majority consensus to approve a submission that fails the RCP test.  If the SWG cannot come to majority consensus to approve a submission, then potential alternatives are:
+
+1. Normalize submission run epochs to reference epochs to pass RCP test irrespective of accuracy achieved
+2. Submission is withdrawn due to non-compliance
+
 ### Filing objections
 
 Submitters must officially file objections to other submitter’s code by creating a GitHub issue prior to the “Filing objections” deadline that cites the offending lines, the rules section violated, and, if pertinent, corresponding lines of the reference implementation that are not equivalent.
