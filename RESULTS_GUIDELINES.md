@@ -1,4 +1,4 @@
-# MLPerf Results Guidelines
+# MLPerf™ Results Guidelines
 
 ## MLPerf results must clearly identify basic details in the main text, table, or figure
 
