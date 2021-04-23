@@ -421,17 +421,18 @@ For Inference, the results logs must have been produced by the [standard load ge
 
 The following section applies to all submissions in all divisions.
 
-The source code must be sufficient to reproduce the results of the submission, given all source components specified. Any software component that would be required to substantially reproduce the submission must be uniquely identified using one of the following methods:
+The source code must be sufficient to reproduce the results of the submission, given all source components specified in Section 5.11 (for Inference) or Section 5.12 (for Training) are provided in the submission repo for all Categories, including Available, Preview, and RDI. In addition, any software component that would be required to substantially reproduce the submission must be uniquely identified using one of the following methods:
 
 
 |===
-| Software Component | Possible methods for replication | Considered “Available” for Category purposes (see later section)
-| Source code or binary included in the submission repo | --- | Yes
-| Depends only on public Github repo | Commit hash or tag | Yes
-| Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes
-| Depends only on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes, if the binary is a Beta or Production release
-| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No
-| Private binary | Checksum | No
+| Possible methods to provide Software (meet at least 1 criteria) | Methods for replication | "Available" Category | "Preview" Category |  "RDI" Category
+| Source code or binary included in the submission repo | --- | Yes | Optional | Optional
+| Depends only on public Github repo | Commit hash or tag | Yes | Optional | Optional
+| Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes | Optional | Optional
+| Depends only on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes, if the binary is a Beta or Production release | Optional | Optional
+| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
+| Depends on partially redacted source code from an internal source control system (line numbers logged in result files should comply with redacted source code for easy review)  | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
+| Private binary | Checksum | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
 |===
 
 
@@ -443,6 +444,7 @@ For inference, the source code, pseudo-code, or prose description must be suffic
 
 
 
+*   Readme detailing run command with command line flags, if any
 *   The connection to the loadgen
 *   Preprocessing
 *   The architecture of the model, and the operations performed
@@ -460,14 +462,16 @@ For the inference server scenario, the source code, pseudo-code, or prose must b
 ### Source code requirements for training inspection
 
 For training, the source code must be sufficient to verify all aspects of a Closed submission including but not limited to:
-* Data preprocessing
-* Data traversal order
-* Model 
-* Model initialization
-* Optimizer used
-* Hyperparameters used
-* Evaluation frequency
-* Evaluation method
+
+*   Readme detailing run command with command line flags, if any
+*   Data preprocessing
+*   Data traversal order
+*   Model 
+*   Model initialization
+*   Optimizer used
+*   Hyperparameters used
+*   Evaluation frequency
+*   Evaluation method
 
 This requirement applies even to Open submissions, though the aspects do not need to match the reference.
 
