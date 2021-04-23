@@ -537,7 +537,7 @@ Each submitter is required to review at least one other submission. Required rev
 
 #### Training
 
-In order to reduce the burden on the submitter as well as the Submitter’s Working Group (SWG) during the review period, submitters shall ensure compliance with RCP tests ahead of the submission deadline. Submissions that need new RCPs are required to supply those RCPs at the same time as their submission, as specified by the Logging Library’s RCP support. While providing new RCPs, a submitter must also include reference run logs for the SWG and reference owner to review.
+In order to reduce the burden on the submitter as well as the Submitter’s Working Group (SWG) during the review period, submitters shall ensure compliance with RCP tests ahead of the submission deadline. Submissions that need new RCPs are required to supply those RCPs at the same time as their submission, as specified in the Training Rules document. While providing new RCPs, a submitter must also include reference run logs for the SWG and reference owner to review.
 
 Submissions with failing RCP tests are rejected by default until the SWG approves the submission. Submitters shall notify the SWG in advance of a potential RCP failure, so they can prefetch requests for additional data and minimize churn during the review period.  A submitter requesting approval for a submission with failing RCP test shall provide additional explanatory data to the SWG explaining why the WG should consider the non-compliant submission a fair comparison to compliant submissions. This list will be decided by the WG for each submission individually. 
 
