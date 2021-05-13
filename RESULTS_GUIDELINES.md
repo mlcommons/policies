@@ -56,13 +56,13 @@ Users may see fit to combine or aggregate results from multiple MLPerf benchmark
 
 ## Comparisons based on secondary or derived metrics must be explicit
 
-Each MLPerf benchmark or scenario has a primary metric, for instance time-to-train for Training Image Classification, or queries/sec for the Server scenario of Infernece Image Classification (Datacenter system type). Any comparison based on different or derived metric such as power, cost, model size/architecture, accuracy, etc. must make the basis for comparison clear in the text and in a footnote. Secondary and derived metrics must not be presented as official MLPerf metrics.
+Each MLPerf benchmark or scenario has a primary metric, for instance time-to-train for Training Image Classification, or queries/sec for the Server scenario of Infernece Image Classification (Datacenter system type). Any comparison based on different or derived metric such as power rating, cost, model size/architecture, accuracy, etc. must make the basis for comparison clear in the text and in a footnote. Secondary and derived metrics must not be presented as official MLPerf metrics.
 
 _Prestigious Research University has created a new neural network model called MagicEightBall that is 100% accurate for Top-1 image classification on the MLPerf v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]._
 
 _[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are registered trademarks. See www.mlperf.org for more information._
 
-## Making additional comparisons without context of MLPerf benchmark results is prohibited
+## Additional comparisons should provide context of MLPerf benchmark results
 
 Additional comparisons that are based on an MLPerf model or are described as being related to MLPerf may be made only if MLPerf benchmark results for that model are published, for all required scenarios, and are referenced in the text of the comparison.
 
