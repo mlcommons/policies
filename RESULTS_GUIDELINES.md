@@ -64,7 +64,7 @@ _[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are regi
 
 ## Making additional comparisons without context of MLPerf benchmark results is prohibited
 
-No additional comparisons that are based on an MLPerf model or are described as being related to MLPerf may be made unless MLPerf benchmark results for that model are made available, for all required scenarios, and are referenced in the text of the comparison.
+Additional comparisons that are based on an MLPerf model or are described as being related to MLPerf may be made only if MLPerf benchmark results for that model are published, for all required scenarios, and are referenced in the text of the comparison.
 
 Additional comparisons must comply with the letter and spirit of the relevant MLPerf rules and all deviations from requirements of the official benchmark must be explicitly stated.  The fact that additional comparisons are not benchmarks of MLPerf must also be explicitly stated.
 
