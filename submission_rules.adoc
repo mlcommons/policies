@@ -86,16 +86,19 @@ committee.
 
 ### Confidential and not precedent setting 
 
-Because the submission round is confidential to the submitters, the review
-committee agenda, deliberations, and specific decisions are confidential and
-shared only with committee members and submitters for that round. The general
-nature of decisions may be shared outside the review process because such
-decisions may expose the need for rules changes.
+The review committee agenda, deliberations, referenda, votes, and specific
+decisions are confidential and shared only with committee members and submitters
+for that round. The general nature of decisions may be shared outside the review
+process because such decisions may expose the need for rules changes. A
+submitter may publicly or privately share the specific changes necessary to
+bring their submission into compliance with their suppliers, contractors, and
+other partners.
 
-The private submission repo will be deleted when the next MLPerf submission is
-made public or after 200 days.
+The private submission repository will be deleted when the next relevant MLPerf
+submission is made public or discontinued.
 
-Review committee decisions do not create precedents. Instead, the decisions should be explicitly incorporated into the rules through the normal process. 
+Review committee decisions do not create precedents. Instead, the decisions
+should be explicitly incorporated into the rules through the normal process.
 
 ## Operating principles
 
