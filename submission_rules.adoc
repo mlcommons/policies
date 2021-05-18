@@ -67,10 +67,14 @@ to reach a grudging consensus, the submitters will vote to decide the
 issue. Each submitting organization will cast at most one vote per
 referendum. Non-submitters (including non-submitting chairs, the executive
 director, and the president of the board) may not vote, except in the case of a
-tie. In the case of a tie, the first non-submitter from the following list will
-cast the deciding vote: the review chair, the chairs of the relevant working
-group shortest tenure first, the chairs of the relevant power working group
-shortest tenure first, and a random number generator.
+tie. In the case of a tie exactly one vote is cast by the first non-submitter
+from the following list who are able and willing to vote:
+
+* The non-submitting review chair
+* The non-submitting chairs of the relevant working group collectively
+* The non-submitting chairs of the relevant power working group if invited by
+  the non-submitting chairs of the relevant working group
+* A random number generator
 
 If there are two outcomes, voting proceeds by simple majority. If there are more
 than two outcomes, voting proceeds by Condorcet poll with the minimax completion
