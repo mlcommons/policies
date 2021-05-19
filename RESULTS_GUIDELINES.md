@@ -1,4 +1,4 @@
-# MLPerf Terms of Use
+# MLPerf Results Guidelines
 
 The MLPerf name and logo are trademarks. Any use of the MLPerf trademark must conform to these terms of use. The MLCommons organization reserves the right to solely determine if a use of its name or logo, or the MLPerf trademark, is acceptable. Any use of the benchmark results under the MLPerf trademark must conform to the guidelines in this document.
 
