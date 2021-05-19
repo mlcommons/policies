@@ -4,15 +4,15 @@ The MLPerf name and logo are trademarks. Any use of the MLPerf trademark must co
 
 ## MLPerf results must clearly identify basic details in the main text, table, or figure
 
-Any use of results must clearly identify the following in the main text, table, or figure: submitting organization, benchmark name, and system under test. For example:
+Any use of results must clearly identify the following in the main text, table, or figure: submitting organization, benchmark name, version, category, division, scenario if applicable, and system under test. For example:
 
-_SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchmark using a SmartCluster._
+_SmartAI Corp achieved a score of 0.6 in closed division on the MLPerf v0.7 Image Classification benchmark using a SmartCluster submitted in available category._
 
 For Closed Division benchmarks, the model name may be used instead of the benchmark name, e.g. "SSD" instead of "Object Detection (light-weight)".
 
 ## MLPerf results must include a detailed footnote
 
-Any use of results of must include the following in a footnote: benchmark suite, version, category and division, benchmark name and scenario if applicable, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
+Any use of results of must include the following in a footnote: benchmark suite, version, and division, benchmark name and scenario if applicable, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
 
 _[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from www.mlperf.org 21 December 2018, entry 0.5-12. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
 
@@ -66,7 +66,7 @@ _[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are regi
 
 Additional comparisons that are based on an MLPerf model or are described as being related to MLPerf may be made only if MLPerf benchmark results for that model are published, for all required scenarios, and are referenced in the text of the comparison.
 
-Additional comparisons must comply with the letter and spirit of the relevant MLPerf rules and all deviations from requirements of the official benchmark must be explicitly stated.  The fact that additional comparisons are not benchmarks of MLPerf must also be explicitly stated.
+Any deviations from requirements of the official benchmark must be explicitly stated. The fact that additional comparisons are not benchmarks of MLPerf must also be explicitly stated.
 
 Additional comparisons must be based on data collected using an MLPerf model implementation available in the “code” directory pointed at by the official MLPerf Results table for each verified result , or based on a model that produced a valid “unverified” result that has been publicly disclosed.
 
@@ -82,9 +82,9 @@ _[2] LessSmartAI Corp results based on testing their MLPerf v0.7 Image Classific
 
 ## Violation Determination, Remedies, and Penalties
 
-Any MLCommons member may report a violation of Result Guidelines via email to any MLCommons WG Chair. A violation review committee (minimally 5 MLPerf WG chairs) will screen the violation. If rejected at this stage, the committee will respond to the objector with reasoning.
+Any MLCommons member may report a violation of Result Guidelines via email to the Executive Director & WG Chairs of appropriate benchmark. ED & WG chairs would inform potential violator and request remedial action. If ED, chairs, objector, and potential violator are unable to reach a mutually satisfactory conclusion, the issue can be raised in WG to seek resolution via WG vote.
 
-Otherwise, the committee will direct the violator to take remedial action or impose penalties. Possible remedial actions or penalties based on the degree of violation may include:
+Possible remedial actions or penalties based on the degree of violation may include:
   1. Minor corrections to published materials in the form of marketing blog posts, journals, papers & other digital media
   2. If the violation was at a public event such as a conference, the committee may direct the violator to issue a public statement to correct claims in ways that conform to the guidelines
   3. The committee may issue a public statement citing the violation; suspend publication privileges or terminate license
