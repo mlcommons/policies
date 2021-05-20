@@ -4,9 +4,9 @@ The MLPerf name and logo are trademarks. Any use of the MLPerf trademark must co
 
 ## MLPerf results must clearly identify basic details in the main text, table, or figure
 
-Any use of results must clearly identify the following in the main text, table, or figure: submitting organization, benchmark name, version, category, division, scenario if applicable, and system under test. For example:
+Any use of results must clearly identify the following in the main text, table, or figure: submitting organization, benchmark name, and system under test. For example:
 
-_SmartAI Corp achieved a score of 0.6 in closed division on the MLPerf v0.7 Image Classification benchmark using a SmartCluster submitted in available category._
+_SmartAI Corp achieved a score of 0.6 on the MLPerf v0.7 Image Classification benchmark using a SmartCluster._
 
 For Closed Division benchmarks, the model name may be used instead of the benchmark name, e.g. "SSD" instead of "Object Detection (light-weight)".
 
@@ -14,7 +14,7 @@ For Closed Division benchmarks, the model name may be used instead of the benchm
 
 Any use of results of must include the following in a footnote: benchmark suite, version, and division, benchmark name and scenario if applicable, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
 
-_[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from www.mlperf.org 21 December 2018, entry 0.5-12. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
+_[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from www.mlcommons.org 21 December 2018, entry 0.5-12. MLPerf name and logo are trademarks. See www.mlcommons.org for more information._
 
 ## MLPerf results may only be compared against similar MLPerf results
 
@@ -24,19 +24,9 @@ MLPerf Training v0.5 and v0.6 are not directly compatible and should not be comp
 
 ## When comparing MLPerf results, you must identify any submission differences
 
-When comparing results the main text, table, or figure must clearly identify any difference in version, division, category, official or unverified status, scenario or chipcount. 
+When comparing results the main text, table, or figure must clearly identify any difference in version, division, category, official or unverified status, scenario or chipcount. When comparing Open and Closed division results any ways in which the Open result would not qualify as a Closed result must be identified.
 
 _SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchmark using a SmartCluster with 8 chips in RDI category of Closed Division which is faster than the result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Available on-premise category of Closed Division_
-
-## When comparing MLPerf results of different divisions, one must identify any benchmark or dataset differences
-
-Open division and Closed division results might not be directly compatible and should not be compared without identifying ways in which the Open result does not qualify as a Closed result. Open division and Closed division scores may be compared for a given task provided base hardware is the same. When comparing Open division and Closed division submissions on different systems, comparison should not be based on mlperf score but can be based on comparing algorithmic differences such as quality metric or samples to convergence.
-
-Examples:
-
-_By increasing channel count in the network architecture, SmartAI Corp achieved an accuracy of 78% on MLPerf Image Classification benchmark using a SmartCluster with 8 chips in the Open Division which is higher than the accuracy requirement of Closed Division._
-
-_By modifying the benchmark network architecture to be more efficient, an 8 chip SmartCluster from SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchmark in the Open Division, which is faster than the result of 7.2 achieved on the same system in Closed Division._
 
 ## Official results must be clearly distinguished from unofficial results
 
@@ -48,7 +38,7 @@ For example:
 
 _SmartAI Corp announced an unverified score of 0.3 on the MLPerf Image Classification benchmark using a SmartCluster running MLFramework v4.1 [1]._
 
-_[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
+_[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlcommons.org for more information._
 
 Submitters are not allowed to publish any results for a given version before its official publication date. Non-submitters are not allowed to publish any unofficial results until two weeks after the official publication date for that version.
 
@@ -58,23 +48,23 @@ Users may see fit to combine or aggregate results from multiple MLPerf benchmark
 
 ## Comparisons based on secondary or derived metrics must be explicit
 
-Each MLPerf benchmark or scenario has a primary metric, for instance time-to-train for Training Image Classification, or queries/sec for the Server scenario of Inference Image Classification (Datacenter system type). Any comparison based on different or derived metric such as power rating, cost, model size/architecture, accuracy, etc. must make the basis for comparison clear in the text and in a footnote. Secondary and derived metrics must not be presented as official MLPerf metrics.
+Each MLPerf benchmark or scenario has a primary metric, for instance time-to-train for Training Image Classification, or queries/sec for the Server scenario of Inference Image Classification (Datacenter system type). Any comparison based on different or derived metric such as power rating, cost, model size/architecture, accuracy, etc. must make the basis for comparison clear in the text and in a footnote. Secondary and derived metrics must not be presented as official MLPerf metrics. Any comparison based on secondary or derived metric should always be accompanied by comparison of the primary metric as well.
 
-_Prestigious Research University has created a new neural network model called MagicEightBall that is 100% accurate for Top-1 image classification on the MLPerf v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]._
+_Prestigious Research University has created a new neural network model called MagicEightBall that is 100% accurate for Top-1 image classification on the MLPerf v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]. MagicEightBall achieved a score of 20 minutes._
 
-_[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are registered trademarks. See www.mlperf.org for more information._
+_[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are registered trademarks. See www.mlcommons.org for more information._
 
 ## Violation Determination, Remedies, and Penalties
 
 Any MLCommons member may report a violation of Result Guidelines via email to the Executive Director & WG Chairs of appropriate benchmark. ED & WG chairs would inform potential violator and request remedial action. If ED, chairs, objector, and potential violator are unable to reach a mutually satisfactory conclusion, the issue can be raised in WG to seek resolution via WG vote.
 
-Possible remedial actions or penalties based on the degree of violation may include:
+A non-exhaustive list of possible remedial actions or penalties based on the degree of violation is noted below:
   1. Minor corrections to published materials in the form of marketing blog posts, journals, papers & other digital media
   2. If the violation was at a public event such as a conference, the committee may direct the violator to issue a public statement to correct claims in ways that conform to the guidelines
   3. The committee may issue a public statement citing the violation; suspend publication privileges or terminate license
   4. Continued failure to conform to these guidelines by a submitter may lead to marking the results as non-compliant in the results database permanently
 
-THE SERVICE AND SOFTWARE ARE PROVIDED TO YOU "AS IS" WITHOUT ANY WARRANTY OR IMPLIED WARRANTY. NEITHER MLCOMMONS NOR ITS PARENT, SUBSIDIARIES, OR AFFILIATES (“MLCOMMONS”) TAKE ANY RESPONSIBILITY FOR ANY DIFFICULTIES YOU MAY ENCOUNTER WITH THE SERVICE OR SOFTWARE. MLPERF DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE OR OTHER PRODUCTS WILL MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE OR OTHER PRODUCTS WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION, BENCHMARKS, BENCHMARK RESULTS, OR ADVICE GIVEN BY MLPERF (THE “MLCOMMONS CONTENT”) SHALL CREATE ANY WARRANTY.
+THE SERVICE AND SOFTWARE ARE PROVIDED TO YOU "AS IS" WITHOUT ANY WARRANTY OR IMPLIED WARRANTY. NEITHER MLCOMMONS NOR ITS PARENT, SUBSIDIARIES, OR AFFILIATES (“MLCOMMONS”) TAKE ANY RESPONSIBILITY FOR ANY DIFFICULTIES YOU MAY ENCOUNTER WITH THE SERVICE OR SOFTWARE. MLCOMMONS DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE OR OTHER PRODUCTS WILL MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE OR OTHER PRODUCTS WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION, BENCHMARKS, BENCHMARK RESULTS, OR ADVICE GIVEN BY MLPERF (THE “MLCOMMONS CONTENT”) SHALL CREATE ANY WARRANTY.
 
 MLCOMMONS IS NOT RESPONSIBLE FOR ANY PRODUCTS YOU MAY CHOOSE TO PURCHASE OR CHOOSE NOT TO PURCHASE AS A RESULT OF THE MLPERF CONTENT. MLCOMMONS DISCLAIMS ANY AND ALL LOSS OR LIABILITY RELATED TO YOUR USE OF THE WEBSITE, THE MLCOMMONS CONTENT GIVEN TO YOU ON THE WEBSITE OR SOFTWARE FROM THE WEBSITE, OR THIS AGREEMENT.
 
@@ -83,4 +73,3 @@ MLCommons is not liable for, among other things, any loss of data, hardware or s
 MLCommons makes no representations whatsoever about any other website that you may access through the Website. MLCommons has no control over the content or claims of websites outside the MLPerf domain, and does not endorse or accept any responsibility for the content of such websites.
 
 MLCOMMONS, ITS REPRESENTATIVES, LICENSORS, AND PARTNERS WILL NOT BE LIABLE FOR ANY DAMAGES (INCLUDING DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE).
-
