@@ -3,7 +3,7 @@
 
 :sectnums:
 
-# General MLPerf Submission Rules v0.2
+# General MLPerf Submission Rules v0.3
 
 :TOC:
 
@@ -21,70 +21,100 @@ Unless otherwise stated all rules apply to closed and open.
 
 ## Review committee
 
-The MLPerf submission, review, and publication process is overseen by a review committee. 
+The MLPerf review and publication process is overseen by a review committee. 
 
 
 ### Structure
 
 The review committee consists of the following people:
 
+*   The relevant working group chairs
+*   The relevant power working group chairs
+*   Optionally, the review chair of relevant working group
+*   The executive director
+*   The president of the board
+*   Representatives of each submitter
 
+If representatives of a single organization, its parents, subsidiaries, or
+affiliates hold multiple positions on this list, at most one such representative
+is eligible to vote in the review committee.
 
-*   The chair or chairs of the following working groups:
-    **   [ Inference or training, whichever is being submitted ] results
-    **   [ Inference or training, whichever is being submitted ] submitters
-    **   [ Inference or training, whichever is being submitted ] special topics
-    **   Power
-*   Until such time a permanent host organization exists:
-    **   The general chair
-*   When a permanent host organization exists:
-    **   The executive director
-    **   The chairperson of the board
-*   For v0.5 only, and only for the review process: One representative of each accelerator vendor (as opposed an OEM or system vendor) who submitted and is not otherwise represented above, provide that in the opinion of the majority of the above said representative is a significant contributor to MLPerf through active participation in one or more working groups.
-
-If representatives of a single organization, its parents, subsidiaries, affiliates, or contractors hold multiple positions on this list, only one such representative is eligible to serve on the review committee. 
-
-The review committee is chaired by the relevant results working group chair, e.g. training results working chair during a training submission review. For this reason, the results working groups may never have multiple chairs. 
-
+The review committee is chaired by the relevant results working group chairs
+unless a review chair is selected.
 
 ### Meetings
 
-The review committee makes decisions during properly scheduled meetings. The base meeting schedule is dictated by the review process. The review committee chair may schedule additional meetings during the review process in the course of any meeting or by emailing all committee members (e.g. mlperf-chairs mailing list) at least 24 hours in advance.
+The review committee makes decisions during properly scheduled meetings. The
+base meeting schedule is dictated by the review process. The review committee
+chair may schedule additional meetings during the review process in the course
+of any meeting or by emailing all committee members at least 24 hours in
+advance.
 
-The review committee has a quorum if it includes an eligible chair and at four other eligible members.
+Review committee meetings are typically held virtually.
 
-Review committee meetings are typically held at a specific location determined by the review committee chair and in-person attendance is encouraged, but virtual attendance is to be enabled and allowed. 
-
-Review committee meetings are open only to the review committee and all submitters in the current submission round.
-
+Review committee meetings are open only to the review committee.
 
 ### Agenda and decisions
 
-The review committee agenda is set by, and decisions are tracked, using issues filed against the Github submission repo. In general, issues must be filed as dictated by the review process schedule. Exceptions are discouraged but may be allowed during a meeting by a vote of the review committee. In general, issues are decided in the order filed, but the chair may choose a different order if circumstances warrant.
+The review committee agenda is set by, and decisions are tracked, using issues
+filed against the Github submission repo. In general, issues must be filed as
+dictated by the review process schedule. Exceptions are discouraged but may be
+allowed during a meeting by a vote of the review committee.
 
-The review committee should attempt to decide issues through discussion and grudging consensus whenever possible. However, if the review committee and all submitters are unable to reach a grudging consensus, the review committee will vote to decide the issue.
+The review committee should attempt to decide issues through discussion and
+grudging consensus whenever possible. However, if the review committee is unable
+to reach a grudging consensus, the submitters will vote to decide the
+issue. Each submitting organization will cast at most one vote per
+referendum. Non-submitters (including non-submitting chairs, the executive
+director, and the president of the board) may not vote, except in the case of a
+tie. In the case of a tie exactly one vote is cast by the first non-submitter
+from the following list who are able and willing to vote:
 
-Review committee votes are determined by a majority of eligible review committee members attending a meeting. In the event of a tie, the committee chair has the casting vote. Votes are initiated by the chair, and are cast openly and may be cast verbally or using a shared spreadsheet or other voting software.
+* The non-submitting review chair
+* The non-submitting chairs of the relevant working group collectively
+* The non-submitting chairs of the relevant power working group if invited by
+  the non-submitting chairs of the relevant working group
+* A random number generator
 
-The review committee operates on balance of interests rather than by avoiding conflict of interest. Members may cast votes on all matters, including those directly affecting benchmark submissions made by their organization, as a practical response to the fact that competitors are also on the review committee.
+If there are two outcomes, voting proceeds by simple majority. If there are more
+than two outcomes, voting proceeds by Condorcet poll with the minimax completion
+rule. Votes are initiated by the chair and are cast openly. Votes may be cast
+verbally or using a shared spreadsheet or other voting software.
+
+The review committee operates on balance of interests rather than by avoiding
+conflict of interest. Members may cast votes on all matters, including those
+directly affecting benchmark submissions made by their organization, as a
+practical response to the fact that competitors are also on the review
+committee.
 
 
 ### Confidential and not precedent setting 
 
-Because the submission round is confidential to the submitters, the review committee agenda, deliberations, and specific decisions are confidential and shared only with committee members and submitters for that round. The general nature of decisions may be shared outside the review process because such decisions may expose the need for rules changes. 
+The review committee agenda, deliberations, referenda, votes, and specific
+decisions are confidential and shared only with committee members and submitters
+for that round. The general nature of decisions may be shared outside the review
+process because such decisions may expose the need for rules changes. A
+submitter may publicly or privately share the specific changes necessary to
+bring their submission into compliance with their suppliers, contractors, and
+other partners.
 
-The private submission repo will be deleted when the next MLPerf submission repo is created, or after 90 days.
+The private submission repository will be deleted when the next relevant MLPerf
+submission is made public or discontinued.
 
-Review committee decisions do not create precedents. Instead, the decisions should be explicitly incorporated into the rules through the normal process. 
-
+Review committee decisions do not create precedents. Instead, the decisions
+should be explicitly incorporated into the rules through the normal process.
 
 ## Operating principles
 
 MLPerf’s purpose is to produce fair and useful benchmark results.
 
-The MLPerf review committee reserves the right to amend these rules and/or exclude submissions that conflict with this purpose with a two-thirds (rounded up) vote. For instance, if the schedule is discovered to be untenable in practice, it may be amended. If a submission is judged to be deceptive or not of interest to the community, it may be excluded. 
+The MLPerf review committee reserves the right to amend these rules and/or
+exclude submissions that conflict with this purpose with a two-thirds (rounded
+up) vote by the submitters. For instance, if the schedule is discovered to be
+untenable in practice, it may be amended. If a submission is judged to be
+deceptive or not of interest to the community, it may be excluded.
 
-The role of the review process is to ensure fairness of submissions, not to litigate details in an effort to disquality competitors. For example:
+The role of the review process is to ensure fairness of submissions, not to litigate details in an effort to disqualify competitors. For example:
 
 
 
@@ -438,7 +468,7 @@ The source code must be sufficient to reproduce the results of the submission, g
 
 ### Source code requirements for inference inspection
 
-The following section applies to all submissions in the Closed division. We encourage Open division submissions to be as transparent as possible. We will re-examine in v0.6.
+The following section applies to all submissions in the Closed division. We encourage Open division submissions to be as transparent as possible.
 
 For inference, the source code, pseudo-code, or prose description must be sufficient to determine:
 
