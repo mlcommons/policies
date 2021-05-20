@@ -42,7 +42,7 @@ _By modifying the benchmark network architecture to be more efficient, an 8 chip
 
 You may cite either official results obtained from the MLPerf results page or unofficial results measured independently. If you cite an unofficial result you must clearly specify that the result is “Unverified” in text and clearly state “Result not verified by MLPerf” in a footnote. The result must comply with the letter and spirit of the relevant MLPerf rules.
 
-When claiming an unofficial result, you must specify all differences in HW/SW stack to a known official submission, if one exists on a similar platform. If you cannot do that, you must get permission from the vendor.
+When claiming an unofficial result, you must specify all differences in HW/SW stack to a known official submission, if one exists on a similar platform.
 
 For example:
 
@@ -56,7 +56,7 @@ Users may see fit to combine or aggregate results from multiple MLPerf benchmark
 
 ## Comparisons based on secondary or derived metrics must be explicit
 
-Each MLPerf benchmark or scenario has a primary metric, for instance time-to-train for Training Image Classification, or queries/sec for the Server scenario of Infernece Image Classification (Datacenter system type). Any comparison based on different or derived metric such as power rating, cost, model size/architecture, accuracy, etc. must make the basis for comparison clear in the text and in a footnote. Secondary and derived metrics must not be presented as official MLPerf metrics.
+Each MLPerf benchmark or scenario has a primary metric, for instance time-to-train for Training Image Classification, or queries/sec for the Server scenario of Inference Image Classification (Datacenter system type). Any comparison based on different or derived metric such as power rating, cost, model size/architecture, accuracy, etc. must make the basis for comparison clear in the text and in a footnote. Secondary and derived metrics must not be presented as official MLPerf metrics.
 
 _Prestigious Research University has created a new neural network model called MagicEightBall that is 100% accurate for Top-1 image classification on the MLPerf v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]._
 
