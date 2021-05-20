@@ -62,24 +62,6 @@ _Prestigious Research University has created a new neural network model called M
 
 _[1] Accuracy is not the primary metric of MLPerf. MLPerf name and logo are registered trademarks. See www.mlperf.org for more information._
 
-## Additional comparisons should provide context of MLPerf benchmark results
-
-Additional comparisons that are based on an MLPerf model or are described as being related to MLPerf may be made only if MLPerf benchmark results for that model are published, for all required scenarios, and are referenced in the text of the comparison.
-
-Any deviations from requirements of the official benchmark must be explicitly stated. The fact that additional comparisons are not benchmarks of MLPerf must also be explicitly stated.
-
-Additional comparisons must be based on data collected using an MLPerf model implementation available in the “code” directory pointed at by the official MLPerf Results table for each verified result , or based on a model that produced a valid “unverified” result that has been publicly disclosed.
-
-Any modifications made to a third party MLPerf repo for the purpose of obtaining additional comparisons must be made in good faith and be made publicly available.
-
-Example:
-
-_SmartAI Corp announced a throughput of 2000 samples/sec on Resnet50 inferencing based on the MLPerf Image Classification Resnet50 model, constrained to a batch of 20 [1].  By comparison LessSmartAI Corp achieves a throughput of 1000 samples/sec with the same constraints [2]_
-
-_[1] Throughput at batch of 20 is not a benchmark of MLPerf.  On the MLPerf Image Classification benchmark v0.7 for Datacenter systems, SmartAI Corp achieves an unverified score of 3000 queries/sec in the Server scenario and 4000 samples/sec in the Offline scenario._
-
-_[2] LessSmartAI Corp results based on testing their MLPerf v0.7 Image Classification Resnet50 model with batch size forced to a fixed value, with modifications available at http://github/xyz .  This scenario is not a benchmark of MLPerf.  LessSmartAI Corp achieved an official score of 2500 queries/sec in the Server scenario and 3500 samples/sec in the Offline scenario._
-
 ## Violation Determination, Remedies, and Penalties
 
 Any MLCommons member may report a violation of Result Guidelines via email to the Executive Director & WG Chairs of appropriate benchmark. ED & WG chairs would inform potential violator and request remedial action. If ED, chairs, objector, and potential violator are unable to reach a mutually satisfactory conclusion, the issue can be raised in WG to seek resolution via WG vote.
@@ -89,7 +71,6 @@ Possible remedial actions or penalties based on the degree of violation may incl
   2. If the violation was at a public event such as a conference, the committee may direct the violator to issue a public statement to correct claims in ways that conform to the guidelines
   3. The committee may issue a public statement citing the violation; suspend publication privileges or terminate license
   4. Continued failure to conform to these guidelines by a submitter may lead to marking the results as non-compliant in the results database permanently
-
 
 THE SERVICE AND SOFTWARE ARE PROVIDED TO YOU "AS IS" WITHOUT ANY WARRANTY OR IMPLIED WARRANTY. NEITHER MLCOMMONS NOR ITS PARENT, SUBSIDIARIES, OR AFFILIATES (“MLCOMMONS”) TAKE ANY RESPONSIBILITY FOR ANY DIFFICULTIES YOU MAY ENCOUNTER WITH THE SERVICE OR SOFTWARE. MLPERF DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE OR OTHER PRODUCTS WILL MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE OR OTHER PRODUCTS WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION, BENCHMARKS, BENCHMARK RESULTS, OR ADVICE GIVEN BY MLPERF (THE “MLCOMMONS CONTENT”) SHALL CREATE ANY WARRANTY.
 
