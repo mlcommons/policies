@@ -1,4 +1,4 @@
-# MLPerf Results Guidelines
+# MLPerf™ Results Guidelines
 
 The MLPerf name and logo are trademarks. Any use of the MLPerf trademark must conform to these terms of use. The MLCommons organization reserves the right to solely determine if a use of its name or logo, or the MLPerf trademark, is acceptable. Any use of the benchmark results under the MLPerf trademark must conform to the guidelines in this document.
 
@@ -49,6 +49,8 @@ For example:
 _SmartAI Corp announced an unverified score of 0.3 on the MLPerf Image Classification benchmark using a SmartCluster running MLFramework v4.1 [1]._
 
 _[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by MLPerf. MLPerf name and logo are trademarks. See www.mlperf.org for more information._
+
+Submitters are not allowed to publish any results for a given version before its official publication date. Non-submitters are not allowed to publish any unofficial results until two weeks after the official publication date for that version.
 
 ## MLPerf allows but does not endorse combining results of benchmarks
 
