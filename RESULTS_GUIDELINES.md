@@ -12,7 +12,7 @@ For Closed Division benchmarks, the model name may be used instead of the benchm
 
 Any use of results of must include the following in a footnote: benchmark suite, version, and division, benchmark name and scenario if applicable, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
 
-_[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlperf.org for more information._
+_[1] MLPerf™ v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlperf.org for more information._
 
 ## MLPerf results may only be compared against similar MLPerf results
 
@@ -32,7 +32,7 @@ You may cite either official results obtained from the MLPerf results page or un
 
 _SmartAI Corp announced an unverified score of 0.3 on the MLPerf™ Image Classification benchmark using a SmartCluster running MLFramework v4.1 [1]._
 
-_[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by the MLCommons™ Association. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information._
+_[1] MLPerf™ v0.5 Training ResNet-v1.5; Result not verified by the MLCommons™ Association. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information._
 
 Submitters are not allowed to publish any results for a given version before its official publication date. Non-submitters are not allowed to publish any unofficial results until two weeks after the official publication date for that version.
 
