@@ -12,7 +12,7 @@ For Closed Division benchmarks, the model name may be used instead of the benchm
 
 Any use of results of must include the following in a footnote: benchmark suite, version, and division, benchmark name and scenario if applicable, date and source of retrieval, MLPerf result ID (major-version.minor-version.entry.benchmark), and clear reference to MLPerf trademark. For example:
 
-_[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from www.mlperf.org 21 December 2018, entry 0.5-12. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlperf.org for more information._
+_[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlperf.org for more information._
 
 ## MLPerf results may only be compared against similar MLPerf results
 
@@ -28,11 +28,11 @@ _SmartAI Corp achieved a score of 0.6 on the MLPerf™ Image Classification benc
 
 ## Official results must be clearly distinguished from unofficial results
 
-You may cite either official results obtained from the MLPerf results page or unofficial results measured independently. If you cite an unofficial result you must clearly specify that the result is “Unverified” in text and clearly state “Result not verified by MLCommons Association” in a footnote. The result must comply with the letter and spirit of the relevant MLPerf rules. For example:
+You may cite either official results obtained from the MLPerf results page or unofficial results measured independently. If you cite an unofficial result you must clearly specify that the result is “Unverified” in text and clearly state “Result not verified by MLCommons™ Association” in a footnote. The result must comply with the letter and spirit of the relevant MLPerf rules. For example:
 
 _SmartAI Corp announced an unverified score of 0.3 on the MLPerf™ Image Classification benchmark using a SmartCluster running MLFramework v4.1 [1]._
 
-_[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by the MLCommons™ Association. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlperf.org for more information._
+_[1] MLPerf v0.5 Training ResNet-v1.5; Result not verified by the MLCommons™ Association. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information._
 
 Submitters are not allowed to publish any results for a given version before its official publication date. Non-submitters are not allowed to publish any unofficial results until two weeks after the official publication date for that version.
 
@@ -46,7 +46,7 @@ Each MLPerf benchmark has a primary metric, for instance time-to-train for Train
 
 _Prestigious Research University has created a new neural network model called MagicEightBall that is 100% accurate for Top-1 image classification on the MLPerf™ v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]._
 
-_[1] Accuracy is not the primary metric of MLPerf Training. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlperf.org for more information._
+_[1] Accuracy is not the primary metric of MLPerf Training. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information._
 
 THE SERVICE AND SOFTWARE ARE PROVIDED TO YOU "AS IS" WITHOUT ANY WARRANTY OR IMPLIED WARRANTY. NEITHER MLCOMMONS NOR ITS PARENT, SUBSIDIARIES, OR AFFILIATES (“MLCOMMONS”) TAKE ANY RESPONSIBILITY FOR ANY DIFFICULTIES YOU MAY ENCOUNTER WITH THE SERVICE OR SOFTWARE. MLPERF DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE OR OTHER PRODUCTS WILL MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE OR OTHER PRODUCTS WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION, BENCHMARKS, BENCHMARK RESULTS, OR ADVICE GIVEN BY MLPERF (THE “MLCOMMONS CONTENT”) SHALL CREATE ANY WARRANTY.
 
