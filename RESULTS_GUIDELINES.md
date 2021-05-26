@@ -54,7 +54,7 @@ MLCOMMONS IS NOT RESPONSIBLE FOR ANY PRODUCTS YOU MAY CHOOSE TO PURCHASE OR CHOO
 
 MLCommons is not liable for, among other things, any loss of data, hardware or software, or any liability resulting from: access delays; access interruptions; viruses; hackers; crackers; data non-delivery or mis-delivery; negligent acts, grossly negligent acts, or omissions by MLCommons; errors in any information, goods, or documents obtained due to the MLCommons Content; or force majeure, or any damages whatsoever resulting from loss of use, data or profits, whether in an action of contract, negligence or other action, arising out of or in connection with the use or performance of the Website, the MLCommons Content, the Service or the Software.
 
-MLCommons makes no representations whatsoever about any other website that you may access through the Website. MLCommons has no control over the content or claims of websites outside the MLPerf domain, and does not endorse or accept any responsibility for the content of such websites.
+MLCommons makes no representations whatsoever about any other website that you may access through the Website. MLCommons has no control over the content or claims of websites outside the MLCommons domain, and does not endorse or accept any responsibility for the content of such websites.
 
 MLCOMMONS, ITS REPRESENTATIVES, LICENSORS, AND PARTNERS WILL NOT BE LIABLE FOR ANY DAMAGES (INCLUDING DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE).
 
