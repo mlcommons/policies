@@ -16,7 +16,7 @@ _[1] MLPerf™ v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https:/
 
 ## MLPerf results may only be compared against similar MLPerf results
 
-Whether comparing official results or unverified results, comparisons must be made between results of the same benchmark and scenario from compatible versions of an MLPerf benchmark. Compatible versions are determined by the MLCommons Association. MLPerf results may not be compared against non-MLPerf results.
+Whether comparing official results or unverified results, comparisons must be made between results of the same benchmark and scenario from compatible versions of an MLPerf benchmark. Compatible versions are determined by the MLCommons™ Association. MLPerf results may not be compared against non-MLPerf results.
 
 MLPerf Training v0.5 and v0.6 are not directly compatible and should not be compared between submitters. A given system’s v0.5 and v0.6 submissions may be compared with each other provided that the base hardware is the same and the comparisons are done with sufficient analysis to remove influence of benchmark changes such as overheads and quality targets.
 
