@@ -646,7 +646,7 @@ Each results table will contain the following information:
 
 ### Results categories
 
-Results will be divided into categories based on the availability of the hardware and software components
+Results will be divided into categories based on the availability of the hardware and software components. Availability rules apply to both Closed and Open division submissions.
 
 
 |===
@@ -662,7 +662,7 @@ Results will be divided into categories based on the availability of the hardwar
 
 _Available_ cloud systems must (1) have available pricing (either publicly advertised or available by request), (2) have been rented by at least one third party, (3) have public evidence of availability (web page saying product is available, statement by company, etc), and (4) be “reasonably available” for rent by additional third parties by the submission date. 
 
-An on-premise system is _Available_ if all of its components that substantially determine ML performance are _Available_ either individually or in aggregate (development boards that meet the substantially determine clause are allowed). An _Available_ component or system must (1) have available pricing (either publicly advertised or available by request), (2) have been shipped to at least one third party, (3) have public evidence of availability (web page saying product is available, statement by company, etc), and (4) be “reasonably available” for purchase by additional third parties by the submission date.  In addition, submissions for on-premise systems must describe the system and its components in sufficient detail to enable third parties to build a similar system. 
+An on-premise system is _Available_ if all of its components that substantially determine ML performance are _Available_ either individually or in aggregate (development boards that meet the substantially determine clause are allowed). Components that are considered to substantially determine ML performance include accelerator chips, CPUs, and NICs. An _Available_ component or system must (1) have available pricing (either publicly advertised or available by request), (2) have been shipped to at least one third party, (3) have public evidence of availability (web page saying product is available, statement by company, etc), and (4) be “reasonably available” for purchase by additional third parties by the submission date.  In addition, submissions for on-premise systems must describe the system and its components in sufficient detail to enable third parties to build a similar system. 
 
 In both cases, “reasonably available” means:
 
@@ -684,12 +684,12 @@ A _Preview_ system is a system which will meet the requirements of an _Available
 
  
 
-If a _Preview_ system contains a newly developed hardware component (e.g. a new ML accelerator) that is a substantial contributor to the determination of ML performance, then for that submission only, the “Available software stack” requirement is waived for software that is necessary to support that component. Otherwise, _Preview_ systems must meet the same _Available_ software stack requirements as an _Available_ system. For example, the first shipping version of a new accelerator need not meet the _Available _software stack requirements, but subsequent SKUs of that accelerator are not considered newly developed, and must meet _Available_ software stack requirements.
+A _Preview_ system may contain a newly developed hardware component (e.g. a new ML accelerator) that is a substantial contributor to the determination of ML performance. "Newly developed" is defined as a component that was not available, by the MLPerf definition of _Available_ at the time of the last MLPerf round. So a chip that was available in the previous MLPerf round but was never before used for an MLPerf submission does not qualify as "newly developed."  In a submission using a _Preview_ system with newly developed hardware, the “Available software stack” requirement is waived for software that is necessary to support that component. Otherwise, _Preview_ systems must meet the same _Available_ software stack requirements as an _Available_ system. For example, the first shipping version of a new accelerator need not meet the _Available _software stack requirements, but subsequent SKUs of that accelerator are not considered newly developed, and must meet _Available_ software stack requirements.
 
 
 #### Research, Development, or Internal Systems
 
-A research, development, or internal (RDI) component  does not meet the requirements for an available or preview component. An RDI system is a system containing one or more RDI components. The RDI components may not be submitted as _Available_ components  until the submission cycle after next or 181 days whichever is longer
+A research, development, or internal (RDI) component  does not meet the requirements for an available or preview component. An RDI system is a system containing one or more RDI components. The RDI components may not be submitted as _Available_ components  until the submission cycle after next or 181 days whichever is longer.
 
 
 ## After publication
