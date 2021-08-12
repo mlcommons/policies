@@ -460,9 +460,9 @@ The source code must be sufficient to reproduce the results of the submission, g
 | Depends only on public Github repo | Commit hash or tag | Yes | Optional | Optional
 | Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes | Optional | Optional
 | Depends only on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes, if the binary is a Beta or Production release | Optional | Optional
-| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
-| Depends on partially redacted source code from an internal source control system (line numbers logged in result files should comply with redacted source code for easy review)  | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
-| Private binary | Checksum | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
+| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" within 140 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
+| Depends on partially redacted source code from an internal source control system (line numbers logged in result files should comply with redacted source code for easy review)  | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" within 140 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
+| Private binary | Checksum | No | Yes. Should be made "Available" within 140 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
 |===
 
 
@@ -653,7 +653,7 @@ Results will be divided into categories based on the availability of the hardwar
 | Category | Hardware | Software
 | Available in cloud | Available for rent in the cloud | Available
 | Available on premise | Available for purchase | Available
-| Preview | Must be available for rent or purchase in time for the next submission or within 180 days whichever is longer | Available except for software required to support substantially new hardware
+| Preview | Must be available for rent or purchase in time for the next submission or within 140 days whichever is longer | Available except for software required to support substantially new hardware
 | Research, Development, or Internal | Does not meet the above requirements | Does not meet the above requirements
 |===
 
@@ -680,7 +680,7 @@ An _Available_ software component must be well supported for general use. For op
 
 #### Preview Systems
 
-A _Preview_ system is a system which did not qualify as an _Available_ system as of the previous MLPerf submission date, but will qualify within 180 days of the current submission date, or by the next MLPerf submission date, whichever is more, and which the submitter commits to submitting as an _Available_ system by that time. If it is not submitted in that submission round with equal or better performance (allowing for noise), the _Preview_ submission will be marked as invalid. Systems are exempt from this requirement if the submitted benchmarks are retired or changed to such a degree as no longer reasonably runnable on that system.
+A _Preview_ system is a system which did not qualify as an _Available_ system as of the previous MLPerf submission date, but will qualify within 140 days of the current submission date, or by the next MLPerf submission date, whichever is more, and which the submitter commits to submitting as an _Available_ system by that time. If it is not submitted in that submission round with equal or better performance (allowing for noise), the _Preview_ submission will be marked as invalid. Systems are exempt from this requirement if the submitted benchmarks are retired or if the SWG determines that the benchmark has changed to such a degree as no longer reasonably runnable on that system.
 
 
 
@@ -698,7 +698,7 @@ Examples and counterexamples:
 
 #### Research, Development, or Internal Systems
 
-A research, development, or internal (RDI) component  does not meet the requirements for an available or preview component. An RDI system is a system containing one or more RDI components. The RDI components may not be submitted as _Available_ components  until the submission cycle after next or 181 days whichever is longer.
+A research, development, or internal (RDI) component  does not meet the requirements for an available or preview component. An RDI system is a system containing one or more RDI components. The RDI components may not be submitted as _Available_ components  until the submission cycle after next or 221 days whichever is longer.
 
 
 ## After publication
