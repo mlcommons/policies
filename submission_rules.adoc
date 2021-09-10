@@ -206,10 +206,9 @@ Each of these phases is described in more detail later in this document.
 | Tuesday | Review committee meeting, discusses any fixes and borrowing
 | Wednesday | Final code due
 | Thursday | Review committee meeting, decides to approve/reject fixes if required
-|  | Approve final draft of press release"
-| Friday | 1:00pm San Jose: Final results in human readable form due
 |  | 1:00pm San Jose: Final opportunity to withdraw some or all results
 |  | 1:30pm San Jose: Results summary distributed by Submitters WG chair
+|  | Approve final draft of press release"
 | *Week 4* | *Publication*
 | Monday | Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release
 |  | 1:00pm San Jose: Draft of results page available for comment
