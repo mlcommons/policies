@@ -16,6 +16,8 @@ Any use of results of must include the following in a footnote: benchmark suite,
 
 _[1] MLPerf™ v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information._
 
+The size and color of footnotes must be such that they are clearly visible.
+
 ## MLPerf results may only be compared against similar MLPerf results
 
 Whether comparing official results or unverified results, comparisons must be made between results of the same benchmark and scenario from compatible versions of an MLPerf benchmark. Compatible versions are determined by the MLCommons™ Association. MLPerf results may not be compared against non-MLPerf results.
