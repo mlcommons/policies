@@ -28,6 +28,20 @@ When comparing results the main text, table, or figure must clearly identify any
 
 _SmartAI Corp achieved a score of 0.6 on the MLPerf™ Image Classification benchmark using a SmartCluster with 8 chips in the RDI category of Closed Divsion which is faster than the result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Available on-premise category of Closed Division._
 
+## When comparing MLPerf results, use official MLPerf power metrics
+
+System power measured using the MLPerf Power methodology is the only officially sanctioned power metric to be used for the purposes of portraying results and/or making comparisons. 
+
+For the first two weeks following MLPerf results publication:
+
+- Submitters are prohibited from using other power metrics for the purpose of making direct or derived comparisons, including but not limited to TDP, rated power, PSU power rating, etc. 
+- For submissions without a corresponding power measurement, no other proxy power metric should be used.
+- For submissions with a corresponding power measurement, only the official measured system power corresponding to that submission must be used.
+
+_CORRECT: SmartAI Corp had a perf. score of 1000fps and a measured power of 200W. Therefore, SmartAI achieved 5fps/W._
+
+_INCORRECT: SmartAI Corp had a perf. score of 1000fps and SmarterAI Corp achieved a perf score of 900fps. SmartAI Corp's chip has a TDP of 250W and SmarterAI Corp has a TDP of 200W. Therefore SmarterAI is more efficient because it has a perf/TDP of 4.5 while SmartAI has a perf/TDP of 4._
+
 ## Official results must be clearly distinguished from unofficial results
 
 You may cite either official results obtained from the MLPerf results page or unofficial results measured independently. If you cite an unofficial result you must clearly specify that the result is “Unverified” in text and clearly state “Result not verified by MLCommons™ Association” in a footnote. The result must comply with the letter and spirit of the relevant MLPerf rules. 
