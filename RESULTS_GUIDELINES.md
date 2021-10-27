@@ -34,7 +34,7 @@ System power measured using the MLPerf Power methodology is the only officially 
 
 For the first two weeks following MLPerf results publication:
 
-- Submitters are prohibited from making normalized or derived comparisons (e.g. perf/W, inferences/W) using power metrics other than the MLPerf measured power, including but not limited to TDP, rated power, PSU power rating, etc. 
+- Submitters are prohibited from making comparisons normalized or derived metrics (e.g. perf/W, inferences/W) using power metrics other than the MLPerf measured power, including but not limited to TDP, rated power, PSU power rating, etc. 
 - For submissions without a corresponding power measurement, no other proxy power metric should be used.
 - For submissions with a corresponding power measurement, only the official measured system power corresponding to that submission must be used.
 
