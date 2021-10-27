@@ -34,13 +34,20 @@ System power measured using the MLPerf Power methodology is the only officially 
 
 For the first two weeks following MLPerf results publication:
 
-- Submitters are prohibited from using other power metrics for the purpose of making direct or derived comparisons, including but not limited to TDP, rated power, PSU power rating, etc. 
+- Submitters are prohibited from making normalized or derived comparisons (e.g. perf/W, inferences/W) using power metrics other than the MLPerf measured power, including but not limited to TDP, rated power, PSU power rating, etc. 
 - For submissions without a corresponding power measurement, no other proxy power metric should be used.
 - For submissions with a corresponding power measurement, only the official measured system power corresponding to that submission must be used.
 
 _CORRECT: SmartAI Corp had a perf. score of 1000fps and a measured power of 200W. Therefore, SmartAI achieved 5fps/W._
 
 _INCORRECT: SmartAI Corp had a perf. score of 1000fps and SmarterAI Corp achieved a perf score of 900fps. SmartAI Corp's chip has a TDP of 250W and SmarterAI Corp has a TDP of 200W. Therefore SmarterAI is more efficient because it has a perf/TDP of 4.5 while SmartAI has a perf/TDP of 4._
+
+_CORRECT: AI_OEM1 Corp had a perf. score of 1000fps using Accelerator1-250W while AI_OEM2 Corp had a perf. score of 900fps using Accelerator1-150W. (Note that this comparison does not derive perf/W from the accelerator TDP, but merely differentiates that the 2 submitters used the same accelerator in a different configuration and obtained different results)._  
+
+_CORRECT: AI_OEM1 Corp had a perf. score of 1000fps using Accelerator1-250W with a measured system power of 500W. AI_OEM2 Corp had a perf. score of 900fps using Accelerator1-150W and a measured system power of 400W.  Therefore, AI_OEM1 Corp achieved 2fps/W while AI_OEM2 achieved 2.25fps/W using the same accelerator. (In this case, the submitters are allowed to specify the accelerator TDP configuration since it is part of the SKU name, so the first sentence is valid.  However in the second sentence, when they measure power and derive their perf/W score, they used the MLPerf measured power.  Therefore the second sentence is also valid and the statement does not violate this rule.)._
+
+_INCORRECT: AI_OEM1 Corp had a perf. score of 1000fps using Accelerator1-250W while AI_OEM2 Corp had a perf. score of 900fps using Accelerator1-150W.  Therefore, AI_OEM1 Corp achieved 4fps/W while AI_OEM2 achieved 6fps/W using the same accelerator. (In this case, the second sentence is a violation since it uses TDP to normalize perf/W when they should have used MLPerf measured power.  The first sentence is still allowed.)._  
+
 
 ## Official results must be clearly distinguished from unofficial results
 
