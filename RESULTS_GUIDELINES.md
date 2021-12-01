@@ -38,9 +38,9 @@ For the first two weeks following MLPerf results publication:
 - For submissions without a corresponding power measurement, no other proxy power metric should be used.
 - For submissions with a corresponding power measurement, only the official measured system power corresponding to that submission must be used.
 
-_CORRECT: SmartAI Corp had a perf. score of 1000fps and a measured power of 200W. Therefore, SmartAI achieved 5fps/W._
+_CORRECT: AI_OEM1 Corp had a perf. score of 1000fps and a measured power of 200W. Therefore, AI_OEM1 achieved 5fps/W._
 
-_INCORRECT: SmartAI Corp had a perf. score of 1000fps and SmarterAI Corp achieved a perf score of 900fps. SmartAI Corp's chip has a TDP of 250W and SmarterAI Corp has a TDP of 200W. Therefore SmarterAI is more efficient because it has a perf/TDP of 4.5 while SmartAI has a perf/TDP of 4._
+_INCORRECT: AI_OEM1 Corp had a perf. score of 1000fps and AI_OEM1 Corp achieved a perf score of 900fps. AI_OEM1 Corp's chip has a TDP of 250W and AI_OEM2 Corp has a TDP of 200W. Therefore AI_OEM2 is more efficient because it has a perf/TDP of 4.5 while AI_OEM1 has a perf/TDP of 4._
 
 _CORRECT: AI_OEM1 Corp had a perf. score of 1000fps using Accelerator1-250W while AI_OEM2 Corp had a perf. score of 900fps using Accelerator1-150W. (Note that this comparison does not derive perf/W from the accelerator TDP, but merely differentiates that the 2 submitters used the same accelerator in a different configuration and obtained different results)._  
 
