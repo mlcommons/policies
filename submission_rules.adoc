@@ -245,9 +245,6 @@ MLPerf will allow submissions for up to 60 minutes after the published deadline 
 #### Post-submission extension for extraordinary circumstances (submission deadline + 72 hours):
 If a submitter notifies the submission chair that their submission will be delayed due to force-majeure-type circumstances (e.g. blizzards, hurricanes, terrorism, etc.), the submission chair will delay sharing results for up to 72 hours to allow that submitter more time to make their submission. The extraordinary nature of the circumstances must be approved by the review committee at the first committee meeting or the submission will be disregarded. 
 
-#### Review period fixes (submission through final score review period deadline):
-New results, defined as results on a system for a benchmark which was not included in the submission, may not be added during the review period. Correctness issues identified by parties other than the submitter may be fixed in compliance with the remainder of this document resulting in a change in submitted scores.
-
 
 
 
