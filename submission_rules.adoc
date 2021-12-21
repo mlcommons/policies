@@ -130,31 +130,23 @@ MLPerf has several submission rounds each year. Each submission round follows a 
 
 ### Schedule of submission rounds
 
-The submission schedule is to be set yearly, and must be approved by both the inference and training submitters meetings. The following is the remaining 2019 submission schedule.
+The submission schedule will be set yearly, and must be approved by both the inference and training submitters meetings.  In general, the goal is to have two Inference and two Training submissions each year, and to not have them overlap eachother.  MLCommons attempts to avoid major international holidays, and accomodate relevant conferences.
 
-
-|===
-| Submission round | Submission date
-| Inference v0.5 | October 11th
-|===
-
-
-The following is the draft 2020 submission schedule:
-
+The MLCommons yearly calendars are located in the MLCommons Members shared drive https://drive.google.com/drive/folders/0ANHS6hvarUOUUk9PVA[here].  For example, the 2022 calendar is located in https://docs.google.com/spreadsheets/d/1cIlVR0Upec6bZ00RXhqMm4_8hSr6ackd6tT4eOnSgNo/edit?resourcekey=0-O3ZF0iDPc6vJTt0x0a-HJg#gid=538466233[this google sheet].  Access is limited to MLCommons members for now, since the calendars contain sensitive information.  We will look into making public versions of these calendars, but in the meantime, the 2022 calendar is:
 
 |===
-| Submission round | Submission date
-| Training v0.7 | June 26
-| Inference v0.7 | September 4
-| Training v0.8 | November 13 [tentative]
+| Submission Round | Submision Date    | Publication Date
+
+| Inference v2.0   | February 25, 2022 | March 23, 2022
+| Training v2.0    | May 20, 2022      | June 22, 2022
+| Inference v2.1   | August 5, 2022    | August 31, 2022
+| Training v2.1    | October 14, 2022  | November 16, 2022
 |===
 
 
 ### Single submission round schedule
 
 Each submission round has the following detailed schedule, which has three major phases:
-
-
 
 . Submission
 . Review
@@ -165,9 +157,11 @@ Each submission round has the following detailed schedule, which has three major
 
 Each of these phases is described in more detail later in this document.
 
+The exact review period schedule needs to be agreed upon 4 weeks in advance of submission.  The following table is an example of the level of detail that the schedule needs to have:
 
 |===
-| Day | Meeting or deadline (all deadlines are 11:59pm San Jose unless otherwise specified)
+| Day | Meeting or deadline (all deadlines are 11:59pm Pacific Time unless otherwise specified)
+
 | *Week -2* | *Presubmission*  
 | Monday | 
 | Tuesday | 
@@ -186,8 +180,8 @@ Each of these phases is described in more detail later in this document.
 | Tuesday | 
 | Wednesday | 
 | Thursday | Last opportunity to notify chair that you will not submit
-| Friday | 1:00pm San Jose: Submit all required artifacts to the Github repo
-|  | 1:30pm San Jose: Results summary distributed by the Submitters working group chair
+| Friday | 1:00pm Pacific Time: Submit all required artifacts to the Github repo
+|  | 1:30pm Pacific Time: Results summary distributed by the Submitters working group chair
 | *Week 1* | *Review: objection filing*
 | Monday | Begin drafting neutral press release [general chair until org, then executive director]
 | Tuesday | Review committee meeting, discuss objections
@@ -207,16 +201,32 @@ Each of these phases is described in more detail later in this document.
 | Wednesday | Final code due
 | Thursday | Review committee meeting, decides to approve/reject fixes if required
 |  | Approve final draft of press release"
-| Friday | 1:00pm San Jose: Final results in human readable form due
-|  | 1:00pm San Jose: Final opportunity to withdraw some or all results
-|  | 1:30pm San Jose: Results summary distributed by Submitters WG chair
+| Friday | 1:00pm Pacific Time: Final results in human readable form due
+|  | 1:00pm Pacific Time: Final opportunity to withdraw some or all results
+|  | 1:30pm Pacific Time: Results summary distributed by Submitters WG chair
 | *Week 4* | *Publication*
 | Monday | Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release
-|  | 1:00pm San Jose: Draft of results page available for comment
-| Tuesday | 1:00pm San Jose: Corrections to results page due
-|  | 5:00pm San Jose: Results page and press release live on staging site
-| Wednesday | 10:00am San Jose: results and PR public, press embargo ends
+|  | 1:00pm Pacific Time: Draft of results page available for comment
+| Tuesday | 1:00pm Pacific Time: Corrections to results page due
+|  | 5:00pm Pacific Time: Results page and press release live on staging site
+| Wednesday | 10:00am Pacific Time: results and PR public, press embargo ends
 |===
+
+### Benchmark Roadmap schedule
+
+Each Working Group decides what benchmarks they want in each round.  This is a pipelined process, with the following steps:
+
+. *Carrying Capacity Decision* - Each working group decides how many benchmarks they can handle for this round.
+. *Domain Identification* - Working groups review proposals for domain adds/removals from members.  The working group should attempt to come to majority concensus in 1 or 2 meetings.  If concensus cannot be had, this should go to a vote according to the MLCommons voting rules.
+. *Sync Domains* across working groups (ie Inference, Training, and HPC)
+. *Identify PIC* (person in charge) to drive this domain addition across all working groups
+. For each domain addition, do the two following steps in parallel:
+.. *Advisory Board Formation* for the domain.  
+.. *Task Force(s) create benchmark proposals.*  The task force(s) should consider all working groups that might consume this benchmark (ie Inference and Training).  Ideally benchmark proposals should take around 2 months or less.
+. *Review benchmark proposals* with the Advisory Board.  The board approves, rejects, or suggests changes.
+. *Formal working group acceptance* - the working group needs to come to concensus on whether or not to accept the benchmark proposal that has now been approved by the Advisory Board.  If concensus cannot be had, this should go to a vote according to the MLCommons voting rules.
+
+Working groups are encouraged to start this process early, possibly several rounds ahead of time to account for larger changes.  For example Domain Identification could be done for several rounds at once.  Some working groups such as HPC may choose to replace the Advisory Board formation with working group concensus, but in general working groups should try their hardest to get third party opinions from non-submitters.
 
 ## Submission 
 
@@ -242,6 +252,7 @@ All submissions of code must be made under the MLCommons CLA. Per the CLA, all s
 A submission must pass the package checker script and the result summarizer script must be capable of extracting the correct results. Specifically, the following commands must not generate errors: 
 
 #### Training
+TODO: Fix this section
 ----
 python3 -m pip install https://github.com/mlcommons/logging/archive/0.7.1.zip
 python3 -m mlperf_logging.package_checker <YOUR SUBMISSION_FOLDER> training 0.7.0
