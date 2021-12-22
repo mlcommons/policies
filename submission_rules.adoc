@@ -217,16 +217,16 @@ The exact review period schedule needs to be agreed upon 4 weeks in advance of s
 Each Working Group decides what benchmarks they want in each round.  This is a pipelined process, with the following steps:
 
 . *Carrying Capacity Decision* - Each working group decides how many benchmarks they can handle for this round.
-. *Domain Identification* - Working groups review proposals for domain adds/removals from members.  The working group should attempt to come to majority concensus in 1 or 2 meetings.  If concensus cannot be had, this should go to a vote according to the MLCommons voting rules.
+. *Domain Identification* - Working groups review proposals for domain adds/removals from members.  The working group will attempt to come to majority consensus in 1 or 2 meetings.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.
 . *Sync Domains* across working groups (ie Inference, Training, and HPC)
 . *Identify PIC* (person in charge) to drive this domain addition across all working groups
 . For each domain addition, do the two following steps in parallel:
 .. *Advisory Board Formation* for the domain.  
-.. *Task Force(s) create benchmark proposals.*  The task force(s) should consider all working groups that might consume this benchmark (ie Inference and Training).  Ideally benchmark proposals should take around 2 months or less.
+.. *Task Force(s) create benchmark proposals.*  The task force(s) will consider all working groups that might consume this benchmark (ie Inference and Training).  Ideally benchmark proposals will take around 2 months or less.
 . *Review benchmark proposals* with the Advisory Board.  The board approves, rejects, or suggests changes.
-. *Formal working group acceptance* - the working group needs to come to concensus on whether or not to accept the benchmark proposal that has now been approved by the Advisory Board.  If concensus cannot be had, this should go to a vote according to the MLCommons voting rules.
+. *Formal working group acceptance* - the working group needs to come to consensus on whether or not to accept the benchmark proposal that has now been approved by the Advisory Board.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.
 
-Working groups are encouraged to start this process early, possibly several rounds ahead of time to account for larger changes.  For example Domain Identification could be done for several rounds at once.  Some working groups such as HPC may choose to replace the Advisory Board formation with working group concensus, but in general working groups should try their hardest to get third party opinions from non-submitters.
+Working groups are encouraged to start this process early, possibly several rounds ahead of time to account for larger changes.  For example Domain Identification could be done for several rounds at once.  Some working groups such as HPC may choose to replace the Advisory Board formation with working group consensus, but in general working groups will try their hardest to get third party opinions from non-submitters.
 
 ## Submission 
 
