@@ -3,7 +3,7 @@
 
 :sectnums:
 
-# General MLPerf Submission Rules v0.3
+# General MLPerf Submission Rules
 
 :TOC:
 
@@ -217,16 +217,35 @@ The exact review period schedule needs to be agreed upon 4 weeks in advance of s
 Each Working Group decides what benchmarks they want in each round.  This is a pipelined process, with the following steps:
 
 . *Carrying Capacity Decision* - Each working group decides how many benchmarks they can handle for this round.
-. *Domain Identification* - Working groups review proposals for domain adds/removals from members.  The working group will attempt to come to majority consensus in 1 or 2 meetings.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.
+. *Domain Identification* - Working groups review proposals for domain adds/removals from members.  The working group will attempt to come to majority consensus in 1 or 2 meetings.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.  Working groups may add up to 2 benchmarks max per round, but will strive for 1 or 0 as the typical case.
 . *Sync Domains* across working groups (ie Inference, Training, and HPC)
 . *Identify PIC* (person in charge) to drive this domain addition across all working groups
-. For each domain addition, do the two following steps in parallel:
+. For each domain addition, do the two following steps, possibly in parallel:
 .. *Advisory Board Formation* for the domain.  
 .. *Task Force(s) create benchmark proposals.*  The task force(s) will consider all working groups that might consume this benchmark (ie Inference and Training).  Ideally benchmark proposals will take around 2 months or less.
-. *Review benchmark proposals* with the Advisory Board.  The board approves, rejects, or suggests changes.
+. *Review benchmark proposals* with the Advisory Board.  The board approves, rejects, or suggests changes.  If changes are needed, the Task Force(s) iterate on making the changes and getting Advisory Board approval until the Advisory Board signs off.
 . *Formal working group acceptance* - the working group needs to come to consensus on whether or not to accept the benchmark proposal that has now been approved by the Advisory Board.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.
 
-Working groups are encouraged to start this process early, possibly several rounds ahead of time to account for larger changes.  For example Domain Identification could be done for several rounds at once.  Some working groups such as HPC may choose to replace the Advisory Board formation with working group consensus, but in general working groups will try their hardest to get third party opinions from non-submitters.
+Some working groups such as HPC may choose to replace the Advisory Board formation with working group consensus, but in general working groups will try their hardest to get third party opinions from non-submitters.
+
+#### Benchmark roadmap update recommended schedule
+
+|=== 
+| Time | Event
+
+| T-28 weeks | Carrying Capacity Decision
+| T-26 weeks | Domain identification, then sync domains across working groups
+| T-24 weeks | PIC identified.  Task forces iterating on benchmark proposals.  Advisory Board formation
+| T-20 weeks | Advisory Board signs off, Working groups sync on final benchmark. Finishing touches on benchmark can commence.
+| T-16 weeks | Benchmark code complete. Only bug fixes allowed beyond this point.
+| T-12 weeks | RCPs due (for Training and HPC)
+| T-4 weeks  | No more bug fixes.  Benchmark code now final.
+| T-0 weeks  | Submission 
+|===
+
+Working groups are not required to following the timeline above for every round, but are required to complete the process steps.  For example, Domain Identification could cover multiple rounds at once, so that step could be accelerated for the next round.
+
+Note that this schedule requires starting 7 months early, which means it needs to be pipelined with prior rounds, given rounds are typically 6 months apart per working group.  Working groups are free to start even earlier.
 
 ## Submission 
 
