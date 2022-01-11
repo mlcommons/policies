@@ -228,7 +228,7 @@ Each Working Group decides what benchmarks they want in each round.  This is a p
 
 Some working groups such as HPC may choose to replace the Advisory Board formation with working group consensus, but in general working groups will try their hardest to get third party opinions from non-submitters.
 
-#### Benchmark roadmap update recommended schedule
+#### Benchmark roadmap update recommended schedule for Training and HPC
 
 |=== 
 | Time | Event
@@ -236,14 +236,14 @@ Some working groups such as HPC may choose to replace the Advisory Board formati
 | T-28 weeks | Carrying Capacity Decision
 | T-26 weeks | Domain identification, then sync domains across working groups
 | T-24 weeks | PIC identified.  Task forces iterating on benchmark proposals.  Advisory Board formation
-| T-20 weeks | Advisory Board signs off, Working groups sync on final benchmark. Finishing touches on benchmark can commence.
+| T-20 weeks | Advisory Board signs off, Model Frozen, Working groups sync on final benchmark. Finishing touches on benchmark can commence.
 | T-16 weeks | Benchmark code complete. Only bug fixes allowed beyond this point.
 | T-12 weeks | RCPs due (for Training and HPC)
 | T-4 weeks  | No more bug fixes.  Benchmark code now final.
 | T-0 weeks  | Submission 
 |===
 
-Working groups are not required to following the timeline above for every round, but are required to complete the process steps.  For example, Domain Identification could cover multiple rounds at once, so that step could be accelerated for the next round.
+Working groups are not required to following the timeline above for every round, but are required to complete the process steps.  For example, Domain Identification could cover multiple rounds at once, so that step could be accelerated for the next round.  Also, the Inference WG has different model freeze and code freeze expectations from the table above (14 weeks and 9 weeks, respectively).
 
 Note that this schedule requires starting 7 months early, which means it needs to be pipelined with prior rounds, given rounds are typically 6 months apart per working group.  Working groups are free to start even earlier.
 
