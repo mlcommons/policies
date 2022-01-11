@@ -130,7 +130,7 @@ MLPerf has several submission rounds each year. Each submission round follows a 
 
 ### Schedule of submission rounds
 
-The submission schedule will be set yearly, and must be approved by both the inference and training submitters meetings.  In general, the goal is to have two Inference and two Training submissions each year, and to not have them overlap eachother.  MLCommons attempts to avoid major international holidays, and accomodate relevant conferences.
+The submission schedule will be set yearly, and must be approved by both the inference and training submitters meetings.  The goal is to have two Inference and two Training submissions each year, and to not have them overlap each other.  MLCommons attempts to avoid major international holidays, and accommodate relevant conferences.
 
 The MLCommons yearly calendars are located in the MLCommons Members shared drive https://drive.google.com/drive/folders/0ANHS6hvarUOUUk9PVA[here].  For example, the 2022 calendar is located in https://docs.google.com/spreadsheets/d/1cIlVR0Upec6bZ00RXhqMm4_8hSr6ackd6tT4eOnSgNo/edit?resourcekey=0-O3ZF0iDPc6vJTt0x0a-HJg#gid=538466233[this google sheet].  Access is limited to MLCommons members for now, since the calendars contain sensitive information.  We will look into making public versions of these calendars, but in the meantime, the 2022 calendar is:
 
@@ -218,11 +218,11 @@ Each Working Group decides what benchmarks they want in each round.  This is a p
 
 . *Carrying Capacity Decision* - Each working group decides how many benchmarks they can handle for this round.
 . *Domain Identification* - Working groups review proposals for domain adds/removals from members.  The working group will attempt to come to majority consensus in 1 or 2 meetings.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.  Working groups may add up to 2 benchmarks max per round, but will strive for 1 or 0 as the typical case.
-. *Sync Domains* across working groups (ie Inference, Training, and HPC)
+. *Sync Domains* across working groups (e.g. Inference, Training, and HPC)
 . *Identify PIC* (person in charge) to drive this domain addition across all working groups
 . For each domain addition, do the two following steps, possibly in parallel:
 .. *Advisory Board Formation* for the domain.  
-.. *Task Force(s) create benchmark proposals.*  The task force(s) will consider all working groups that might consume this benchmark (ie Inference and Training).  Ideally benchmark proposals will take around 2 months or less.
+.. *Task Force(s) create benchmark proposals.*  The task force(s) will consider all working groups that might consume this benchmark (e.g. Inference and Training).  Ideally benchmark proposals will take around 2 months or less.
 . *Review benchmark proposals* with the Advisory Board.  The board approves, rejects, or suggests changes.  If changes are needed, the Task Force(s) iterate on making the changes and getting Advisory Board approval until the Advisory Board signs off.
 . *Formal working group acceptance* - the working group needs to come to consensus on whether or not to accept the benchmark proposal that has now been approved by the Advisory Board.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.
 
