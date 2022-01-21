@@ -3,7 +3,7 @@
 
 :sectnums:
 
-# General MLPerf Submission Rules v0.3
+# General MLPerf Submission Rules
 
 :TOC:
 
@@ -130,31 +130,23 @@ MLPerf has several submission rounds each year. Each submission round follows a 
 
 ### Schedule of submission rounds
 
-The submission schedule is to be set yearly, and must be approved by both the inference and training submitters meetings. The following is the remaining 2019 submission schedule.
+The submission schedule will be set yearly, and must be approved by both the inference and training submitters meetings.  The goal is to have two Inference and two Training submissions each year, and to not have them overlap each other.  MLCommons attempts to avoid major international holidays, and accommodate relevant conferences.
 
-
-|===
-| Submission round | Submission date
-| Inference v0.5 | October 11th
-|===
-
-
-The following is the draft 2020 submission schedule:
-
+The MLCommons yearly calendars are located in the MLCommons Members shared drive https://drive.google.com/drive/folders/0ANHS6hvarUOUUk9PVA[here].  For example, the 2022 calendar is located in https://docs.google.com/spreadsheets/d/1cIlVR0Upec6bZ00RXhqMm4_8hSr6ackd6tT4eOnSgNo/edit?resourcekey=0-O3ZF0iDPc6vJTt0x0a-HJg#gid=538466233[this google sheet].  Access is limited to MLCommons members for now, since the calendars contain sensitive information.  We will look into making public versions of these calendars, but in the meantime, the 2022 calendar is:
 
 |===
-| Submission round | Submission date
-| Training v0.7 | June 26
-| Inference v0.7 | September 4
-| Training v0.8 | November 13 [tentative]
+| Submission Round | Submision Date    | Publication Date
+
+| Inference v2.0   | February 25, 2022 | March 23, 2022
+| Training v2.0    | May 20, 2022      | June 22, 2022
+| Inference v2.1   | August 5, 2022    | August 31, 2022
+| Training v2.1    | October 14, 2022  | November 16, 2022
 |===
 
 
 ### Single submission round schedule
 
 Each submission round has the following detailed schedule, which has three major phases:
-
-
 
 . Submission
 . Review
@@ -165,9 +157,11 @@ Each submission round has the following detailed schedule, which has three major
 
 Each of these phases is described in more detail later in this document.
 
+The exact review period schedule needs to be agreed upon 4 weeks in advance of submission.  The following table is an example of the level of detail that the schedule needs to have:
 
 |===
-| Day | Meeting or deadline (all deadlines are 11:59pm San Jose unless otherwise specified)
+| Day | Meeting or deadline (all deadlines are 11:59pm Pacific Time unless otherwise specified)
+
 | *Week -2* | *Presubmission*  
 | Monday | 
 | Tuesday | 
@@ -186,8 +180,8 @@ Each of these phases is described in more detail later in this document.
 | Tuesday | 
 | Wednesday | 
 | Thursday | Last opportunity to notify chair that you will not submit
-| Friday | 1:00pm San Jose: Submit all required artifacts to the Github repo
-|  | 1:30pm San Jose: Results summary distributed by the Submitters working group chair
+| Friday | 1:00pm Pacific Time: Submit all required artifacts to the Github repo
+|  | 1:30pm Pacific Time: Results summary distributed by the Submitters working group chair
 | *Week 1* | *Review: objection filing*
 | Monday | Begin drafting neutral press release [general chair until org, then executive director]
 | Tuesday | Review committee meeting, discuss objections
@@ -206,16 +200,52 @@ Each of these phases is described in more detail later in this document.
 | Tuesday | Review committee meeting, discusses any fixes and borrowing
 | Wednesday | Final code due
 | Thursday | Review committee meeting, decides to approve/reject fixes if required
-|  | 1:00pm San Jose: Final opportunity to withdraw some or all results
-|  | 1:30pm San Jose: Results summary distributed by Submitters WG chair
+| Friday | 1:00pm Pacific Time: Final results in human readable form due
+|  | 1:00pm Pacific Time: Final opportunity to withdraw some or all results
+|  | 1:30pm Pacific Time: Results summary distributed by Submitters WG chair
 |  | Approve final draft of press release"
 | *Week 4* | *Publication*
 | Monday | Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release
-|  | 1:00pm San Jose: Draft of results page available for comment
-| Tuesday | 1:00pm San Jose: Corrections to results page due
-|  | 5:00pm San Jose: Results page and press release live on staging site
-| Wednesday | 10:00am San Jose: results and PR public, press embargo ends
+|  | 1:00pm Pacific Time: Draft of results page available for comment
+| Tuesday | 1:00pm Pacific Time: Corrections to results page due
+|  | 5:00pm Pacific Time: Results page and press release live on staging site
+| Wednesday | 10:00am Pacific Time: results and PR public, press embargo ends
 |===
+
+### Benchmark Roadmap schedule
+
+Each Working Group decides what benchmarks they want in each round.  This is a pipelined process, with the following steps:
+
+. *Carrying Capacity Decision* - Each working group decides how many benchmarks they can handle for this round.
+. *Domain Identification* - Working groups review proposals for domain adds/removals from members.  The working group will attempt to come to majority consensus in 1 or 2 meetings.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.  Working groups may add up to 2 benchmarks max per round, but will strive for 1 or 0 as the typical case.
+. *Sync Domains* across working groups (e.g. Inference, Training, and HPC)
+. *Identify PIC* (person in charge) to drive this domain addition across all working groups
+. For each domain addition, do the two following steps, possibly in parallel:
+.. *Advisory Board Formation* for the domain.  
+.. *Task Force(s) create benchmark proposals.*  The task force(s) will consider all working groups that might consume this benchmark (e.g. Inference and Training).  Ideally benchmark proposals will take around 2 months or less.
+. *Review benchmark proposals* with the Advisory Board.  The board approves, rejects, or suggests changes.  If changes are needed, the Task Force(s) iterate on making the changes and getting Advisory Board approval until the Advisory Board signs off.
+. *Formal working group acceptance* - the working group needs to come to consensus on whether or not to accept the benchmark proposal that has now been approved by the Advisory Board.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.
+
+Some working groups such as HPC may choose to replace the Advisory Board formation with working group consensus, but in general working groups will try their hardest to get third party opinions from non-submitters.
+
+#### Benchmark roadmap update recommended schedule for Training and HPC
+
+|=== 
+| Time | Event
+
+| T-28 weeks | Carrying Capacity Decision
+| T-26 weeks | Domain identification, then sync domains across working groups
+| T-24 weeks | PIC identified.  Task forces iterating on benchmark proposals.  Advisory Board formation
+| T-20 weeks | Advisory Board signs off, Model Frozen, Working groups sync on final benchmark. Finishing touches on benchmark can commence.
+| T-16 weeks | Benchmark code complete. Only bug fixes allowed beyond this point.
+| T-12 weeks | RCPs due (for Training and HPC)
+| T-4 weeks  | No more bug fixes.  Benchmark code now final.
+| T-0 weeks  | Submission 
+|===
+
+Working groups are not required to following the timeline above for every round, but are required to complete the process steps.  For example, Domain Identification could cover multiple rounds at once, so that step could be accelerated for the next round.  Also, the Inference WG has different model freeze and code freeze expectations from the table above (14 weeks and 9 weeks, respectively).
+
+Note that this schedule requires starting 7 months early, which means it needs to be pipelined with prior rounds, given rounds are typically 6 months apart per working group.  Working groups are free to start even earlier.
 
 ## Submission 
 
@@ -241,6 +271,7 @@ All submissions of code must be made under the MLCommons CLA. Per the CLA, all s
 A submission must pass the package checker script and the result summarizer script must be capable of extracting the correct results. Specifically, the following commands must not generate errors: 
 
 #### Training
+TODO: Fix this section
 ----
 python3 -m pip install https://github.com/mlcommons/logging/archive/0.7.1.zip
 python3 -m mlperf_logging.package_checker <YOUR SUBMISSION_FOLDER> training 0.7.0
@@ -459,9 +490,9 @@ The source code must be sufficient to reproduce the results of the submission, g
 | Depends only on public Github repo | Commit hash or tag | Yes | Optional | Optional
 | Depends only on public Github repo plus one or more PRs | Commit hash or tag, and PR number(s) | Yes | Optional | Optional
 | Depends only on an available binary (could be free to download or for purchase / customers only) | Name and version, or url | Yes, if the binary is a Beta or Production release | Optional | Optional
-| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
-| Depends on partially redacted source code from an internal source control system (line numbers logged in result files should comply with redacted source code for easy review)  | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
-| Private binary | Checksum | No | Yes. Should be made "Available" within 180 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
+| Depends on private source code from an internal source control system | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" in the next submission after 140 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
+| Depends on partially redacted source code from an internal source control system (line numbers logged in result files should comply with redacted source code for easy review)  | Unique source identifier [i.e., gitlab hash, p4 CL, etc] | No | Yes. Should be made "Available" in the next submission after 140 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
+| Private binary | Checksum | No | Yes. Should be made "Available" in the next submission after 140 days of the submission date, or by the next MLPerf submission date, whichever is longer | Yes
 |===
 
 
@@ -522,12 +553,12 @@ Submitters may adopt the following procedure to ensure that their submission is 
 
 By the submission deadline, the submitter will email the following items to submissions@mlcommons.org to show Proof of Work:
 
-- A URL to the location in public blob storage of an encrypted tarball containing the open/* and closed/* submission files. Any storage mechanism that supports curl may be used.
+- A URL to the location in public blob storage of an encrypted tarball containing the directory structure and files described in the <<directory-structure>> section above. Any storage mechanism that supports curl may be used.
 - A password to the encrypted tarball
 - A sha1sum of the tarball
 - The last two lines of submission_checker_log.txt as cursory evidence of a valid submission
 
-A simple script has been provided to facilitate this process: https://github.com/mlcommons/inference/blob/master/tools/submission/pack_submission.sh
+A simple script has been provided to facilitate this process: https://github.com/mlcommons/logging/blob/master/pack_submission.sh
 
 When the deadline is reached, repository access will be removed for everyone EXCEPT the following parties:
 
@@ -645,14 +676,14 @@ Each results table will contain the following information:
 
 ### Results categories
 
-Results will be divided into categories based on the availability of the hardware and software components
+Results will be divided into categories based on the availability of the hardware and software components. Availability rules apply to both Closed and Open division submissions.
 
 
 |===
 | Category | Hardware | Software
 | Available in cloud | Available for rent in the cloud | Available
 | Available on premise | Available for purchase | Available
-| Preview | Must be available for rent or purchase in time for the next submission or within 180 days whichever is longer | Available except for software required to support substantially new hardware
+| Preview | Must be available for rent or purchase in time for the next submission or in the next submission after 140 days whichever is longer | Available except for software required to support substantially new hardware
 | Research, Development, or Internal | Does not meet the above requirements | Does not meet the above requirements
 |===
 
@@ -674,21 +705,30 @@ However, it is allowed for the qualifying pre-submission rentals/purchases to ha
 
 _Available_ systems must use an _Available_ software stack. A software stack consists of the set of software components that substantially determine ML performance but are not in the uploaded source code. For instance, for training this includes at a minimum any required ML framework (e.g. TensorFlow, pyTorch) and ML accelerator library (e.g. cuDNN, MKL). An _Available_ software stack consists of only _Available_ software components.
 
-An Available software component must be well supported for general use. For open source software, you must base the software on any commit in an "official" repo plus a PR to support a particular architecture. For binaries, the binary must be made available as release, or as a "beta" release with the requirement that optimizations will be included in a future "official" release. The beta must be made available to customers as a clear part of the release sequence. The software must be available at the time of submission.
+An _Available_ software component must be well supported for general use. For open source software, the software may be based on any commit in an "official" repo plus optionally any PRs to support a particular architecture. For binaries, the binary must be made available as release, or as a "beta" release with the requirement that optimizations will be included in a future "official" release. The beta must be made available to customers as a clear part of the release sequence. The software must be available at the time of submission.
 
 
 #### Preview Systems
 
-A _Preview_ system is a system which will meet the requirements of an _Available_ system within 180 days of the submission date, or by the next MLPerf submission date, whichever is more, and which the submitter commits to submitting as an _Available_ system by that time. If it is not submitted in that submission round with equal or better performance (allowing for noise), the _Preview_ submission will be marked as invalid. Systems are exempt from this requirement if the submitted benchmarks are retired or changed to such a degree as no longer reasonably runnable on that system.
+A _Preview_ system is a system which did not qualify as an _Available_ system as of the previous MLPerf submission date, but will qualify in the next submission after 140 days of the current submission date, or by the next MLPerf submission date, whichever is more, and which the submitter commits to submitting as an _Available_ system by that time. If it is not submitted in that submission round with equal or better performance (allowing for noise), the _Preview_ submission will be marked as invalid. Systems are exempt from this requirement if the submitted benchmarks are retired or if the SWG determines that the benchmark has changed to such a degree as no longer reasonably runnable on that system.
 
- 
 
-If a _Preview_ system contains a newly developed hardware component (e.g. a new ML accelerator) that is a substantial contributor to the determination of ML performance, then for that submission only, the “Available software stack” requirement is waived for software that is necessary to support that component. Otherwise, _Preview_ systems must meet the same _Available_ software stack requirements as an _Available_ system. For example, the first shipping version of a new accelerator need not meet the _Available _software stack requirements, but subsequent SKUs of that accelerator are not considered newly developed, and must meet _Available_ software stack requirements.
+
+For a _Preview_ submission only, the "_Available_ software stack" requirement is waived for software that is necessary to support newly developed hardware component(s) that are substantial contributors to the determination of ML performance (e.g. a new ML accelerator or CPU or NIC). A "newly developed" component is one that was not _Available_ as of the submission date of the previous MLPerf submission round, and was not submitted in a _Preview_ system in that previous round. Other parts of the software stack must still meet the same _Available_ software stack requirements as an _Available_ system.  
+
+
+Examples and counterexamples:
+
+* All SKUs of a new chip can be considered "newly developed" as long as the first shipping SKU qualifies as "newly developed". Once the first shipping SKU no longer qualifies, no existing or future SKUs of the chip can be considered "newly developed".
+
+* A chip that was _Available_ prior to the submission date of the previous MLPerf round but was never used before for an MLPerf submission does not qualify as "newly developed."  
+
+* At this point in time a hardware component that is not an ML accelerator, CPU, or NIC, is presumed to not meet the "substantial contributor to the determination of ML performance" criteria. Other possible cases must be brought to the relevant working group for consideration.
 
 
 #### Research, Development, or Internal Systems
 
-A research, development, or internal (RDI) component  does not meet the requirements for an available or preview component. An RDI system is a system containing one or more RDI components. The RDI components may not be submitted as _Available_ components  until the submission cycle after next or 181 days whichever is longer
+A research, development, or internal (RDI) component  does not meet the requirements for an available or preview component. An RDI system is a system containing one or more RDI components. The RDI components may not be submitted as _Available_ components  until the submission cycle after next or 221 days whichever is longer.
 
 
 ## After publication
