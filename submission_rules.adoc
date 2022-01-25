@@ -256,19 +256,30 @@ The submission process defines how to submit code and results for review and eve
 
 Submitters must register with the submitters working group and begin attending meetings at least **eight weeks before the deadline. **In order to register, a submitter or their org must sign the relevant CLA and provide primary and secondary github handles and primary and secondary POC email address.
 
+### How to Submit
 
-### Github repo
+The goal of the submission process is to ensure a successful submission for as many submitters as possible in a fair manner. Therefore, the submission process is structured to ensure that submissions are well formed. 
 
-MLPerf will provide a private Github repository for submissions. Each submitter will submit one or more pull requests containing their submission to the appropriate Github repo before the submission deadline. Pull requests may be amended up until the deadline. 
+A submission is made by placing an encrypted tarball in a MLCommons-provided cloud storage bucket and confirming the submission using an MLCommons web UI.
+
+MLCommons provides a cloud storage bucket [TODO: URL] for submitting encrypted tarballs up to fourteen days before the deadline. Submitters are encouraged to submit as early as possible during this period, since their results will not be visible to others and they will have a chance to fix any issues.
+
+MLCommons provides a web UI [TODO: URL] for verifying scores contained in the tarball. When provided { private key, file name }, the UI decrypts, untars, and runs a submission verifier then displays results or errors. The submitter may confirm results as final and receive an email receipt. *All submissions must be confirmed in this manner or they will be disregarded.*
+
+### Late Submissions
+
+#### Post-submission grace period (submission deadline + 60 minutes):
+MLPerf will allow submissions for up to 60 minutes after the published deadline without explanation or penalty. This grace period will be advertised as little as possible. The 60 minute limit will be strictly enforced.
+
+#### Post-submission extension for extraordinary circumstances (submission deadline + 72 hours):
+If a submitter notifies the submission chair that their submission will be delayed due to force-majeure-type circumstances (e.g. blizzards, hurricanes, terrorism, etc.), the submission chair will delay sharing results for up to 72 hours to allow that submitter more time to make their submission. The extraordinary nature of the circumstances must be approved by the review committee at the first committee meeting or the submission will be disregarded. 
+
+
 
 
 ### Licensing
 
 All submissions of code must be made under the MLCommons CLA. Per the CLA, all submissions of code will be Apache 2 compatible. Third party libraries need not be Apache 2 licensed.
-
-### Verification
-
-A submission must pass the package checker script and the result summarizer script must be capable of extracting the correct results. Specifically, the following commands must not generate errors: 
 
 #### Training
 TODO: Fix this section
