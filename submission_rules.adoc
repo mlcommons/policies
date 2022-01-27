@@ -444,19 +444,20 @@ The file <system_desc_id>.json should contain the following metadata describing 
 | host_memory_capacity | Yes | 128GB | 384GB | 384GB
 | host_storage_type | Yes | SSD | SSD | SSD
 | host_storage_capacity | Yes | 1 200 GB + 1 50 GB | 800GB | 800GB
-| host_networking |  |  | N/A | N/A
-| host_networking_topology |  |  | N/A | N/A
-| host_memory_configuration |  |  | 12 x 32GB 2Rx4 PC4-2666V-R | 12 x 32GB 2Rx4 PC4-2666V-R
+| host_networking | Yes |  | Gig Ethernet | Infiniband
+| host_network_card_count | Yes |  | 1 100Gbe + 1 10Gbe | 1 Integrated
+| host_networking_topology | Yes |  | N/A | N/A
+| host_memory_configuration | Yes |  | 12 x 32GB 2Rx4 PC4-2666V-R | 12 x 32GB 2Rx4 PC4-2666V-R
 | accelerators_per_node | Yes | 16 | 4 | 4
 | accelerator_model_name | Yes | tpu-v3 | Nvidia Tesla V100 | Nvidia Tesla V100
-| accelerator_host_interconnect |  |  | PCIe 3.0 x16 | PCIe 3.0 x16
+| accelerator_host_interconnect | Yes |  | PCIe 3.0 x16 | PCIe 3.0 x16
 | accelerator_frequency |  |  | 1230MHz | 1230MHz 
 | accelerator_on-chip_memories |  |  | L1: 80x 128KB, L2: 6MB per chip | L1: 80x 128KB, L2: 6MB per chip 
 | accelerator_memory_configuration | Yes | HBM | HBM2 | HBM2
 | accelerator_memory_capacity | Yes | 32 GB | 32GB | 32GB
-| accelerator_interconnect |  |  | 6x 25GT/s NVLink | 6x 25GT/s NVLink
+| accelerator_interconnect | Yes |  | 6x 25GT/s NVLink | 6x 25GT/s NVLink
 | accelerator_interconnect_topology |  |  | Direct | Mesh
-| cooling |  |  | Liquid | Air-cooled
+| cooling | Yes  |  | Liquid | Air-cooled
 | hw_notes |  |  | I overclocked it! | Miscellaneous notes
 |  |  |  | | 
 | framework | Yes | TensorFlow 1.14 commit hash = faf9db515c4bf550daacc1c3a22fedf3ff5dde63 | PyTorch, NGC19.05 | PyTorch, NGC19.05
