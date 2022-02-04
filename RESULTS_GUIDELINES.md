@@ -32,7 +32,7 @@ _SmartAI Corp achieved a score of 0.6 on the MLPerf™ Image Classification benc
 
 System power measured using the MLPerf Power methodology is the only officially sanctioned power metric to be used for the purposes of portraying results and/or making comparisons. 
 
-For the first two weeks following MLPerf results publication:
+When stating or comparing MLPerf results:
 
 - Submitters are prohibited from making comparisons using normalized or derived metrics (e.g. perf/W, inferences/W) which use power metrics other than the MLPerf measured power, including but not limited to TDP, rated power, PSU power rating, etc. 
 - For submissions without a corresponding power measurement, no other proxy power metric should be used.
