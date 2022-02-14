@@ -58,13 +58,13 @@ Any use of derived metrics must follow the methodology defined by MLCommons for 
 
 Defined methodology for derived metrics:
 
-1. _utilization_: shall be calculated as `model_tensor_flops / (peak_system_tensor_flops_per_second * median_runtime_seconds)`
+1. _utilization_: shall be calculated as `model_tensor_flops / (peak_system_tensor_flops_per_second * runtime_seconds)`
 
     * `model_tensor_flops` means only the tensor (ie matrix multiply or convolution) operations that are required by the model definition.  Vector or pointwise ops in the model such as bias add, normalization etc, are not counted as `model_tensor_flops`.  Furthermore, implementations that use activation recomputation methods should not count any of the operations added by activation recomputation as `model_tensor_flops`.  
 
     * `peak_system_tensor_flops_per_second` means the peak tensor operations of the hardware, counting only tensor math throughput and not additional vector or pointwise math datapaths.
 
-    * `median_runtime_seconds` means the runtime of the median run that was used to report the MLPerf score.
+    * `runtime_seconds` means the mean of the runtimes of the runs used to calculate the benchmark result.
 
     * Reporting of `hardware_tensor_flops` (defined as `model_tensor_flops` plus operations added due to activation recomputation), instead of `model_tensor_flops` is _strongly discouraged_ because those are not useful flops for the model. If `hardware_tensor_flops` are reported, an accompanying `model_tensor_flops` calculation must also be provided.
 
