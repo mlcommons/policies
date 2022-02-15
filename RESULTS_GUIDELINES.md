@@ -69,7 +69,27 @@ Users may see fit to combine or aggregate results from multiple MLPerf benchmark
 
 ## Comparisons based on secondary or derived metrics must be explicit
 
-Each MLPerf benchmark has a primary metric, for instance time-to-train for Training Image Classification, or queries/sec for the Server scenario of Inference Image Classification (Datacenter system type). Any comparison based on different or derived metric such as power rating, cost, model size/architecture, accuracy, etc. must make the basis for comparison clear in the text and in a footnote. Secondary and derived metrics must not be presented as official MLPerf metrics.
+Each MLPerf benchmark has a primary metric, for instance time-to-train for Training Image Classification, or queries/sec for the Server scenario of Inference Image Classification (Datacenter system type). 
+
+Any comparison based on different or derived metric such as power rating, cost, model size/architecture, accuracy, etc. must make the basis for comparison clear in the text and in a footnote. 
+
+Secondary and derived metrics must not be presented as official MLPerf metrics.
+
+Any use of derived metrics must follow the methodology defined by MLCommons for that derived metric, if a methodology is defined.
+
+Defined methodology for derived metrics:
+
+1. _utilization_: shall be calculated as `model_tensor_flops / (peak_system_tensor_flops_per_second * runtime_seconds)`
+
+    * `model_tensor_flops` means only the tensor (ie matrix multiply or convolution) operations that are required by the model definition.  Vector or pointwise ops in the model such as bias add, normalization etc, are not counted as `model_tensor_flops`.  Furthermore, implementations that use activation recomputation methods should not count any of the operations added by activation recomputation as `model_tensor_flops`.  
+
+    * `peak_system_tensor_flops_per_second` means the peak tensor operations of the hardware, counting only tensor math throughput and not additional vector or pointwise math datapaths.
+
+    * `runtime_seconds` means the mean of the runtimes of the runs used to calculate the benchmark result.
+
+    * Reporting of `hardware_tensor_flops` (defined as `model_tensor_flops` plus operations added due to activation recomputation), instead of `model_tensor_flops` is _strongly discouraged_ because those are not useful flops for the model. If `hardware_tensor_flops` are reported, an accompanying `model_tensor_flops` calculation must also be provided.
+
+Example:
 
 _Prestigious Research University has created a new neural network model called MagicEightBall that is 100% accurate for Top-1 image classification on the MLPerf™ v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]. MagicEightBall achieved a score of 20 minutes._
 
