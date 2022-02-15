@@ -28,6 +28,27 @@ When comparing results the main text, table, or figure must clearly identify any
 
 _SmartAI Corp achieved a score of 0.6 on the MLPerf™ Image Classification benchmark using a SmartCluster with 8 chips in the RDI category of Closed Divsion which is faster than the result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Available on-premise category of Closed Division._
 
+## When comparing MLPerf results, use official MLPerf power metrics
+
+System power measured using the MLPerf Power methodology is the only officially sanctioned power metric to be used for the purposes of portraying results and/or making comparisons. 
+
+When stating or comparing MLPerf results:
+
+- Submitters are prohibited from making public comparisons using normalized or derived metrics (e.g. perf/W, inferences/W) which use power metrics other than the MLPerf measured power, including but not limited to TDP, rated power, PSU power rating, etc. 
+- For submissions without a corresponding power measurement, no other proxy power metric should be used.
+- For submissions with a corresponding power measurement, only the official measured system power corresponding to that submission must be used.
+
+_CORRECT: AI_OEM1 Corp had a perf. score of 1000fps and a measured power of 200W. Therefore, AI_OEM1 achieved 5fps/W._
+
+_INCORRECT: AI_OEM1 Corp had a perf. score of 1000fps and AI_OEM2 Corp achieved a perf score of 900fps. AI_OEM1 Corp's chip has a TDP of 250W and AI_OEM2 Corp has a TDP of 200W. Therefore AI_OEM2 is more efficient because it has a perf/TDP of 4.5 while AI_OEM1 has a perf/TDP of 4._
+
+_CORRECT: AI_OEM1 Corp had a perf. score of 1000fps using Accelerator1-250W while AI_OEM2 Corp had a perf. score of 900fps using Accelerator1-150W. (Note that this comparison does not derive perf/W from the accelerator TDP, but merely differentiates that the 2 submitters used the same accelerator in a different configuration and obtained different results)._  
+
+_CORRECT: AI_OEM1 Corp had a perf. score of 1000fps using Accelerator1-250W with a measured system power of 500W. AI_OEM2 Corp had a perf. score of 900fps using Accelerator1-150W and a measured system power of 400W.  Therefore, AI_OEM1 Corp achieved 2fps/W while AI_OEM2 achieved 2.25fps/W using the same accelerator. (In this case, the submitters are allowed to specify the accelerator TDP configuration since it is part of the SKU name, so the first sentence is valid.  However in the second sentence, when they measure power and derive their perf/W score, they used the MLPerf measured power.  Therefore the second sentence is also valid and the statement does not violate this rule.)._
+
+_INCORRECT: AI_OEM1 Corp had a perf. score of 1000fps using Accelerator1-250W while AI_OEM2 Corp had a perf. score of 900fps using Accelerator1-150W.  Therefore, AI_OEM1 Corp achieved 4fps/W while AI_OEM2 achieved 6fps/W using the same accelerator. (In this case, the second sentence is a violation since it uses TDP to normalize perf/W when they should have used MLPerf measured power.  The first sentence is still allowed.)._  
+
+
 ## Official results must be clearly distinguished from unofficial results
 
 You may cite either official results obtained from the MLPerf results page or unofficial results measured independently. If you cite an unofficial result you must clearly specify that the result is “Unverified” in text and clearly state “Result not verified by MLCommons™ Association” in a footnote. The result must comply with the letter and spirit of the relevant MLPerf rules. 
