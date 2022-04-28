@@ -4,8 +4,8 @@
 
 TODO LIST:
 
-Convert explicit references to "Section III" and Section X(b) to automatic ones
-Create compatibility table and link
+- Convert explicit references to "Section III" and Section X(b) to automatic ones
+- Create compatibility table and link
 
 = MLPerf™ Results Messaging Guidelines
 
