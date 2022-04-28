@@ -169,7 +169,7 @@ You must follow the MLPerf name with the proper complete benchmark name, e.g., M
 
 ### No Use in Company or Product Names
   
-  Do not use the MLPerf name (or any variation thereof or confusingly similar name) in any company name, product name, service name, logo, model number, part number, service name, or domain name.
+Do not use the MLPerf name (or any variation thereof or confusingly similar name) in any company name, product name, service name, logo, model number, part number, service name, or domain name.
 
 ### Do Not Use as a Trademark
   
