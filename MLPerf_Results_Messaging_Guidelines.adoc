@@ -2,23 +2,23 @@
 
 :sectnums:
 
-# MLPerf™ Results Messaging Guidelines
+= MLPerf™ Results Messaging Guidelines
 
 The MLPerf™ name and logo are trademarks of MLCommons™ Association (“MLCommons”) in the United States and other countries. The MLPerf name and logo are used to identify the source of MLCommons Association benchmarks. You may not use the MLPerf name or logo, except in a factual and non-trademark manner solely to accurately represent your benchmark score, in accordance with the following usage terms. Nothing in these MLPerf Results Messaging Guidelines (the “Guidelines”) grants you a license to use the MLPerf trademark or logo, or any other right or interest in or to the MLPerf trademark or logo. 
 
-## Use of MLPerf™ Benchmark for Non-MLCommons Reviewed Results
+== Use of MLPerf™ Benchmark for Non-MLCommons Reviewed Results
 
 If you used an MLPerf™ benchmark to obtain a result for your product or service but did not submit your product or service for MLCommons review, then your result is unverified, and you must disclose this fact. Submission of MLPerf benchmark results for MLCommons review is restricted to Members of MLCommons (as “Members” is defined in the MLCommons Bylaws) and Test Partners of MLCommons (as “Test Partners” is defined in the Test Partner Agreement); if you are not a Member or Test Partner in good standing, then you may not submit MLPerf benchmark results for MLCommons review.
 
 Since your results have not gone through MLCommons review and, therefore, have not been verified by MLCommons, you must indicate your results are not verified by using the term “unverified” next to each result score and by using the following language when publishing or otherwise discussing your results: “_Result not verified by MLCommons Association._” You can include this statement in a footnote, as described in Section III below.
 
-## Use of MLPerf™ Benchmark for MLCommons Reviewed and Verified Results
+== Use of MLPerf™ Benchmark for MLCommons Reviewed and Verified Results
 
 If you used an MLPerf benchmark to obtain a result for your product or service, you submitted your result for MLCommons review, and your result was verified through such review, you may indicate your results are verified when publishing or otherwise discussing your results, by indicating your results are “verified” or “official” or by otherwise following the examples below for verified results. You may also choose to use this language: “_Result verified by MLCommons Association._” You can include this statement in a footnote, as described in Section III below.
 
-## MLPerf™ Benchmark results must clearly identify basic details in the main text, table, or figure
+== MLPerf™ Benchmark results must clearly identify basic details in the main text, table, or figure
 
-### Required Information
+=== Required Information
 
 Any disclosure of results must clearly identify the following information in the main text, table, or figure: submitting organization, benchmark name and version number, and system under test. 
 
@@ -40,7 +40,7 @@ or
 
 For Closed Division benchmarks, the model name may be used instead of the benchmark name, e.g. “SSD” instead of “Object Detection (light-weight)”.
 
-### Required Footnote
+=== Required Footnote
 
 Any use of or reference to an MLPerf benchmark result must also include the following in a footnote: benchmark suite, version, and division; benchmark name and scenario if applicable; date and source of retrieval; MLPerf result ID (major-version.minor-version.entry.benchmark); and trademark ownership legend shown in Section X(b) below. Further, if your result was not verified through MLCommons review, the footnote **must** state “_Result not verified by MLCommons Association._” If your result was verified through MLCommons review, you may choose to state “_Result verified by MLCommons Association._”
 
@@ -62,13 +62,13 @@ For all footnotes required by these Guidelines, the size and color of the footno
     
 >[1] Official MLPerf™ score of v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. The MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 
-## MLPerf results may only be compared against similar MLPerf results
+== MLPerf results may only be compared against similar MLPerf results
 
 MLPerf results may only be compared against compatible MPerf results. Results are compatible if produced using the same benchmark and scenario from compatible versions of that benchmark. Compatible versions are determined by MLCommons. See lists of compatible versions and non-compatible versions here: <<INSERT URL TO COMPATIBILITY TABLES_DK FIX THIS>>
 
 MLPerf results may not be compared against non-MLPerf results. For example, an MLPerf Training v0.5 Closed ResNet-v1.5 result may not be compared against an arbitrary result not produced in accordance with MLPerf rules.
 
-## When comparing MLPerf results, you must identify any submission differences
+== When comparing MLPerf results, you must identify any submission differences
 
 When comparing results the main text, table, or figure must clearly identify any difference in version, division, category, verified or unverified status, scenario or chip count (count of the compute devices executing the largest number of ops, which could be processors or accelerators). When comparing Open and Closed division results, any ways in which the Open result would not qualify as a Closed result must be identified.
   
@@ -92,7 +92,7 @@ Furthermore, a comparison of an unverified result with a verified result must in
   
 >[1] MLPerf™ v0.5 Training ResNet-v1.5. Result not verified by MLCommons Association. Unverified results have not been through an MLPerf™ review and may use measurement methodologies and/or workload implementations that are inconsistent with the MLPerf™ specification for verified results. The MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 
-## When comparing MLPerf Results, use official MLPerf power metrics
+== When comparing MLPerf Results, use official MLPerf power metrics
   
 System power measured using the MLPerf Power methodology is the only MLCommons officially-sanctioned power metric to be used for the purposes of portraying MLPerf results and/or making comparisons. When stating or comparing MLPerf power metics results:
   
@@ -121,17 +121,17 @@ or
 
 >**Required Footnote**: “[1]Result verified by MLCommons Association. MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 
-## Timing for Results Disclosures 
+== Timing for Results Disclosures 
 
 Submitters (i.e., those who have submitted results for review and verification by MLCommons) are not allowed to publish any results for a given benchmark version before its official publication date. 
   
 Non-submitters (i.e., those who have not submitted results for review and verification by MLCommons) are not allowed to publish any results until two weeks after the official publication date for that benchmark version.
 
-## MLCommons allows but does not endorse combining results of benchmarks
+== MLCommons allows but does not endorse combining results of benchmarks
 
 Users may see fit to combine or aggregate results from multiple MLPerf benchmark tests. If publicly disclosed, these composite results must cite the MLPerf benchmark score as required above and clearly describe the method of combination. However, the composite result is not sanctioned by MLCommons and may not be represented as an official or verified MLPerf result or score. You must follow the rules for citing an unverified score, set forth above.
 
-## Comparisons based on secondary or derived metrics must be explicit 
+== Comparisons based on secondary or derived metrics must be explicit 
 
 Each MLPerf benchmark has a primary metric, for instance time-to-train for Training Image Classification, or queries/sec for the Server scenario of Inference Image Classification (Datacenter system type). Any comparison based on different or derived metric such as power rating, cost, model size/architecture, accuracy, etc. must make the basis for comparison clear in the text and in a footnote. Secondary and derived metrics must not be presented as official or verified MLPerf metrics. You must follow the rules above for citing an unverified score.
 
@@ -149,33 +149,33 @@ If your results have not been verified through MLCommons review, you must indica
 
 Do not use the MLPerf name in any manner that is likely to suggest or imply MLCommons’ endorsement of a specific company and/or its products or services. You may not use the MLperf name in any way that could cause confusion as to source or as to ownership of the mark or in any way that could damage the goodwill in the mark.
 
-## Additional Requirements and Restrictions
+== Additional Requirements and Restrictions
 
-### Notice Symbol
+=== Notice Symbol
   
 You must include the ™ next to all uses of the MLPerf name. Do not use the ® symbol next to the MLPerf name; falsely indicating a mark is registered is a violation.
   
-### Attribution
+=== Attribution
   
 You must attribute ownership of the MLPerf mark to MLCommons in all uses of the MLPerf name and you must list the MLCommons website for additional information about the benchmark, as follows: “The MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.”
 
-### Do not Alter
+=== Do not Alter
   
 Do not alter or separate the MLPerf name, vary the spelling, add hyphens, make one word two words or more, use a similar mark, use a phonetic equivalent, use abbreviations, translate the mark, or otherwise alter or modify the mark in any way.
 
-### Use with Full Benchmark Name
+=== Use with Full Benchmark Name
   
 You must follow the MLPerf name with the proper complete benchmark name, e.g., MLPerf™ Training v0.5 Open Image Classification benchmark. Never use the MLPerf name as a verb or noun, or in the possessive or plural forms.
 
-### No Use in Company or Product Names
+=== No Use in Company or Product Names
   
 Do not use the MLPerf name (or any variation thereof or confusingly similar name) in any company name, product name, service name, logo, model number, part number, service name, or domain name.
 
-### Do Not Use as a Trademark
+=== Do Not Use as a Trademark
   
 The MLPerf mark is owned by MLCommons, and only MLCommons and its authorized licensees (who have a written license agreement with MLCommons) may use the MLPerf trademark in a trademark manner. If you desire to use the MLPerf name in any manner other than to make a factual statement about your MLPerf benchmark results in compliance with these Guidelines, you must contact trademark@mlcommons.org about your request, which MLCommons will consider in its discretion.
 
-## Violation Determination, Remedies, and Penalties
+== Violation Determination, Remedies, and Penalties
 
 Any MLCommons Member, Test Partner, or third party may report a violation of these Guidelines via email to the MLCommons Executive Director (“ED”) & Working Group (“WG”) chairs of the appropriate benchmark. Upon confirming the violation in their discretion, ED & WG chairs would inform the potential violator and request remedial action. If the ED, WG chairs, and potential violator are unable to reach a mutually satisfactory conclusion, the issue can be raised in WG to seek resolution via WG vote.
   
@@ -187,7 +187,7 @@ A non-exhaustive list of possible remedial actions or penalties based on the deg
 4. The WG may prohibit the violator from submitting MLPerf benchmark results for MLCommons review in the future.
 5. Continued failure to conform to these Guidelines by a violator may lead to marking the results as non-compliant in the results database permanently.
 
-## DISCLAIMER; LIMITATION OF LIABILITY
+== DISCLAIMER; LIMITATION OF LIABILITY
 
 THE BENCHMARKS, SOFTWARE, AND MLPERF AND MLCOMMONS TRADEMARKS ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT ANY REPRESENTATION, WARRANTY, OR GUARANTEE OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. YOU USE THE BENCHMARKS, SOFTWARE, AND TRADEMARKS AT YOUR SOLE RISK. NEITHER MLCOMMONS NOR ITS PARENT, SUBSIDIARIES, OR AFFILIATES (ALL REFERRED TO COLLECTIVELY HERE AS “MLCOMMONS”) ACCEPT ANY RESPONSIBILITY OR LIABILITY FOR ANY DIFFICULTIES YOU MAY ENCOUNTER WITH THE BENCHMARKS, SOFTWARE, AND/OR TRADEMARKS. MLCOMMONS DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE BENCHMARKS OR SOFTWARE OR OTHER PRODUCTS WILL MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF THE BENCHMARKS OR SOFTWARE OR OTHER PRODUCTS WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE BENCHMARKS OR SOFTWARE OR OTHER PRODUCTS WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION, BENCHMARKS, BENCHMARK RESULTS, OR ADVICE GIVEN BY MLCOMMONS (COLLECTIVELY, THE “MLCOMMONS CONTENT”) SHALL CREATE ANY WARRANTY, REPRESENTATION, OR GUARANTEE.
 
