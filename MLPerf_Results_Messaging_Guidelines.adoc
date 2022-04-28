@@ -10,7 +10,7 @@ The MLPerf™ name and logo are trademarks of MLCommons™ Association (“MLCom
 
 If you used an MLPerf™ benchmark to obtain a result for your product or service but did not submit your product or service for MLCommons review, then your result is unverified, and you must disclose this fact. Submission of MLPerf benchmark results for MLCommons review is restricted to Members of MLCommons (as “Members” is defined in the MLCommons Bylaws) and Test Partners of MLCommons (as “Test Partners” is defined in the Test Partner Agreement); if you are not a Member or Test Partner in good standing, then you may not submit MLPerf benchmark results for MLCommons review.
 
-Since your results have not gone through MLCommons review and, therefore, have not been verified by MLCommons, you must indicate your results are not verified by using the term “unverified” next to each result score and by using the following language when publishing or otherwise discussing your results: “_Result not verified by MLCommons Association._” You can include this statement in a footnote, as described in Section III below.
+Since your results have not gone through MLCommons review and, therefore, have not been verified by MLCommons, you must indicate your results are not verified by using the term “unverified” next to each result score and by using the following language when publishing or otherwise discussing your results: “_Result not verified by MLCommons Association._” You can include this statement in a footnote, as described in Section III below. FIGURE OUT HOW TO MAKE THIS A DYNAMIC REFERENCE!!!
 
 == Use of MLPerf™ Benchmark for MLCommons Reviewed and Verified Results
 
