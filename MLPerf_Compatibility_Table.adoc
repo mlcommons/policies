@@ -69,6 +69,7 @@ Note: Multistream v0.5-v1.1 is not compatible with v2.0 and newer
 |===
 
 Primary metrics: Latency (measured in milliseconds) (single stream), Samples/second (offline)
+
 Note: Submission requires all benchmarks in single stream and MobileNetEdge in single stream and offline
 
 
@@ -83,5 +84,7 @@ Note: Submission requires all benchmarks in single stream and MobileNetEdge in s
 |===
 
 Primary metric: Latency (measured in milliseconds)
+
 Secondary metric: Energy per inference (measured in microjoules)
+
 *Latency Compatible, not accuracy: v0.5 and v0.7 use the same model, but changed the evaluation set to improve balance.
