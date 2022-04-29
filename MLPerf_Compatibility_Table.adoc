@@ -6,19 +6,82 @@
 
 |===
 |Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 
-|ResNet-50 v1.5 |Compatible 5+|Compatible 
-|SSD-ResNet34 |Compatible 5+|Compatible 
-|MaskRCNN |Compatible 5+|Compatible 
-|NCF |Compatible 5+|N/A  
-|NMT |Compatible 2+|Compatible 3+|N/A 
-|Transformer |Compatible 2+|Compatible 3+|N/A 
-|MiniGo |Compatible |Compatible 4+|Compatible 
-|DLRM 2+|N/A 4+|Compatible 
-|BERT 3+|N/A 3+|Compatible 
-|RNN-T 3+|N/A |Compatible 2+|Compatible
-|3D U-Net 3+|N/A 3+|Compatible
+|ResNet-50 v1.5 |X 5+|X 
+|SSD-ResNet34 |X 5+|X 
+|MaskRCNN |X 5+|X 
+|NCF |X 5+|N/A  
+|NMT |X 2+|X 3+|N/A 
+|Transformer |X 2+|X 3+|N/A 
+|MiniGo |X |X 4+|X 
+|DLRM 2+|N/A 4+|X 
+|BERT 3+|N/A 3+|X 
+|RNN-T 3+|N/A |X 2+|X
+|3D U-Net 3+|N/A 3+|X
 |===
 
 Metric: Time-to-train (measured in minutes)
 
 Note: v0.6 ResNet-50 v1.5, SSD-ResNet34, NMT increased accuracy targets, all v0.6 benchmarks changed initializition timing, and v0.7 MiniGo moved to 19x19 board
+
+== HPC
+
+|===
+|Model |0.7 |1.0  
+|CosmoFlow |X |X 
+|DeepCAM 2+|X  
+|Open Catalyst |N/A|X 
+|===
+
+Metrics: Time-to-train (measured in minutes) and throughput (weak scaling - measured in models/minute)
+
+== Inference
+
+|===
+|Model |0.5 |0.7 |1.0 |1.1 |2.0 
+|MobileNet-v1|X 4+|N/A
+|ResNet-50 v1.5 5+|X 
+|SSD-MobileNets 5+|X 
+|SSD-ResNet34 5+|X 
+|NMT |X 4+|N/A 
+|DLRM |N/A 4+|X 
+|BERT |N/A 4+|X 
+|RNN-T |N/A 4+|X
+|3D U-Net |N/A 3+|X |X
+|===
+
+Metrics: Queries/second (server), Samples/second (offline),  Latency (measured in milliseconds) (single stream), Streams (multi-stream v0.5-v1.1), Latency (measured in milliseconds) (multi-stream 2.0+)
+
+Additional power metrics: System power (measured in watts) (server and offline), system energy per stream (measured in joules) (single stream and multi-stream)
+
+Note: Performance metrics for inference and power submissions are not comparable
+
+Note: Multistream v0.5-v1.1 is not compatible with v2.0 and newer
+
+== Mobile
+
+|===
+|Model |0.7 |1.0 |1.1 |2.0 
+|MobileNetEdge 4+|X
+|SSD-MobileNetsV2 |X 3+|N/A 
+|MobileDET |N/A 3+|X 
+|MOSAIC 3+|N/A |X
+|MobileBERT 4+|X 
+|===
+
+Primary metrics: Latency (measured in milliseconds) (single stream), Samples/second (offline)
+Note: Submission requires all benchmarks in single stream and MobileNetEdge in single stream and offline
+
+
+== Tiny
+
+|===
+|Model |0.5 |0.7  
+|MobileNetV1 2+|X
+|ResNet-V1 2+|X* 
+|DSCNN 2+|X 
+|FC Autoencoder 2+|X 
+|===
+
+Primary metric: Latency (measured in milliseconds)
+Secondary metric: Energy per inference (measured in microjoules)
+*Latency Compatible, not accuracy: v0.5 and v0.7 use the same model, but changed the evaluation set to improve balance.
