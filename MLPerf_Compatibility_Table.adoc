@@ -1,0 +1,24 @@
+:toc:
+:toclevels: 4
+
+
+== Training
+
+|===
+|Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 
+|ResNet-50 v1.5 |Compatible 5+|Compatible 
+|SSD-ResNet34 |Compatible 5+|Compatible 
+|MaskRCNN |Compatible 5+|Compatible 
+|NCF |Compatible 5+|N/A  
+|NMT |Compatible 2+|Compatible 3+|N/A 
+|Transformer |Compatible 2+|Compatible 3+|N/A 
+|MiniGo |Compatible |Compatible 4+|Compatible 
+|DLRM 2+|N/A 4+|Compatible 
+|BERT 3+|N/A 3+|Compatible 
+|RNN-T 3+|N/A |Compatible 2+|Compatible
+|3D U-Net 3+|N/A 3+|Compatible
+|===
+
+Metric: Time-to-train (measured in minutes)
+
+Note: v0.6 ResNet-50 v1.5, SSD-ResNet34, NMT increased accuracy targets, all v0.6 benchmarks changed initializition timing, and v0.7 MiniGo moved to 19x19 board
