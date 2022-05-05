@@ -71,7 +71,7 @@ or
 
 == MLPerf results may only be compared against similar MLPerf results
 
-MLPerf results may only be compared against compatible MPerf results. Results are compatible if produced using the same benchmark and scenario from compatible versions of that benchmark. Compatible versions are determined by MLCommons. See the xref:MLPerf_Compatibility_Table.adoc[MLPerf Compatibility Tables] that list compatible versions and non-compatible versions. 
+MLPerf results may only be compared against compatible MPerf results. Results are compatible if produced using the same benchmark and scenario from compatible versions of that benchmark. Compatible versions are determined by MLCommons. See the xref:MLPerf_Compatibility_Table.adoc[MLPerf Compatibility Table] that list compatible versions and non-compatible versions. 
 
 MLPerf results may not be compared against non-MLPerf results. For example, an MLPerf Training v0.5 Closed ResNet-v1.5 result may not be compared against an arbitrary result not produced in accordance with MLPerf rules.
 
