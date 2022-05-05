@@ -749,7 +749,7 @@ A research, development, or internal (RDI) component  does not meet the requirem
 
 ### Terms of use
 
-Any use of published results in connection with the MLPerf trademark must follow the xref:MLPerf_Results_Messaging_Guidelines.adoc[MLPerf Results Messaging Guidelines].
+Any use of published results in connection with the MLPerf trademark must follow the xref:MLPerf_Results_Messaging_Guidelines.adoc[MLPerf Results Messaging Guidelines] and any relevant policies found at https://mlcommons.org/en/policies/.
 
 
 ### Issues discovered after publication
