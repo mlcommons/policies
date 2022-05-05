@@ -142,9 +142,10 @@ ____
 AI_OEM1 Corp had a MLPerf™ score of 1000fps using Accelerator1-250W with a measured system power of 500W. AI_OEM2 Corp had a MLPerf™ score of 900fps using Accelerator1-150W and a measured system power of 400W. Therefore, AI_OEM1 Corp achieved 2fps/W while AI_OEM2 achieved 2.25fps/W using the same accelerator.[1]
 
 **Required Footnote**: “[1]Result verified by MLCommons Association. MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
+
+(In this case, the submitters are allowed to specify the accelerator TDP configuration since it is part of the SKU name, so the first sentence is valid. However in the second sentence, when they measure power and derive their perf/W score, they used the MLPerf measured power. Therefore the second sentence is also valid and the statement does not violate this rule.)
 ____
 
-In this case, the submitters are allowed to specify the accelerator TDP configuration since it is part of the SKU name, so the first sentence is valid. However in the second sentence, when they measure power and derive their perf/W score, they used the MLPerf measured power. Therefore the second sentence is also valid and the statement does not violate this rule.
 
 == Timing for Results Disclosures 
 
