@@ -17,7 +17,7 @@ These rules describe the submission, review, and publication process for all MLP
 
 * https://github.com/mlperf/inference_policies/blob/master/inference_rules.adoc[Inference Rules]
 
-Unless otherwise stated all rules apply to closed and open.
+Unless otherwise stated all rules apply to closed, network and open.
 
 ## Review committee
 
@@ -187,7 +187,7 @@ The exact review period schedule needs to be agreed upon 4 weeks in advance of s
 | Tuesday | Review committee meeting, discuss objections
 | Wednesday | 
 | Thursday | Review committee meeting, discuss objections
-| Friday | Objections due in Github, audit results due in GitHub for open and closed
+| Friday | Objections due in Github, audit results due in GitHub for open, closed and network
 | *Week 2* | *Review: objection review* 
 | Monday | Submitter response to objections
 | Tuesday | Review committee meeting, makes easy decisions and requests information about difficult ones
@@ -465,6 +465,25 @@ The file <system_desc_id>.json should contain the following metadata describing 
 | sw_notes |  |  | extra notes here | extra notes here
 |===
 
+In the Network division for the inference datacenter the file <system_desc_id>.json should also contain:
+
+|===
+| Field | Example 
+| is_network | True 
+| network_type | Ethernet 
+| network_rate | 100G 
+| nic_loadgen | NVIDIA CX7 
+| number_nic_loadgen | 1 
+| net_software_stack_loadgen | Linux Kernel TCP stack v.XXX 
+| network_protocol | TCP/IPv4 over Ethernet
+| number_connections | 1 
+| nic_sut | NVIDIA CX7 
+| number_nic_sut | 1 
+| net_software_stack_sut | Linux Kernel TCP stack v.XXX  
+| network_setup | Direct Network connection of Loadgen System to SUT
+|===
+
+
 
 ### <system_desc_id>_<implementation_id>_<scenario>.json metadata
 
@@ -509,7 +528,7 @@ The source code must be sufficient to reproduce the results of the submission, g
 
 ### Source code requirements for inference inspection
 
-The following section applies to all submissions in the Closed division. We encourage Open division submissions to be as transparent as possible.
+The following section applies to all submissions in the Closed and Network divisions. We encourage Open division submissions to be as transparent as possible.
 
 For inference, the source code, pseudo-code, or prose description must be sufficient to determine:
 
@@ -554,7 +573,7 @@ This section in progress [TODO].
 
 #### Inference
 
-Submitters must run the compliance tests for their closed division submissions to verify that their submission achieves a basic level of compliance with a subset of the MLPerf rules. If compliance testing identifies a potential issue with the submission, the onus is on the submitter to provide an adequate explanation to the results review committee.
+Submitters must run the compliance tests for their closed and network divisions submissions to verify that their submission achieves a basic level of compliance with a subset of the MLPerf rules. If compliance testing identifies a potential issue with the submission, the onus is on the submitter to provide an adequate explanation to the results review committee.
 
 Refer to the documentation found under https://github.com/mlperf/inference/tree/master/compliance/nvidia
 
@@ -661,7 +680,7 @@ Hyperparameters may be updated in accordance with the training rules prior to th
 
 ### Withdrawing results or changing division
 
-Anytime up until the final human readable deadline, an entry may be withdrawn by amending the pull request. Alternatively, an entry may be voluntarily moved from the closed division to the open division.
+Anytime up until the final human readable deadline, an entry may be withdrawn by amending the pull request. Alternatively, an entry may be voluntarily moved from the closed or network divisions to the open division.
 
 
 ## Publication 
@@ -671,7 +690,8 @@ MLPerf will publish all results simultaneously via an update to the results page
 
 ### Results tables
 
-There will be two results table published, one for Closed and one for Open.
+For Inference, datacenter, there will be three results table published, one for Closed, one for Network  and one for Open.
+Otherwise, there will be two results table published, one for Closed and one for Open.
 
 
 ### Results table content
@@ -687,7 +707,7 @@ Each results table will contain the following information:
 
 ### Results categories
 
-Results will be divided into categories based on the availability of the hardware and software components. Availability rules apply to both Closed and Open division submissions.
+Results will be divided into categories based on the availability of the hardware and software components. Availability rules apply to Closed, Network and Open division submissions.
 
 
 |===
