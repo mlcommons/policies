@@ -338,6 +338,20 @@ System names and implementation names may be arbitrary.
 
 Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, transformer, gnmt, ncf, minigo **}.
 
+#### HPC
+
+HPC training submissions follow the above Training directory structure except for the `results` folder which is adjusted to allow for time-to-train measurements as well as throughput measurements (and pruned throughput logs):
+
+** results/
+*** <system_desc_id>/
+**** strong/
+***** <benchmark>/
+****** result_<i>.txt   # log file for time-to-train measurement
+**** weak/
+***** <benchmark>/
+****** result_<i>.txt   # log file for throughput measurement
+****** pruned_results/
+******* result_<i>.txt   # log file for pruned throughput measurement
 
 #### Inference
 
