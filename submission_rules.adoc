@@ -471,6 +471,7 @@ In the Network division for the inference datacenter the file <system_desc_id>.j
 | Field | Example 
 | is_network | True 
 | network_type | Ethernet 
+| network_media | Copper 
 | network_rate | 100G 
 | nic_loadgen | NVIDIA CX7 
 | number_nic_loadgen | 1 
@@ -480,7 +481,7 @@ In the Network division for the inference datacenter the file <system_desc_id>.j
 | nic_sut | NVIDIA CX7 
 | number_nic_sut | 1 
 | net_software_stack_sut | Linux Kernel TCP stack v.XXX  
-| network_setup | Direct Network connection of Loadgen System to SUT
+| network_topology | Loadgen System connected to SUT through Switch and Load Balancer
 |===
 
 
