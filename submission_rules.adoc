@@ -54,7 +54,7 @@ Review committee meetings are typically held virtually.
 
 Review committee meetings are open only to the review committee.
 
-### Agenda and decisions
+### Agenda and decisions [[id_agenda_and_decisions]]
 
 The review committee agenda is set by, and decisions are tracked, using issues
 filed against the Github submission repo. In general, issues must be filed as
@@ -76,7 +76,12 @@ from the following list who are able and willing to vote:
   the non-submitting chairs of the relevant working group
 * A random number generator
 
-If there are two outcomes, voting proceeds by simple majority. If there are more
+Changes in a submission that would add new results, improve existing results by more 
+than 2% cumulative difference, or improve its position in the competitive standings 
+that are not covered by <<id_qualified_exceptions,Qualified Exceptions>> require 
+unanimous consent. 
+
+Otherwise, if there are two outcomes, voting proceeds by simple majority. If there are more
 than two outcomes, voting proceeds by Condorcet poll with the minimax completion
 rule. Votes are initiated by the chair and are cast openly. Votes may be cast
 verbally or using a shared spreadsheet or other voting software.
@@ -108,7 +113,7 @@ should be explicitly incorporated into the rules through the normal process.
 
 MLPerf’s purpose is to produce fair and useful benchmark results.
 
-The MLPerf review committee reserves the right to amend these rules and/or
+The MLPerf review committee reserves the right to amend its schedule and/or
 exclude submissions that conflict with this purpose with a two-thirds (rounded
 up) vote by the submitters. For instance, if the schedule is discovered to be
 untenable in practice, it may be amended. If a submission is judged to be
@@ -120,7 +125,6 @@ The role of the review process is to ensure fairness of submissions, not to liti
 
 *   Reviewing submitters should discuss issues with owning submitters after filing objections, and attempt to resolve the issue if possible.
 *   If an objection is supported by the review committee, the objecting submitter should communicate with the owning submitter to ensure a satisfactory fix. 
-*   Issues in submission that are agreed to require correction, but that do not meaningfully impact performance (less than 2% cumulative performance difference) or competitive ordering may be waived by the review committee, subject to its discretion, and with the understanding that the submitter will correct the issue in future submissions.
 
 
 ## Schedule
@@ -295,7 +299,7 @@ python3 -m mlperf_logging.result_summarizer <YOUR SUBMISSION_FOLDER> training 0.
 python3 tools/submission/submission-checker.py --input <YOUR_SUBMISSION_FOLDER> --submitter <YOUR_ORGANIZATION>
 ----
 
-### Submission content
+### Submission content [[id_submission_content]]
 
 A submission must contain the following:
 
@@ -307,6 +311,22 @@ A submission must contain the following:
 *   Scripts that setup and execute each system-implementation tested
 *   Result logs for each system-implementation tested
 
+
+The submission must be submitted by the submission deadline either as a pull request to the submission repository or using the <<id_submission_privacy,private submission process>>. 
+
+#### Qualified Exceptions [[id_qualified_exceptions]]
+
+In the case where last-minute unforeseen events prevent a submission from being submitted to the submission repository or sent to the results chair, a Late Submitter is allowed to make a submission after the deadline following the procedure outlined below. This procedure is meant for extreme circumstances beyond the submitter's control. No submitter may make a Late Submission in two consecutive rounds unless by unanimous approval from the other submitters.
+
+
+
+*   Prior to the submission deadline, the Late Submitter must provide a hash of a tarball containing the submission as Proof of Work as well as an explanation of the reason for the delay via email to the other submitters as well as the results chair, so that the other parties can anticipate a late submission. The submission tarball must contain <<id_submission_content, all required content>>. 
+*   Once notified of a late submission, the chair will wait until all late submissions are resolved before releasing any of the <<id_submission_privacy,private submission results>>.
+*   The submitter then has 72 hours after the submission deadline to make the submission tarball available to the results chair and other submitters. The tarball must match the hash. If the hash has been verified and the majority of other submitters do not object to the provided explanation, the results chair may accept the submission and make it and all other submissions available.  Otherwise the review committee must decide whether the Late Submission meets the criteria for acceptance, following the procedure described <<id_agenda_and_decisions,here>>.
+*   Failure to comply with the late submission procedure outlined here will result in the submission being deemed invalid except by unanimous approval from other submitters based on compelling explanation of extenuating circumstances. Examples of such cases include:
+**  Failure to provide the hash of the submission tarball before the submission deadline.
+**  Failure to provide a reason for the delay before the submission deadline.
+**  Failure to provide the submission tarball within 72 hours of the submission deadline.
 
 ### Directory structure
 
@@ -558,7 +578,7 @@ Submitters must run the compliance tests for their closed division submissions t
 
 Refer to the documentation found under https://github.com/mlperf/inference/tree/master/compliance/nvidia
 
-### Submission Privacy
+### Submission Privacy [[id_submission_privacy]]
 
 Submitters may adopt the following procedure to ensure that their submission is shared only with others who have made valid submissions:
 
