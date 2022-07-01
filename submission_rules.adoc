@@ -108,7 +108,7 @@ should be explicitly incorporated into the rules through the normal process.
 
 MLPerf’s purpose is to produce fair and useful benchmark results.
 
-The MLPerf review committee reserves the right to amend these rules and/or
+The MLPerf review committee reserves the right to depart from these rules and/or
 exclude submissions that conflict with this purpose with a two-thirds (rounded
 up) vote by the submitters. For instance, if the schedule is discovered to be
 untenable in practice, it may be amended. If a submission is judged to be
