@@ -7,7 +7,8 @@
 |===
 |Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 
 |ResNet-50 v1.5 |X 5+|X 
-|SSD-ResNet34 |X 5+|X 
+|SSD-ResNet34 |X 4+|X |N/A
+|RetinaNet-ResNeXt50 5+|N/A |X
 |MaskRCNN |X 5+|X 
 |NCF |X 5+|N/A  
 |NMT |X 2+|X 3+|N/A 
