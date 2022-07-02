@@ -137,10 +137,8 @@ The MLCommons yearly calendars are located in the MLCommons Members shared drive
 |===
 | Submission Round | Submision Date    | Publication Date
 
-| Inference v2.0   | February 25, 2022 | March 23, 2022
-| Training v2.0    | May 20, 2022      | June 22, 2022
 | Inference v2.1   | August 5, 2022    | August 31, 2022
-| Training v2.1    | October 14, 2022  | November 16, 2022
+| Training v2.1    | October 14, 2022  | November 9, 2022
 |===
 
 
