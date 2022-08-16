@@ -267,7 +267,10 @@ MLCommons provides a web UI [TODO: URL] for verifying scores contained in the ta
 ### Late Submissions
 
 #### Post-submission grace period (submission deadline + 60 minutes):
-MLPerf will allow submissions for up to 60 minutes after the published deadline without explanation or penalty. This grace period will be advertised as little as possible. The 60 minute limit will be strictly enforced.
+MLPerf will allow submissions for up to 60 minutes after the published deadline without explanation or penalty. The 60 minute limit will be strictly enforced.
+
+#### Post-submission extra grace period (submission deadline + 120 minutes):
+MLPerf will allow submissions for up to 120 minutes from the published deadline or 60 minutes after the normal grace period provided all the run logs are taken within the normal grace period. This extra grace period is only to ensure that no submitter asks for a time extension due to submission packaging related activities and ideally, a submitter should not use this grace period. Even if all the results are taken before the deadline, unless a valid submission tarball is submitted before this extra grace period, no submission will be considered except for extraordinary circumstances detailed in the next section. 
 
 #### Post-submission extension for extraordinary circumstances (submission deadline + 72 hours):
 If a submitter notifies the submission chair that their submission will be delayed due to force-majeure-type circumstances (e.g. blizzards, hurricanes, terrorism, etc.), the submission chair will delay sharing results for up to 72 hours to allow that submitter more time to make their submission. The extraordinary nature of the circumstances must be approved by the review committee at the first committee meeting or the submission will be disregarded. 
