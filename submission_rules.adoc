@@ -403,11 +403,11 @@ HPC training submissions follow the above Training directory structure except fo
 
 System names and implementation names may be arbitrary. 
 
-<benchmark> must be one of {**resnet50, ssd-mobilenet, ssd-resnet34, rnnt, bert-99, bert-99.9, dlrm-99, dlrm-99.9, 3d-unet-99, 3d-unet-99.9**}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy. 
+<benchmark> must be one of {**resnet50, retinanet, rnnt, bert-99, bert-99.9, dlrm-99, dlrm-99.9, 3d-unet-99, 3d-unet-99.9**}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy. 
 
 <scenario> must be one of {**Offline, Server, SingleStream, MultiStream**}. 
 
-<test_id> must be one of {**TEST01, TEST04-A, TEST04-B, TEST05**}.
+<test_id> must be one of {**TEST01, TEST04, TEST05**}.
 
 Here is the list of mandatory files for all submissions in any division/category. However, your submission should still include all software information and related information for results replication. 
 
