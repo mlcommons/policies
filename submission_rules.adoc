@@ -267,10 +267,9 @@ MLCommons provides a web UI [TODO: URL] for verifying scores contained in the ta
 ### Late Submissions
 
 #### Post-submission grace period (submission deadline + 60 minutes):
-MLPerf will allow submissions for up to 60 minutes after the published deadline without explanation or penalty. The 60 minute limit will be strictly enforced.
+MLPerf will allow submissions for up to 60 minutes after the published deadline without explanation or penalty. In case the submitter cannot upload the valid submission tarball by the hard deadline due to a defect in the submission checker, a hash of the valid submission tarball must be sent to the chairs before the deadline. The burden is on the submitter to demonstrate that the tarball in question could not be uploaded via the web UI because the submission checker was broken, and the tarball must have the complete results including all required compliance tests and must the tarball must pass the submission checker once the required fix for submission checker is done. The 60 minute limit will be strictly enforced.
 
-#### Post-submission extra grace period (submission deadline + 120 minutes):
-MLPerf will allow submissions for up to 120 minutes from the published deadline or 60 minutes after the normal grace period provided all the run logs are taken within the normal grace period. This extra grace period is only to ensure that no submitter asks for a time extension due to submission packaging related activities and ideally, a submitter should not use this grace period. Even if all the results are taken before the deadline, unless a valid submission tarball is submitted before this extra grace period, no submission will be considered except for extraordinary circumstances detailed in the next section. 
+
 
 #### Post-submission extension for extraordinary circumstances (submission deadline + 72 hours):
 If a submitter notifies the submission chair that their submission will be delayed due to force-majeure-type circumstances (e.g. blizzards, hurricanes, terrorism, etc.), the submission chair will delay sharing results for up to 72 hours to allow that submitter more time to make their submission. The extraordinary nature of the circumstances must be approved by the review committee at the first committee meeting or the submission will be disregarded. 
@@ -593,36 +592,10 @@ This section in progress [TODO].
 
 #### Inference
 
-Submitters must run the compliance tests for their closed and network divisions submissions to verify that their submission achieves a basic level of compliance with a subset of the MLPerf rules. If compliance testing identifies a potential issue with the submission, the onus is on the submitter to provide an adequate explanation to the results review committee.
+Submitters must run the compliance tests for their closed and network divisions submissions to verify that their submission achieves a basic level of compliance with a subset of the MLPerf rules. If compliance testing identifies a potential issue, submission checker will not allow a submission to closed division and the submission must go to the open division. Such submissions can be moved to closed division provided the submitter is able to provide an adequate explanation to the results review committee.
 
 Refer to the documentation found under https://github.com/mlperf/inference/tree/master/compliance/nvidia
 
-### Submission Privacy
-
-Submitters may adopt the following procedure to ensure that their submission is shared only with others who have made valid submissions:
-
-By the submission deadline, the submitter will email the following items to submissions@mlcommons.org to show Proof of Work:
-
-- A URL to the location in public blob storage of an encrypted tarball containing the directory structure and files described in the <<directory-structure>> section above. Any storage mechanism that supports curl may be used.
-- A password to the encrypted tarball
-- A sha1sum of the tarball
-- The last two lines of submission_checker_log.txt as cursory evidence of a valid submission
-
-A simple script has been provided to facilitate this process: https://github.com/mlcommons/logging/blob/master/pack_submission.sh
-
-When the deadline is reached, repository access will be removed for everyone EXCEPT the following parties:
-
-- Chairs
-- Submitters who have submitted valid submissions
-
-For each submitted tarball, the results chair will then:
-
-- download the encrypted tarball
-- verify it matches the hash
-- decrypt the tarball
-- verify that it is a valid submission
-- add the submission to the repository
-- enable repository access for the submitter
 
 ## Review
 
