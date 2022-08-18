@@ -269,8 +269,7 @@ MLCommons provides a web UI [TODO: URL] for verifying scores contained in the ta
 #### Post-submission grace period (submission deadline + 60 minutes):
 MLPerf will allow submissions for up to 60 minutes after the published deadline without explanation or penalty. The end of this grace period constitutes a hard deadline which will be strictly enforced.
 
-If a submitter cannot upload a valid submission tarball by the hard deadline due to a defect in the submission checker, a link to a the tarball and a hash of the tarball must be sent to the chairs before the deadline.  The burden is on the submitter to demonstrate that the submission could not be uploaded to via the web GUI because the checker was defective, and that the tarball passes the submission checker once the defect has been addressed.
-
+If a submitter cannot upload a valid submission tarball by the hard deadline due to some defect in the submission checker, a link to the tarball and a hash of the tarball must be sent to the chairs before the deadline. The burden is on the submitter to demonstrate that the submission could not be uploaded to via the web GUI because the checker was defective, and that the tarball passes the submission checker once the defect has been addressed.
 
 
 #### Post-submission extension for extraordinary circumstances (submission deadline + 72 hours):
