@@ -592,7 +592,7 @@ This section in progress [TODO].
 
 #### Inference
 
-Submitters must run the compliance tests for their closed and network divisions submissions to verify that their submission achieves a basic level of compliance with a subset of the MLPerf rules. If compliance testing identifies a potential issue, submission checker will not allow a submission to closed division and the submission must go to the open division. Such submissions can be moved to closed division provided the submitter is able to provide an adequate explanation to the results review committee.
+Submitters must run the compliance tests for their closed and network divisions submissions to verify that their submission achieves a basic level of compliance with a subset of the MLPerf rules. If a compliance test fails, the submission checker will not allow a submission to closed division. If the submission is instead made to open division, it may be moved to closed division upon an adequate explanation of the compliance test failure to the review committee.
 
 Refer to the documentation found under https://github.com/mlperf/inference/tree/master/compliance/nvidia
 
