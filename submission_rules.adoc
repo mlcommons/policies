@@ -267,7 +267,9 @@ MLCommons provides a web UI [TODO: URL] for verifying scores contained in the ta
 ### Late Submissions
 
 #### Post-submission grace period (submission deadline + 60 minutes):
-MLPerf will allow submissions for up to 60 minutes after the published deadline without explanation or penalty. In case the submitter cannot upload the valid submission tarball by the hard deadline due to a defect in the submission checker, a hash of the valid submission tarball must be sent to the chairs before the deadline. The burden is on the submitter to demonstrate that the tarball in question could not be uploaded via the web UI because the submission checker was broken, and the tarball must have the complete results including all required compliance tests and must the tarball must pass the submission checker once the required fix for submission checker is done. The 60 minute limit will be strictly enforced.
+MLPerf will allow submissions for up to 60 minutes after the published deadline without explanation or penalty. The end of this grace period constitutes a hard deadline which will be strictly enforced.
+
+If a submitter cannot upload a valid submission tarball by the hard deadline due to a defect in the submission checker, a link to a the tarball and a hash of the tarball must be sent to the chairs before the deadline.  The burden is on the submitter to demonstrate that the submission could not be uploaded to via the web GUI because the checker was defective, and that the tarball passes the submission checker once the defect has been addressed.
 
 
 
