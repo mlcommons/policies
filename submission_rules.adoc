@@ -528,7 +528,7 @@ For Inference, the results logs must have been produced by the [standard load ge
 
 The following section applies to all submissions in all divisions.
 
-The source code must be sufficient to reproduce the results of the submission, given all source components specified in Section 5.11 (for Inference) or Section 5.12 (for Training) are provided in the submission repo for all Categories, including Available, Preview, and RDI. For inference submissions, the reproducibility must, at minimum, produce all the mandatory loadgen log files used for the submission. In addition, any software component that would be required to substantially reproduce the submission must be uniquely identified using one of the following methods:
+The source code must be sufficient to reproduce all the required files of the submission, given all source components specified in Section 5.11 (for Inference) or Section 5.12 (for Training) are provided in the submission repo for all Categories, including Available, Preview, and RDI. In addition, any software component that would be required to substantially reproduce the submission must be uniquely identified using one of the following methods:
 
 
 |===
