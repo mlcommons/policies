@@ -778,7 +778,9 @@ Examples and counterexamples:
 
 #### Research, Development, or Internal Systems
 
-A research, development, or internal (RDI) component  does not meet the requirements for an available or preview component. An RDI system is a system containing one or more RDI components. The RDI components may not be submitted as _Available_ components  until the submission cycle after next or 221 days whichever is longer.
+A research, development, or internal (RDI) component  does not meet the requirements for an available or preview component. An RDI system is a system containing one or more RDI components. RDI hardware components may not be submitted as _Available_ components  until the submission cycle after next or 221 days whichever is longer.
+
+Software RDI systems must use a _Reproducible_ software stack.  A reproducible software stack consists only of _Available_ components and _Reproducible_ binary components. A binary component is _Reproducible_ if it is downloadable and installable by the submission deadline from a public URL, which must remain valid until a release of the software is Available.  The binary must be accompanied with instructions to allow a reasonable expert user to install it on a hardware system similar to the submission system.
 
 
 ## After publication
