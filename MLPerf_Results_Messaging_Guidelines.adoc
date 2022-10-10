@@ -107,7 +107,7 @@ ____
 
 == When comparing MLPerf Results, use official MLPerf power metrics
   
-System power measured using the MLPerf Power methodology is the only MLCommons officially-sanctioned power metric to be used for the purposes of portraying MLPerf results and/or making comparisons. When stating or comparing MLPerf power metics results:
+System power measured using the MLPerf Power methodology is the only MLCommons officially-sanctioned power metric to be used for the purposes of portraying MLPerf results and/or making comparisons. When stating or comparing MLPerf power metrics results:
   
   - Submitters (i.e., those who have submitted results for review and verification by MLCommons) are prohibited from making public comparisons using normalized or derived metrics (e.g., perf/W, inferences/W), which use power metrics other than the MLPerf measured system power, including but not limited to TDP, rated power, PSU power rating, etc.
   - For submissions without a corresponding power measurement, no other proxy power metric should be used.
