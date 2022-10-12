@@ -328,8 +328,8 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 ****** init_datasets.sh (one-time dataset init script)
 ****** run_and_time.sh (run the benchmark and produce a result)
 ** results/
-*** <system_desc_id>/
-**** <benchmark>/
+*** <benchmark>/
+**** <system_desc_id>_<implementation_id>/
 ***** result_<i>.txt   # log file
 
 System names and implementation names may be arbitrary. 
