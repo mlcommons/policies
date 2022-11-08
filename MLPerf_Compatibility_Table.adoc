@@ -27,10 +27,10 @@ Note: v0.6 ResNet-50 v1.5, SSD-ResNet34, NMT increased accuracy targets, all v0.
 == HPC
 
 |===
-|Model |0.7 |1.0  
-|CosmoFlow |X |X 
-|DeepCAM 2+|X  
-|Open Catalyst |N/A|X 
+|Model |0.7 |1.0| 2.0  
+|CosmoFlow |X |X| X 
+|DeepCAM |X |X|X  
+|Open Catalyst |N/A|X|X 
 |===
 
 Metrics: Time-to-train (measured in minutes) and throughput (weak scaling - measured in models/minute)
