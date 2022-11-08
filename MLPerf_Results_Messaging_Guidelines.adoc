@@ -12,7 +12,7 @@ If you used an MLPerf™ benchmark to obtain a result for your product or servic
 
 Since your results have not gone through MLCommons review and, therefore, have not been verified by MLCommons, you must indicate your results are not verified by using the term “unverified” next to each result score and by using the following language when publishing or otherwise discussing your results: “_Result not verified by MLCommons Association._” You can include this statement in a footnote, as described in Section 3 below.
 
-Any unverified or Non-MLCommons Reviewed results derived for competitor product or service for use in public claims should use the competitor's submission code repository if one exists. Any modifications made to such a third party MLPerf repo for the purpose of obtaining public unverified comparisons must be made in good faith and be made publicly available.
+Any unverified or Non-MLCommons Reviewed results derived for a competitor product or service for use in public claims should use the competitor's submission code repository if one exists instead of reference code repository. Any modifications made to such a third party MLPerf repo for the purpose of obtaining public unverified comparisons must be made in good faith and be made publicly available.
 
 == Use of MLPerf™ Benchmark for MLCommons Reviewed and Verified Results
 
