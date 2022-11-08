@@ -5,7 +5,7 @@
 == Training
 
 |===
-|Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 
+|Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 |2.1
 |ResNet-50 v1.5 |X 5+|X 
 |SSD-ResNet34 |X 4+|X |N/A
 |RetinaNet-ResNeXt50 5+|N/A |X
