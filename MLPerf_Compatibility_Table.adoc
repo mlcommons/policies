@@ -5,19 +5,19 @@
 == Training
 
 |===
-|Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 
-|ResNet-50 v1.5 |X 5+|X 
-|SSD-ResNet34 |X 4+|X |N/A
-|RetinaNet-ResNeXt50 5+|N/A |X
-|MaskRCNN |X 5+|X 
-|NCF |X 5+|N/A  
-|NMT |X 2+|X 3+|N/A 
-|Transformer |X 2+|X 3+|N/A 
-|MiniGo |X |X 4+|X 
-|DLRM 2+|N/A 4+|X 
-|BERT 3+|N/A 3+|X 
-|RNN-T 3+|N/A |X 2+|X
-|3D U-Net 3+|N/A 3+|X
+|Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 |2.1
+|ResNet-50 v1.5 |X 5+|X |X
+|SSD-ResNet34 |X 4+|X |N/A |N/A
+|RetinaNet-ResNeXt50 5+|N/A |X |X
+|MaskRCNN |X 5+|X |X
+|NCF |X 5+|N/A |N/A
+|NMT |X 2+|X 3+|N/A |N/A
+|Transformer |X 2+|X 3+|N/A |N/A
+|MiniGo |X |X 4+|X |X
+|DLRM 2+|N/A 4+|X |X
+|BERT 3+|N/A 3+|X |X
+|RNN-T 3+|N/A |X 2+|X |X
+|3D U-Net 3+|N/A 3+|X |X
 |===
 
 Metric: Time-to-train (measured in minutes)
@@ -27,10 +27,10 @@ Note: v0.6 ResNet-50 v1.5, SSD-ResNet34, NMT increased accuracy targets, all v0.
 == HPC
 
 |===
-|Model |0.7 |1.0  
-|CosmoFlow |X |X 
-|DeepCAM 2+|X  
-|Open Catalyst |N/A|X 
+|Model |0.7 |1.0 |2.0 
+|CosmoFlow |X |X |X 
+|DeepCAM 2+|X |X 
+|Open Catalyst |N/A |X |X
 |===
 
 Metrics: Time-to-train (measured in minutes) and throughput (weak scaling - measured in models/minute)
@@ -77,11 +77,11 @@ Note: Submission requires all benchmarks in single stream and MobileNetEdge in s
 == Tiny
 
 |===
-|Model |0.5 |0.7  
-|MobileNetV1 2+|X
-|ResNet-V1 2+|X* 
-|DSCNN 2+|X 
-|FC Autoencoder 2+|X 
+|Model |0.5 |0.7 |1.0 
+|MobileNetV1 2+|X |X
+|ResNet-V1 2+|X* |X
+|DSCNN 2+|X |X
+|FC Autoencoder 2+|X |X
 |===
 
 Primary metric: Latency (measured in milliseconds)
