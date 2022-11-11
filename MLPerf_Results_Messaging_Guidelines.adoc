@@ -4,7 +4,7 @@
 
 = MLPerf™ Results Messaging Guidelines
 
-The MLPerf™ name and logo are trademarks of MLCommons™ Association (“MLCommons”) in the United States and other countries. The MLPerf name and logo are used to identify the source of MLCommons Association benchmarks. You may not use the MLPerf name or logo, except in a factual and non-trademark manner solely to accurately represent your benchmark score, in accordance with the following usage terms. Nothing in these MLPerf Results Messaging Guidelines (the “Guidelines”) grants you a license to use the MLPerf trademark or logo, or any other right or interest in or to the MLPerf trademark or logo. 
+The MLPerf™ name and logo are trademarks of MLCommons® Association (“MLCommons”) in the United States and other countries. The MLPerf name and logo are used to identify the source of MLCommons Association benchmarks. You may not use the MLPerf name or logo, except in a factual and non-trademark manner solely to accurately represent your benchmark score, in accordance with the following usage terms. Nothing in these MLPerf Results Messaging Guidelines (the “Guidelines”) grants you a license to use the MLPerf trademark or logo, or any other right or interest in or to the MLPerf trademark or logo. 
 
 == Use of MLPerf™ Benchmark for Non-MLCommons Reviewed Results
 
