@@ -204,9 +204,9 @@ The MLPerf mark is owned by MLCommons, and only MLCommons and its authorized lic
 
 Any MLCommons Member, Test Partner, or third party may report a violation of these Guidelines via email to the MLCommons Executive Director (“ED”) & Working Group (“WG”) chairs of the appropriate benchmark. Upon confirming the violation in their discretion, ED & WG chairs would inform the potential violator and request remedial action. If the ED, WG chairs, and potential violator are unable to reach a mutually satisfactory conclusion, the issue can be raised in WG to seek resolution via WG vote.
   
-A non-exhaustive list of possible remedial actions or penalties based on the degree of violation is noted below. Taking or not taking any or all actions on this list or otherwise does not constitute a waiver of any enforcement rights or other rights in the MLPerf benchmarks, software, and/or trademark.
+Violating content must be taken down within first 24 hours of violation being reported. A non-exhaustive list of other possible remedial actions or penalties based on the degree of violation is noted below. Taking or not taking any or all actions on this list or otherwise does not constitute a waiver of any enforcement rights or other rights in the MLPerf benchmarks, software, and/or trademark.
   
-1. Requesting corrections to published materials in the form of marketing blog posts, journals, papers, and other media.
+1. Requesting corrections to published materials in the form of marketing blog posts, journals, papers, and other media. 
 2. If the violation was at a public event such as a conference, the WG may direct the violator to issue a public statement to correct claims in ways that conform to these Guidelines.
 3. The WG may issue a public statement citing the violation.
 4. The WG may prohibit the violator from submitting MLPerf benchmark results for MLCommons review in the future.
