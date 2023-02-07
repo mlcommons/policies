@@ -237,6 +237,7 @@ Some working groups such as HPC may choose to replace the Advisory Board formati
 | T-20 weeks | Advisory Board signs off, Model Frozen, Working groups sync on final benchmark. Finishing touches on benchmark can commence.
 | T-16 weeks | Benchmark code complete. Only bug fixes allowed beyond this point.
 | T-12 weeks | RCPs due (for Training and HPC)
+| T-9 weeks | New RCP requests due (for LLM Training only)
 | T-4 weeks  | No more bug fixes.  Benchmark code now final.
 | T-0 weeks  | Submission 
 |===
@@ -334,7 +335,7 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 
 System names and implementation names may be arbitrary. 
 
-Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, transformer, gnmt, ncf, minigo **}.
+Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, bert, rnnt, unet3d, llm, dlrmv2 **}.
 
 #### HPC
 
