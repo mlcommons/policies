@@ -12,7 +12,7 @@ If you used an MLPerf™ benchmark to obtain a result for your product or servic
 
 Since your results have not gone through MLCommons review and, therefore, have not been verified by MLCommons, you must indicate your results are not verified by using the term “unverified” next to each result score and by using the following language when publishing or otherwise discussing your results: “_Result not verified by MLCommons Association._” You can include this statement in a footnote, as described in Section 3 below.
 
-Any unverified or Non-MLCommons Reviewed results derived for a competitor product or service for use in public claims must use the competitor's submission code repository if one exists instead of reference code repository. Any modifications made to such a third party MLPerf repo for the purpose of obtaining public unverified comparisons must be made in good faith and be made publicly available.
+If the components (eg: HW) that substantially determine ML performance of an "unverified" score also have a verified official score (eg: same HW with a different submission SW stack), it is required to reference the official submission scores in any public comparisons.
 
 == Use of MLPerf™ Benchmark for MLCommons Reviewed and Verified Results
 
@@ -80,7 +80,9 @@ MLPerf results may not be compared against non-MLPerf results. For example, an M
 == When comparing MLPerf results, you must identify any submission differences
 
 When comparing results the main text, table, or figure must clearly identify any difference in version, division, category, verified or unverified status, scenario or chip count (count of the compute devices executing the largest number of ops, which could be processors or accelerators). When comparing Open and Closed division results, any ways in which the Open result would not qualify as a Closed result must be identified.
-  
+
+It is prohibited to compare to an "unverified" or unofficial score derived from reference benchmark code implementation for a submitter who already has an official submission score (references often prioritize readability over performance).
+
 **Example for Non-MLCommons Reviewed Result**: 
 
 ____
