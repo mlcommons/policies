@@ -335,7 +335,7 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 
 System names and implementation names may be arbitrary. 
 
-Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, transformer, gnmt, ncf, minigo **}.
+Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, bert, rnnt, unet3d, gpt3, dlrmv2 **}.
 
 #### HPC
 
