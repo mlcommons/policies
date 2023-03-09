@@ -12,7 +12,7 @@ If you used an MLPerf™ benchmark to obtain a result for your product or servic
 
 Since your results have not gone through MLCommons review and, therefore, have not been verified by MLCommons, you must indicate your results are not verified by using the term “unverified” next to each result score and by using the following language when publishing or otherwise discussing your results: “_Result not verified by MLCommons Association._” You can include this statement in a footnote, as described in Section 3 below.
 
-If the components (e.g. HW) that substantially determine ML performance of an "unverified" score also have a verified official score (e.g. same HW with a different submission SW stack), it is required to state the official submission scores in any public comparisons.
+If the components (e.g. HW) that substantially determine ML performance of an "unverified" score also have a verified official score (e.g. same HW with a different submission SW stack), it is required to state the official submission score of the closest available system in any public comparisons.
 
 Note that benchmark reference code implementations often prioritize readability and should not be mistaken for performance optimized implementations (e.g. reference code performance should not be equated with "out-of-box" performance).
 
