@@ -38,16 +38,17 @@ Metrics: Time-to-train (measured in minutes) and throughput (weak scaling - meas
 == Inference
 
 |===
-|Model |0.5 |0.7 |1.0 |1.1 |2.0 
-|MobileNet-v1|X 4+|N/A
-|ResNet-50 v1.5 5+|X 
-|SSD-MobileNets 5+|X 
-|SSD-ResNet34 5+|X 
-|NMT |X 4+|N/A 
-|DLRM |N/A 4+|X 
-|BERT |N/A 4+|X 
-|RNN-T |N/A 4+|X
-|3D U-Net |N/A 3+|X |X
+|Model |0.5 |0.7 |1.0 |1.1 |2.0 |2.1 |3.0.
+|MobileNet-v1|X 6+|N/A
+|ResNet-50 v1.5 6+|X|N/A
+|RetinaNet-ResNeXt50 5+|N/A 2+|X
+|SSD-MobileNets 7+|X 
+|SSD-ResNet34 7+|X 
+|NMT |X 6+|N/A 
+|DLRM |N/A 6+|X 
+|BERT |N/A 6+|X 
+|RNN-T |N/A 6+|X
+|3D U-Net |N/A 6+|X
 |===
 
 Metrics: Queries/second (server), Samples/second (offline),  Latency (measured in milliseconds) (single stream), Streams (multi-stream v0.5-v1.1), Latency (measured in milliseconds) (multi-stream 2.0+)
