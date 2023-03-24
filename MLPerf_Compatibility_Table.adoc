@@ -59,7 +59,7 @@ Note: Performance metrics for inference and power submissions are not comparable
 
 Note: Multistream v0.5-v1.1 is not compatible with v2.0 and newer
 
-Note: Inference over Network introduced in v2.1
+Note: Inference over Network scenario introduced in v2.1
 
 == Mobile
 
