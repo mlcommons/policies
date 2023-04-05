@@ -64,12 +64,14 @@ Note: Inference over Network scenario introduced in v2.1
 == Mobile
 
 |===
-|Model |0.7 |1.0 |1.1 |2.0 
-|MobileNetEdge 4+|X
-|SSD-MobileNetsV2 |X 3+|N/A 
-|MobileDET |N/A 3+|X 
-|MOSAIC 3+|N/A |X
-|MobileBERT 4+|X 
+|Model |0.7 |1.0 |1.1 |2.0 |2.1 |3.0
+|MobileNetEdge 6+|X
+|SSD-MobileNetsV2 |X 5+|N/A 
+|MobileDET |N/A 5+|X 
+|DeeplabV3 4+|X 2+|N/A
+|MOSAIC 3+|N/A 3+|X
+|MobileBERT 6+|X
+|EDSR 5+|N/A |X
 |===
 
 Primary metrics: Latency (measured in milliseconds) (single stream), Samples/second (offline)
