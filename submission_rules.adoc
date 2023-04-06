@@ -764,7 +764,7 @@ If a submission is unable to meet the _Available_ requirements in the following 
 
 1. The results table of the Preview submission will strike through the results in red.  If a row in the results table has some results that are valid and some that will be invalid, we will split that row into two rows, and only strike through the invalidated results, appending an "i" to the new Submission ID for the invalid row.  Additionally, the System Name will be prefixed with "INVALID" with a footnote that will say "Submission was marked invalid in <round> because it failed to meet the Preview to Available requirements.  See https://github.com/mlcommons/policies/blob/master/submission_rules.adoc#preview-systems."
 
-2. In the press statement for the following round where it is required to be _Available_, there will be a statement that says "Some Preview submissions in <the prior round> were invalidated for failing to meet the Preview to Available requirements.  Please refer to that round's results table for more details."
+2. In the press statement for the round where it is required to be _Available_, there will be a statement that says "Some Preview submissions in <the prior round> were invalidated for failing to meet the Preview to Available requirements.  Please refer to that round's results table for more details."
 
 #### Research, Development, or Internal Systems
 
