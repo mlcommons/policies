@@ -504,6 +504,27 @@ In the Network division for the inference datacenter the file <system_desc_id>.j
 |===
 
 
+For power submissions, the file <system_desc_id>.json should also contain:
+
+|===
+| Field | Example 
+| power_management |
+| filesystem |
+| boot_firmware_version |
+| management_firmware_version |
+| other_hardware |
+| number_of_type_nics_installed |
+| nics_enabled_firmware |
+| nics_enabled_os |
+| nics_enabled_connected |
+| network_speed_mbit |
+| power_supply_quantity_and_rating_watts |
+| power_supply_details |
+| disk_drives |
+| disk_controllers |
+|===
+
+
 
 ### <system_desc_id>_<implementation_id>_<scenario>.json metadata
 
