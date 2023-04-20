@@ -81,7 +81,7 @@ MLPerf results may not be compared against non-MLPerf results. For example, an M
 
 == When comparing MLPerf results, you must identify any submission differences
 
-When comparing results the main text, table, or figure must clearly identify any difference in version, division, category, verified or unverified status, scenario or chip count (count of the compute devices executing the largest number of ops, which could be processors or accelerators) or submitter name. When comparing Open and Closed division results, any ways in which the Open result would not qualify as a Closed result must be identified. When making comparisons, submissions must not be portrayed as representing the performance available from an Independent Hardware Vendor (IHV) unless the submission was by that IHV.
+When comparing results the main text, table, or figure must clearly identify any difference in version, division, category, verified or unverified status, scenario or chip count (count of the compute devices executing the largest number of ops, which could be processors or accelerators) or submitter name. When comparing Open and Closed division results, any ways in which the Open result would not qualify as a Closed result must be identified. When making comparisons, submissions must not be portrayed as representing the performance available from a submitter unless the submission was by that submitter - e.g. a submission by SuperServers Inc that happened to use an accelerator from AccelCorp Ltd must not be portrayed as representing AccelCorp's performance.
 
 **Example for Non-MLCommons Reviewed Result**: 
 
