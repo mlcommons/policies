@@ -678,7 +678,7 @@ Anytime up until the final human readable deadline, an entry may be withdrawn by
 
 ## Publication 
 
-MLPerf will publish all results simultaneously via an update to the results page. After publication, code and results are public and free for use under the MLPerf Terms of Use.
+MLCommons will publish all results simultaneously via an update to the results page. After publication, code and results are public and free for use under the MLPerf Terms of Use.
 
 
 ### Results tables
