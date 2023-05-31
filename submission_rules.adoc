@@ -484,7 +484,7 @@ The file <system_desc_id>.json should contain the following metadata describing 
 
 ^1^ Optional for preview system submission. These fields must be updated in the system description json upon the public availability of the processor.
 
-^2^ The valid values for `system_type_specific` are `cloud` and `on-premice` for datacenter category and `edge-server` and `edge-device` for edge category.
+^2^ The valid values for `system_type_specific` are `cloud` and `on-premise` for datacenter category and `edge-server` and `edge-device` for edge category.
 
 
 In the Network division for the inference datacenter the file <system_desc_id>.json should also contain:
