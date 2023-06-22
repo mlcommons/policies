@@ -4,7 +4,7 @@
 
 = MLPerf™ Results Messaging Guidelines
 
-The MLPerf™ name and logo are trademarks of MLCommons™ Association (“MLCommons”) in the United States and other countries. The MLPerf name and logo are used to identify the source of MLCommons Association benchmarks. You may not use the MLPerf name or logo, except in a factual and non-trademark manner solely to accurately represent your benchmark score, in accordance with the following usage terms. Nothing in these MLPerf Results Messaging Guidelines (the “Guidelines”) grants you a license to use the MLPerf trademark or logo, or any other right or interest in or to the MLPerf trademark or logo. 
+The MLPerf™ name and logo are trademarks of MLCommons® Association (“MLCommons”) in the United States and other countries. The MLPerf name and logo are used to identify the source of MLCommons Association benchmarks. You may not use the MLPerf name or logo, except in a factual and non-trademark manner solely to accurately represent your benchmark score, in accordance with the following usage terms. Nothing in these MLPerf Results Messaging Guidelines (the “Guidelines”) grants you a license to use the MLPerf trademark or logo, or any other right or interest in or to the MLPerf trademark or logo. 
 
 == Use of MLPerf™ Benchmark for Non-MLCommons Reviewed Results
 
@@ -107,7 +107,7 @@ ____
 
 == When comparing MLPerf Results, use official MLPerf power metrics
   
-System power measured using the MLPerf Power methodology is the only MLCommons officially-sanctioned power metric to be used for the purposes of portraying MLPerf results and/or making comparisons. When stating or comparing MLPerf power metics results:
+System power measured using the MLPerf Power methodology is the only MLCommons officially-sanctioned power metric to be used for the purposes of portraying MLPerf results and/or making comparisons. When stating or comparing MLPerf power metrics results:
   
   - Submitters (i.e., those who have submitted results for review and verification by MLCommons) are prohibited from making public comparisons using normalized or derived metrics (e.g., perf/W, inferences/W), which use power metrics other than the MLPerf measured system power, including but not limited to TDP, rated power, PSU power rating, etc.
   - For submissions without a corresponding power measurement, no other proxy power metric should be used.
@@ -202,12 +202,12 @@ The MLPerf mark is owned by MLCommons, and only MLCommons and its authorized lic
 
 Any MLCommons Member, Test Partner, or third party may report a violation of these Guidelines via email to the MLCommons Executive Director (“ED”) & Working Group (“WG”) chairs of the appropriate benchmark. Upon confirming the violation in their discretion, ED & WG chairs would inform the potential violator and request remedial action. If the ED, WG chairs, and potential violator are unable to reach a mutually satisfactory conclusion, the issue can be raised in WG to seek resolution via WG vote.
   
-A non-exhaustive list of possible remedial actions or penalties based on the degree of violation is noted below. Taking or not taking any or all actions on this list or otherwise does not constitute a waiver of any enforcement rights or other rights in the MLPerf benchmarks, software, and/or trademark.
+Violating content must be taken down by the violator within 3 business days of the violation being reported by MLC to the violator. A non-exhaustive list of possible remedial actions or penalties based on the degree of violation is noted below. Taking or not taking any or all actions on this list or otherwise does not constitute a waiver of any enforcement rights or other rights in the MLPerf benchmarks, software, and/or trademark.
   
 1. Requesting corrections to published materials in the form of marketing blog posts, journals, papers, and other media.
 2. If the violation was at a public event such as a conference, the WG may direct the violator to issue a public statement to correct claims in ways that conform to these Guidelines.
-3. The WG may issue a public statement citing the violation.
-4. The WG may prohibit the violator from submitting MLPerf benchmark results for MLCommons review in the future.
+3. MLCommons may issue a public statement citing the violation.
+4. MLCommons may prohibit the violator from submitting MLPerf benchmark results for MLCommons review in the future.
 5. Continued failure to conform to these Guidelines by a violator may lead to marking the results as non-compliant in the results database permanently.
 
 == DISCLAIMER; LIMITATION OF LIABILITY

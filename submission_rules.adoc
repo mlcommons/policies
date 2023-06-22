@@ -3,7 +3,7 @@
 
 :sectnums:
 
-# General MLPerf Submission Rules
+# General MLPerf™ Submission Rules
 
 :TOC:
 
@@ -195,15 +195,17 @@ The exact review period schedule needs to be agreed upon 4 weeks in advance of s
 | Friday | 
 | *Week 3* | *Review: objection revision*
 | Monday | Must declare all intended hyperparameter borrowing (training only)
-| Tuesday | Review committee meeting, discusses any fixes and borrowing
-| Wednesday | Final code due
-| Thursday | Review committee meeting, decides to approve/reject fixes if required
-| Friday | 1:00pm Pacific Time: Final results in human readable form due
+| Tuesday | Review committee meeting, finalize all scores. 
+| Wednesday | 1:00pm Pacific Time: Final code due
+|  | 1:00pm Pacific Time: Final results in human readable form due
 |  | 1:00pm Pacific Time: Final opportunity to withdraw some or all results
-|  | 1:30pm Pacific Time: Results summary distributed by Submitters WG chair
-|  | Approve final draft of press release"
+|  | 1:30pm Pacific Time: Results summary distributed by Results chair
+|  | Approve final draft of press release
+| Thursday | Review committee meeting, review results presentations.
+| Friday | 
 | *Week 4* | *Publication*
 | Monday | Press and analyst pre-briefings allowed under embargo, all briefings to include neutral press release
+|  | 9:30am Pacific Time: submitters can start pre-briefing press under embargo
 |  | 1:00pm Pacific Time: Draft of results page available for comment
 | Tuesday | 1:00pm Pacific Time: Corrections to results page due
 |  | 5:00pm Pacific Time: Results page and press release live on staging site
@@ -327,6 +329,7 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 ****** setup.sh (one-time configuration script)
 ****** init_datasets.sh (one-time dataset init script)
 ****** run_and_time.sh (run the benchmark and produce a result)
+****** (include any post-processing scripts used to make changes to result logs)
 ** results/
 *** <system_desc_id>/
 **** <benchmark>/
@@ -334,7 +337,7 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 
 System names and implementation names may be arbitrary. 
 
-Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, transformer, gnmt, ncf, minigo **}.
+Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, bert, rnnt, unet3d, gpt3, dlrmv2 **}.
 
 #### HPC
 
@@ -403,11 +406,11 @@ HPC training submissions follow the above Training directory structure except fo
 
 System names and implementation names may be arbitrary. 
 
-<benchmark> must be one of {**resnet50, ssd-mobilenet, ssd-resnet34, rnnt, bert-99, bert-99.9, dlrm-99, dlrm-99.9, 3d-unet-99, 3d-unet-99.9**}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy. 
+<benchmark> must be one of {**resnet50, retinanet, rnnt, bert-99, bert-99.9, dlrm-99, dlrm-99.9, 3d-unet-99, 3d-unet-99.9**}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy. 
 
 <scenario> must be one of {**Offline, Server, SingleStream, MultiStream**}. 
 
-<test_id> must be one of {**TEST01, TEST04-A, TEST04-B, TEST05**}.
+<test_id> must be one of {**TEST01, TEST04, TEST05**}.
 
 Here is the list of mandatory files for all submissions in any division/category. However, your submission should still include all software information and related information for results replication. 
 
@@ -594,33 +597,6 @@ Submitters must run the compliance tests for their closed and network divisions 
 
 Refer to the documentation found under https://github.com/mlperf/inference/tree/master/compliance/nvidia
 
-### Submission Privacy
-
-Submitters may adopt the following procedure to ensure that their submission is shared only with others who have made valid submissions:
-
-By the submission deadline, the submitter will email the following items to submissions@mlcommons.org to show Proof of Work:
-
-- A URL to the location in public blob storage of an encrypted tarball containing the directory structure and files described in the <<directory-structure>> section above. Any storage mechanism that supports curl may be used.
-- A password to the encrypted tarball
-- A sha1sum of the tarball
-- The last two lines of submission_checker_log.txt as cursory evidence of a valid submission
-
-A simple script has been provided to facilitate this process: https://github.com/mlcommons/logging/blob/master/pack_submission.sh
-
-When the deadline is reached, repository access will be removed for everyone EXCEPT the following parties:
-
-- Chairs
-- Submitters who have submitted valid submissions
-
-For each submitted tarball, the results chair will then:
-
-- download the encrypted tarball
-- verify it matches the hash
-- decrypt the tarball
-- verify that it is a valid submission
-- add the submission to the repository
-- enable repository access for the submitter
-
 ## Review
 
 
@@ -702,7 +678,7 @@ Anytime up until the final human readable deadline, an entry may be withdrawn by
 
 ## Publication 
 
-MLPerf will publish all results simultaneously via an update to the results page. After publication, code and results are public and free for use under the MLPerf Terms of Use.
+MLCommons will publish all results simultaneously via an update to the results page. After publication, code and results are public and free for use under the MLPerf Terms of Use.
 
 
 ### Results tables
