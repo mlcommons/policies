@@ -266,6 +266,8 @@ MLCommons provides a cloud storage bucket [TODO: URL] for submitting encrypted t
 
 MLCommons provides a web UI [TODO: URL] for verifying scores contained in the tarball. When provided { private key, file name }, the UI decrypts, untars, and runs a submission verifier then displays results or errors. The submitter may confirm results as final and receive an email receipt. *All submissions must be confirmed in this manner or they will be disregarded.*
 
+Documentation of the web UI usage can be found in this https://docs.google.com/document/d/1F7GbAhPduck9v9aMHFyoGoAfiRrNc5reatc0rYU287s[document].
+
 ### Late Submissions
 
 #### Post-submission grace period (submission deadline + 60 minutes):
