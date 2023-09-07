@@ -336,7 +336,7 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 *** <system_desc_id>/
 **** <benchmark>/
 ***** result_<i>.txt   # log file
-***** power  # optinoal power logs
+***** power  # optional power logs
 ****** result_<i>
 ******* node_<j>.txt
 ******* sw_<k>.txt
