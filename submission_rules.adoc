@@ -271,7 +271,9 @@ Documentation of the web UI usage can be found in this https://docs.google.com/d
 ### Late Submissions
 
 #### Post-submission grace period (submission deadline + 60 minutes):
-MLPerf will allow submissions for up to 60 minutes after the published deadline without explanation or penalty. This grace period will be advertised as little as possible. The 60 minute limit will be strictly enforced.
+MLPerf will allow submissions for up to 60 minutes after the published deadline without explanation or penalty. The end of this grace period constitutes a hard deadline which will be strictly enforced.
+
+If a submitter cannot upload a valid submission tarball by the hard deadline due to some defect in the submission checker, a hash of the tarball must be sent to the submitters mailing list before the submission deadline and the submission tarball must be mailed to the submitters mailing list not later than 30 minutes from the submission deadline. An issue must also be raised on the relevant GitHub repository detailing the failure of the submission checker before the submission deadline. The burden is on the submitter to demonstrate that the submission could not be uploaded to via the web GUI because the checker was defective, and that the tarball passes the submission checker once the defect has been addressed. No other changes to the tarball other than those directly related to the submission checker fix will be allowed. For example, if the submission checker did not mandate one or more of the required compliance tests or any other mandatory file due to the bug, they can be later added to the submission tarball. But if the submission checker has already reported an error for one or missing compliance tests or any other mandatory file even before the bug is fixed, then they cannot be afterwards added to the submission tarball.
 
 #### Post-submission extension for extraordinary circumstances (submission deadline + 72 hours):
 If a submitter notifies the submission chair that their submission will be delayed due to force-majeure-type circumstances (e.g. blizzards, hurricanes, terrorism, etc.), the submission chair will delay sharing results for up to 72 hours to allow that submitter more time to make their submission. The extraordinary nature of the circumstances must be approved by the review committee at the first committee meeting or the submission will be disregarded. 
@@ -599,9 +601,10 @@ This section in progress [TODO].
 
 #### Inference
 
-Submitters must run the compliance tests for their closed and network divisions submissions to verify that their submission achieves a basic level of compliance with a subset of the MLPerf rules. If compliance testing identifies a potential issue with the submission, the onus is on the submitter to provide an adequate explanation to the results review committee.
+Submitters must run the compliance tests for their closed and network divisions submissions to verify that their submission achieves a basic level of compliance with a subset of the MLPerf rules. If a compliance test fails, the submission checker will not allow a submission to closed division. If the submission is instead made to open division, it may be moved to closed division upon an adequate explanation of the compliance test failure to the review committee.
 
 Refer to the documentation found under https://github.com/mlperf/inference/tree/master/compliance/nvidia
+
 
 ## Review
 
