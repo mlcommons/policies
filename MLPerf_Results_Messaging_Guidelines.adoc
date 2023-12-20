@@ -2,21 +2,21 @@
 
 :sectnums:
 
-= MLPerf™ Results Messaging Guidelines
+= MLPerf Results Messaging Guidelines
 
-The MLPerf™ name and logo are trademarks of MLCommons® Association (“MLCommons”) in the United States and other countries. The MLPerf name and logo are used to identify the source of MLCommons Association benchmarks. You may not use the MLPerf name or logo, except in a factual and non-trademark manner solely to accurately represent your benchmark score, in accordance with the following usage terms. Nothing in these MLPerf Results Messaging Guidelines (the “Guidelines”) grants you a license to use the MLPerf trademark or logo, or any other right or interest in or to the MLPerf trademark or logo. 
+The MLPerf® name and logo are trademarks of MLCommons® Association (“MLCommons”) in the United States and other countries. The MLPerf name and logo are used to identify the source of MLCommons Association benchmarks. You may not use the MLPerf name or logo, except in a factual and non-trademark manner solely to accurately represent your benchmark score, in accordance with the following usage terms. Nothing in these MLPerf Results Messaging Guidelines (the “Guidelines”) grants you a license to use the MLPerf trademark or logo, or any other right or interest in or to the MLPerf trademark or logo. 
 
-== Use of MLPerf™ Benchmark for Non-MLCommons Reviewed Results
+== Use of MLPerf Benchmark for Non-MLCommons Reviewed Results
 
-If you used an MLPerf™ benchmark to obtain a result for your product or service but did not submit your product or service for MLCommons review, then your result is unverified, and you must disclose this fact. Submission of MLPerf benchmark results for MLCommons review is restricted to Members of MLCommons (as “Members” is defined in the MLCommons Bylaws) and Test Partners of MLCommons (as “Test Partners” is defined in the Test Partner Agreement); if you are not a Member or Test Partner in good standing, then you may not submit MLPerf benchmark results for MLCommons review.
+If you used an MLPerf benchmark to obtain a result for your product or service but did not submit your product or service for MLCommons review, then your result is unverified, and you must disclose this fact. Submission of MLPerf benchmark results for MLCommons review is restricted to Members of MLCommons (as “Members” is defined in the MLCommons Bylaws) and Test Partners of MLCommons (as “Test Partners” is defined in the Test Partner Agreement); if you are not a Member or Test Partner in good standing, then you may not submit MLPerf benchmark results for MLCommons review.
 
 Since your results have not gone through MLCommons review and, therefore, have not been verified by MLCommons, you must indicate your results are not verified by using the term “unverified” next to each result score and by using the following language when publishing or otherwise discussing your results: “_Result not verified by MLCommons Association._” You can include this statement in a footnote, as described in Section 3 below.
 
-== Use of MLPerf™ Benchmark for MLCommons Reviewed and Verified Results
+== Use of MLPerf Benchmark for MLCommons Reviewed and Verified Results
 
 If you used an MLPerf benchmark to obtain a result for your product or service, you submitted your result for MLCommons review, and your result was verified through such review, you may indicate your results are verified when publishing or otherwise discussing your results, by indicating your results are “verified” or “official” or by otherwise following the examples below for verified results. You may also choose to use this language: “_Result verified by MLCommons Association._” You can include this statement in a footnote, as described in Section 3 below.
 
-== MLPerf™ Benchmark results must clearly identify basic details in the main text, table, or figure
+== MLPerf Benchmark results must clearly identify basic details in the main text, table, or figure
 
 === Required Information
 
@@ -25,21 +25,21 @@ Any disclosure of results must clearly identify the following information in the
 **Example for Non-MLCommons Reviewed Result**: 
 
 [quote]
-SmartAI Corp achieved an unverified score of 0.6 on the MLPerf™ Training v0.7 Image Classification benchmark using a SmartCluster [1].
+SmartAI Corp achieved an unverified score of 0.6 on the MLPerf Training v0.7 Image Classification benchmark using a SmartCluster [1].
   
 **Examples for MLCommons Reviewed Result**: 
 [quote]
-SmartAI Corp achieved a score of 0.6 on the MLPerf™ Training v0.7 Image Classification benchmark using a SmartCluster [1].
+SmartAI Corp achieved a score of 0.6 on the MLPerf Training v0.7 Image Classification benchmark using a SmartCluster [1].
 
 or
 
 [quote]
-SmartAI Corp achieved a verified score of 0.6 on the MLPerf™ Training v0.7 Image Classification benchmark using a SmartCluster [1].
+SmartAI Corp achieved a verified score of 0.6 on the MLPerf Training v0.7 Image Classification benchmark using a SmartCluster [1].
 
 or
 
 [quote]
-SmartAI Corp achieved an official score of 0.6 on the MLPerf™ Training v0.7 Image Classification benchmark using a SmartCluster [1].
+SmartAI Corp achieved an official score of 0.6 on the MLPerf Training v0.7 Image Classification benchmark using a SmartCluster [1].
 
 For Closed Division benchmarks, the model name may be used instead of the benchmark name, e.g. “SSD” instead of “Object Detection (light-weight)”.
 
@@ -52,22 +52,22 @@ For all footnotes required by these Guidelines, the size and color of the footno
 **Example for Non-MLCommons Reviewed Result**: 
 
 [quote]
-[1] Unverified MLPerf™ v0.5 Inference Closed ResNet-v1.5 offline. Result not verified by MLCommons Association. The MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.”
+[1] Unverified MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Result not verified by MLCommons Association. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.”
 
 **Examples for MLCommons Reviewed Result**: 
 
 [quote]
-[1] MLPerf™ v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. Result verified by MLCommons Association. The MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
+[1] MLPerf v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. Result verified by MLCommons Association. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 
 or
 
 [quote]
-[1] Verified MLPerf™ score of v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. The MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
+[1] Verified MLPerf score of v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 
 or
     
 [quote]
-[1] Official MLPerf™ score of v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. The MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
+[1] Official MLPerf score of v0.5 Inference Closed ResNet-v1.5 offline. Retrieved from https://mlcommons.org/en/training-normal-05/ 21 December 2018, entry 0.5-12. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 
 == MLPerf results may only be compared against similar MLPerf results
 
@@ -82,27 +82,27 @@ When comparing results the main text, table, or figure must clearly identify any
 **Example for Non-MLCommons Reviewed Result**: 
 
 ____
-SmartAI Corp achieved an unverified score of 0.6 on the MLPerf™ Image Classification benchmark using a SmartCluster with 8 chips in the RDI category of Closed Division which is faster than the unverified result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Available on-premise category of Closed Division.[1]
+SmartAI Corp achieved an unverified score of 0.6 on the MLPerf Image Classification benchmark using a SmartCluster with 8 chips in the RDI category of Closed Division which is faster than the unverified result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Available on-premise category of Closed Division.[1]
 
-**Required Footnote**: “[1]Result not verified by MLCommons Association. MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
+**Required Footnote**: “[1]Result not verified by MLCommons Association. MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 ____
 
 **Example for MLCommons Reviewed Result**: 
 
 ____
-SmartAI Corp achieved a score of 0.6 on the MLPerf™ Image Classification benchmark using a SmartCluster with 8 chips in the RDI category of Closed Division which is faster than the result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Available on-premise category of Closed Division.[1]
+SmartAI Corp achieved a score of 0.6 on the MLPerf Image Classification benchmark using a SmartCluster with 8 chips in the RDI category of Closed Division which is faster than the result of 7.2 achieved by LessSmartAI Corp with 16 chips in the Available on-premise category of Closed Division.[1]
   
-**Required Footnote**: “[1]Result verified by MLCommons Association. MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.”
+**Required Footnote**: “[1]Result verified by MLCommons Association. MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.”
 ____
 
-Furthermore, a comparison of an unverified result with a verified result must include the following statement in a footnote: “_Unverified results have not been through an MLPerf™ review and may use measurement methodologies and/or workload implementations that are inconsistent with the MLPerf™ specification for verified results._”
+Furthermore, a comparison of an unverified result with a verified result must include the following statement in a footnote: “_Unverified results have not been through an MLPerf review and may use measurement methodologies and/or workload implementations that are inconsistent with the MLPerf specification for verified results._”
 
 **Example (applicable to Non-MLCommons Reviewed Result)**:
   
 ____
-SmartAI Corp announced an unverified score of 0.3 on the MLPerf™ Training Image Classification benchmark using a SmartCluster running MLFramework v4.1.[1].
+SmartAI Corp announced an unverified score of 0.3 on the MLPerf Training Image Classification benchmark using a SmartCluster running MLFramework v4.1.[1].
   
-[1] MLPerf™ v0.5 Training ResNet-v1.5. Result not verified by MLCommons Association. Unverified results have not been through an MLPerf™ review and may use measurement methodologies and/or workload implementations that are inconsistent with the MLPerf™ specification for verified results. The MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
+[1] MLPerf v0.5 Training ResNet-v1.5. Result not verified by MLCommons Association. Unverified results have not been through an MLPerf review and may use measurement methodologies and/or workload implementations that are inconsistent with the MLPerf specification for verified results. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 ____
 
 == When comparing MLPerf Results, use official MLPerf power metrics
@@ -116,27 +116,27 @@ System power measured using the MLPerf Power methodology is the only MLCommons o
 **Examples for MLCommons Reviewed Result**: 
 
 ____
-AI_OEM1 Corp had a MLPerf™ score of 1000fps and a measured power of 200W. Therefore, AI_OEM1 achieved 5fps/W.[1]
+AI_OEM1 Corp had a MLPerf score of 1000fps and a measured power of 200W. Therefore, AI_OEM1 achieved 5fps/W.[1]
  
-**Required Footnote**: “[1]Result verified by MLCommons Association. MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
+**Required Footnote**: “[1]Result verified by MLCommons Association. MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 ____
 
 or
 
 ____
-AI_OEM1 Corp had a MLPerf™ score of 1000fps using Accelerator1-250W while AI_OEM2 Corp had a MLPerf™ perf. score of 900fps using Accelerator1-150W.[1][2]
+AI_OEM1 Corp had a MLPerf score of 1000fps using Accelerator1-250W while AI_OEM2 Corp had a MLPerf perf. score of 900fps using Accelerator1-150W.[1][2]
  
 **Required Footnote 1**: “[1] Note that this comparison does not derive perf/W from the accelerator TDP, but merely differentiates that the two submitters used the same accelerator in a different configuration and obtained different results.”
 
-**Required Footnote 2**: “[2]Result verified by MLCommons Association. MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.”
+**Required Footnote 2**: “[2]Result verified by MLCommons Association. MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.”
 ____
 
 or
 
 ____
-AI_OEM1 Corp had a MLPerf™ score of 1000fps using Accelerator1-250W with a measured system power of 500W. AI_OEM2 Corp had a MLPerf™ score of 900fps using Accelerator1-150W and a measured system power of 400W. Therefore, AI_OEM1 Corp achieved 2fps/W while AI_OEM2 achieved 2.25fps/W using the same accelerator.[1]
+AI_OEM1 Corp had a MLPerf score of 1000fps using Accelerator1-250W with a measured system power of 500W. AI_OEM2 Corp had a MLPerf score of 900fps using Accelerator1-150W and a measured system power of 400W. Therefore, AI_OEM1 Corp achieved 2fps/W while AI_OEM2 achieved 2.25fps/W using the same accelerator.[1]
 
-**Required Footnote**: “[1]Result verified by MLCommons Association. MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
+**Required Footnote**: “[1]Result verified by MLCommons Association. MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 
 (In this case, the submitters are allowed to specify the accelerator TDP configuration since it is part of the SKU name, so the first sentence is valid. However in the second sentence, when they measure power and derive their perf/W score, they used the MLPerf measured power. Therefore the second sentence is also valid and the statement does not violate this rule.)
 ____
@@ -159,9 +159,9 @@ Each MLPerf benchmark has a primary metric, for instance time-to-train for Train
 **Example**: 
 
 ____
-SmartAI Corp has created a new neural network model called MagicEightBall that is 100% accurate for Top-1 image classification on the MLPerf™ v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]. MagicEightBall achieved an unverified score of 20 minutes.
+SmartAI Corp has created a new neural network model called MagicEightBall that is 100% accurate for Top-1 image classification on the MLPerf v0.5 Training Open Division Image Classification benchmark using a cluster of 10 SmartChips running MLFramework v4.1 [1]. MagicEightBall achieved an unverified score of 20 minutes.
   
-[1] Accuracy is not the primary metric of MLPerf™ Training. Result not verified by MLCommons Association. The MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
+[1] Accuracy is not the primary metric of MLPerf Training. Result not verified by MLCommons Association. The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 ____
 
 ## Statements Must be Clear and Correct; No Misrepresentation as to Meaning.
@@ -176,11 +176,11 @@ Do not use the MLPerf name in any manner that is likely to suggest or imply MLCo
 
 === Notice Symbol
   
-You must include the ™ next to all uses of the MLPerf name. Do not use the ® symbol next to the MLPerf name; falsely indicating a mark is registered is a violation.
+You must include the  next to all uses of the MLPerf name. Do not use the ® symbol next to the MLPerf name; falsely indicating a mark is registered is a violation.
   
 === Attribution
   
-You must attribute ownership of the MLPerf mark to MLCommons in all uses of the MLPerf name and you must list the MLCommons website for additional information about the benchmark, as follows: “The MLPerf™ name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.”
+You must attribute ownership of the MLPerf mark to MLCommons in all uses of the MLPerf name and you must list the MLCommons website for additional information about the benchmark, as follows: “The MLPerf name and logo are trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.”
 
 === Do not Alter
   
@@ -188,7 +188,7 @@ Do not alter or separate the MLPerf name, vary the spelling, add hyphens, make o
 
 === Use with Full Benchmark Name
   
-You must follow the MLPerf name with the proper complete benchmark name, e.g., MLPerf™ Training v0.5 Open Image Classification benchmark. Never use the MLPerf name as a verb or noun, or in the possessive or plural forms.
+You must follow the MLPerf name with the proper complete benchmark name, e.g., MLPerf Training v0.5 Open Image Classification benchmark. Never use the MLPerf name as a verb or noun, or in the possessive or plural forms.
 
 === No Use in Company or Product Names
   
