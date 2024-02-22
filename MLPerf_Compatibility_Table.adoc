@@ -20,6 +20,8 @@
 |RNN-T 3+|N/A |X 5+|X |N/A
 |3D U-Net 3+|N/A 7+|X
 |GPT3 7+|N/A 3+|X
+|LLama70B-LoRA 9+|N/A |X
+|GNN 9+|N/A |X
 |===
 
 Metric: Time-to-train (measured in minutes)
