@@ -2,7 +2,9 @@
 :toclevels: 4
 
 N/A : Benchmark not present in a round
+
 X: Change in benchmark. Submission results can be compared across rounds when there has been no change in the benchmark
+
 == Training
 
 |===
