@@ -217,7 +217,7 @@ The exact review period schedule needs to be agreed upon 4 weeks in advance of s
 Each Working Group decides what benchmarks they want in each round.  This is a pipelined process, with the following steps:
 
 . *Carrying Capacity Decision* - Each working group decides how many benchmarks they can handle for this round.
-. *Domain Identification* - Working groups review proposals for domain adds/removals from members.  The working group will attempt to come to majority consensus in 1 or 2 meetings.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.  Working groups may add up to 2 benchmarks max per round, but will strive for 1 or 0 as the typical case. Optionally, working group can tag a benchmark as _experimental_ implying the benchmark is likely to be updated earlier than the otherwise expected lifetime of 2 years. The suite will have at most one benchmark with _experimental_ tag in any round.
+. *Domain Identification* - Working groups review proposals for domain adds/removals from members.  The working group will attempt to come to majority consensus in 1 or 2 meetings.  If consensus cannot be had, this will go to a vote according to the MLCommons voting rules.  Working groups may add up to 2 benchmarks max per round, but will strive for 1 or 0 as the typical case. Optionally, working group can tag a benchmark as _experimental_ implying the benchmark is likely to be updated earlier than the otherwise expected lifetime of 2 years.
 . *Sync Domains* across working groups (e.g. Inference, Training, and HPC)
 . *Identify PIC* (person in charge) to drive this domain addition across all working groups
 . For each domain addition, do the two following steps, possibly in parallel:
