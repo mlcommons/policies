@@ -92,11 +92,11 @@ Note: Submission requires all benchmarks in single stream and MobileNetEdge in s
 == Tiny
 
 |===
-|Model |0.5 |0.7 |1.0 
-|MobileNetV1 2+|X |X
-|ResNet-V1 2+|X* |X
+|Model |0.5 |0.7 |1.0 |1.1 |1.2
+|MobileNetV1 2+|X 3+|X 
+|ResNet-V1 2+|X* 3+|X
 |DSCNN 2+|X |X
-|FC Autoencoder 2+|X |X
+|FC Autoencoder 2+|X 3+|X
 |===
 
 Primary metric: Latency (measured in milliseconds)
