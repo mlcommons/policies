@@ -391,7 +391,6 @@ HPC training submissions follow the above Training directory structure except fo
 ******* mlperf_log_detail.txt
 ******* mlperf_log_accuracy.json # truncated by truncate_accuracy_log.py if too large
 ******* accuracy.txt # stdout of reference accuracy scripts
-*** compliance_checker_log.txt
 ** compliance/
 *** <system_desc_id>/
 **** <benchmark>/
@@ -430,7 +429,6 @@ Here is the list of mandatory files for all submissions in any division/category
 *   code which interfaces with the loadgen 
 *   <system_desc_id>_<implementation_id>_<scenario>.json
 *   <system_desc_id>.json
-*   compliance_checker_log.txt
 
 For some models mlperf_log_accuracy.json can get very large. Because of this we truncate mlperf_log_accuracy.log in submissions
 using a tool.
