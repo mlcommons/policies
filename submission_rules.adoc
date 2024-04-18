@@ -343,7 +343,7 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 
 System names and implementation names may be arbitrary. 
 
-Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, bert, rnnt, unet3d, gpt3, dlrmv2 **}.
+Training benchmark directory names must be one of  { **resnet, ssd, bert, unet3d, gpt3, dlrm_dcnv2, gnn, llama2_70b_lora, stable_diffusion **} for v4.0. Benchmark directory names are determined from the benchmark keywords used in logging repository for compliance checks.
 
 #### HPC
 
