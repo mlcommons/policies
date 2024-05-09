@@ -671,7 +671,7 @@ Hyperparameters may be updated in accordance with the training rules prior to th
 
 ### Withdrawing results or changing division
 
-Anytime up until the final human readable deadline, an entry may be withdrawn by amending the pull request. Alternatively, an entry may be voluntarily moved from the closed or network divisions to the open division. When a submitter withdraws all of their results, their name and system details will still be displayed on the results table, marked with an 'X' across results withdrawn. If a submitter withdraws only a subset of their results while still contributing others to the public table, they will be exempt from being marked ‘X’ on the results table.
+Anytime up until the final human readable deadline, an entry may be withdrawn by amending the pull request. Alternatively, an entry may be voluntarily moved from the closed or network divisions to the open division. Submission withdrawals must be made in good faith, due to legitimate and unexpected competitive issues.
 
 ## Publication 
 
