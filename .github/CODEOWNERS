@@ -3,3 +3,5 @@
 * @mlcommons/policies
 
 /MLPerf_Results_Messaging_Guidelines.adoc @mlcommons/legal
+
+/CODEOWNERS @mlcommons/staff
