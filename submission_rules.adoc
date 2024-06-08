@@ -614,6 +614,7 @@ The following compliance tests are required for each of the folliwing benchmarks
 | gpt-j | - 
 | stable-diffusion-xl | - 
 | Llama2-70b | TEST06 
+| PointPainting | TEST01, TEST04, TEST05
 |===
 
 ## Review
