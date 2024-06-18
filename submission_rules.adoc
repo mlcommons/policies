@@ -415,7 +415,7 @@ System names and implementation names may be arbitrary.
 
 <scenario> must be one of {**Offline, Server, SingleStream, MultiStream**}. 
 
-<test_id> must be one of {**TEST01, TEST04, TEST05**}.
+<test_id> must be one of {**TEST01, TEST04, TEST05, TEST06**}.
 
 Here is the list of mandatory files for all submissions in any division/category. However, your submission should still include all software information and related information for results replication. 
 
@@ -612,8 +612,9 @@ The following compliance tests are required for each of the folliwing benchmarks
 | 3d-unet | TEST01, TEST05
 | rnnt | TEST01, TEST05
 | gpt-j | - 
-| stable-diffusion-xl | - 
+| stable-diffusion-xl | TEST01, TEST04, TEST05 
 | Llama2-70b | TEST06 
+| mixtral-8x7b | TEST06 
 |===
 
 ## Review
