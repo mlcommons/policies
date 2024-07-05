@@ -28,19 +28,20 @@ The MLPerf review and publication process is overseen by a review committee.
 
 The review committee consists of the following people:
 
-*   The relevant working group chairs
-*   The relevant power working group chairs
-*   Optionally, the review chair of relevant working group
-*   The executive director
-*   The president of the board
 *   Representatives of each submitter
+*   The review chair of relevant working group
+*   The relevant working group chairs †
+*   The relevant power working group chairs †
+*   The executive director †
+*   The president of the board †
 
 If representatives of a single organization, its parents, subsidiaries, or
 affiliates hold multiple positions on this list, at most one such representative
 is eligible to vote in the review committee.
 
-The review committee is chaired by the relevant results working group chairs
-unless a review chair is selected.
+The review committee is chaired by the review chair, who should be selected among a group of candidates whose candidacy is approved by unanimous consent among the members who indicate intent to submit in the submission survey of the relevant round. The relevant working group chair or power working group chair may be a valid candidate as the review chair if approved by unanimous consent. If no candidates can be identified as acceptable by unanimous consent, the executive director must make best effort to appoint one from MLC staff who is best qualified in terms of impartiality and familiarity with the rules and subject of the relevant working group, or fulfill the role themselves.
+
+Any submitter may request that any individual serving a role demarcated by † to abstain from the review committee if the individual is deemed by the submitter to be associated with a competitor and the individual must abide by the request.
 
 ### Meetings
 
@@ -78,7 +79,7 @@ from the following list who are able and willing to vote:
 
 If there are two outcomes, voting proceeds by simple majority. If there are more
 than two outcomes, voting proceeds by Condorcet poll with the minimax completion
-rule. Votes are initiated by the chair and are cast openly. Votes may be cast
+rule. Votes are initiated by the review chair and are cast openly. Votes may be cast
 verbally or using a shared spreadsheet or other voting software.
 
 The review committee operates on balance of interests rather than by avoiding
