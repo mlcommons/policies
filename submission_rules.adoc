@@ -29,17 +29,17 @@ The MLPerf review and publication process is overseen by a review committee.
 The review committee consists of the following people:
 
 *   Representatives of each submitter
-*   The review chair of relevant working group
+*   The review chairs of relevant working group
+*   The executive director
+*   The president of the board
 *   The relevant working group chairs †
 *   The relevant power working group chairs †
-*   The executive director †
-*   The president of the board †
 
 If representatives of a single organization, its parents, subsidiaries, or
 affiliates hold multiple positions on this list, at most one such representative
 is eligible to vote in the review committee.
 
-The review committee is chaired by the review chair, who should be selected among a group of candidates whose candidacy is approved by unanimous consent among the members who indicate intent to submit in the submission survey of the relevant round. The relevant working group chair or power working group chair may be a valid candidate as the review chair if approved by unanimous consent. If no candidates can be identified as acceptable by unanimous consent, the executive director must make best effort to appoint one from MLC staff who is best qualified in terms of impartiality and familiarity with the rules and subject of the relevant working group, or fulfill the role themselves.
+The review committee is driven by the review chairs, one of who is an MLC staff member. The other should be selected among a group of candidates whose candidacy is approved by unanimous consent among members who indicate intent to submit in the submission survey of the relevant round. The relevant working group chair or power working group chair may be a valid candidate as the review chair if approved by unanimous consent. If no candidates can be identified as acceptable by unanimous consent, the executive director must make best effort to appoint one from MLC staff who is best qualified in terms of impartiality and familiarity with the rules and subject of the relevant working group, or fulfill the role themselves.
 
 Any submitter may request that any individual serving a role demarcated by † to abstain from the review committee if the individual is deemed by the submitter to be associated with a competitor and the individual must abide by the request.
 
