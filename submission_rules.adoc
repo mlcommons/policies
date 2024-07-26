@@ -42,6 +42,8 @@ is eligible to vote in the review committee.
 The review committee is chaired by the relevant results working group chairs
 unless a review chair is selected.
 
+If there are more than two nominees for review chair positions, they shall be elected following the company's Directors Election Policies
+
 ### Meetings
 
 The review committee makes decisions during properly scheduled meetings. The
