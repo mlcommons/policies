@@ -373,7 +373,7 @@ HPC training submissions follow the above Training directory structure except fo
 *** <system_desc_id>/
 **** <benchmark>/
 ***** <scenario>
-****** <system_desc_id>_<implementation_id>_<scenario>.json
+****** model-info.json
 ****** README.md
 ****** user.conf
 ****** mlperf.conf
@@ -427,7 +427,7 @@ Here is the list of mandatory files for all submissions in any division/category
 *   actual models if the models are not deterministically generated
 *   READMEs to enable users to replicate performance results
 *   code which interfaces with the loadgen 
-*   <system_desc_id>_<implementation_id>_<scenario>.json
+*   model-info.json
 *   <system_desc_id>.json
 
 For some models mlperf_log_accuracy.json can get very large. Because of this we truncate mlperf_log_accuracy.log in submissions
@@ -509,9 +509,9 @@ In the Network division for the inference datacenter the file <system_desc_id>.j
 
 
 
-### <system_desc_id>_<implementation_id>_<scenario>.json metadata
+### model-info.json metadata
 
-The file <system_desc_id>_<implementation_id>.json should contain metadata describing use of the specified implementation on the specified system.
+The file model-info.json should contain metadata describing use of the specified implementation on the specified system.
 
 
 |===
