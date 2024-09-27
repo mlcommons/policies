@@ -336,10 +336,14 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 *** <system_desc_id>/
 **** <benchmark>/
 ***** result_<i>.txt   # log file
+***** power  # optional power logs
+****** result_<i>
+******* node_<j>.txt
+******* sw_<k>.txt
 
 System names and implementation names may be arbitrary. 
 
-Training benchmark directory names must be one of  { **resnet, ssd, maskrcnn, bert, rnnt, unet3d, gpt3, dlrmv2 **}.
+Training benchmark directory names must be one of  { **resnet, ssd, bert, unet3d, gpt3, dlrm_dcnv2, gnn, llama2_70b_lora, stable_diffusion **} for v4.0. Benchmark directory names are determined from the benchmark keywords used in logging repository for compliance checks.
 
 #### HPC
 
@@ -387,7 +391,6 @@ HPC training submissions follow the above Training directory structure except fo
 ******* mlperf_log_detail.txt
 ******* mlperf_log_accuracy.json # truncated by truncate_accuracy_log.py if too large
 ******* accuracy.txt # stdout of reference accuracy scripts
-*** compliance_checker_log.txt
 ** compliance/
 *** <system_desc_id>/
 **** <benchmark>/
@@ -412,7 +415,7 @@ System names and implementation names may be arbitrary.
 
 <scenario> must be one of {**Offline, Server, SingleStream, MultiStream**}. 
 
-<test_id> must be one of {**TEST01, TEST04, TEST05**}.
+<test_id> must be one of {**TEST01, TEST04, TEST05, TEST06**}.
 
 Here is the list of mandatory files for all submissions in any division/category. However, your submission should still include all software information and related information for results replication. 
 
@@ -426,7 +429,6 @@ Here is the list of mandatory files for all submissions in any division/category
 *   code which interfaces with the loadgen 
 *   <system_desc_id>_<implementation_id>_<scenario>.json
 *   <system_desc_id>.json
-*   compliance_checker_log.txt
 
 For some models mlperf_log_accuracy.json can get very large. Because of this we truncate mlperf_log_accuracy.log in submissions
 using a tool.
@@ -602,6 +604,22 @@ Submitters must run the compliance tests for their closed and network divisions 
 
 Refer to the documentation found under https://github.com/mlperf/inference/tree/master/compliance/nvidia
 
+The following compliance tests are required for each of the folliwing benchmarks:
+
+|===
+| model | Required Compliance Tests
+| resnet50-v1.5 | TEST01, TEST04, TEST05
+| retinanet 800x800 | TEST01, TEST05
+| bert | TEST01, TEST05
+| dlrm-v2 | TEST01, TEST05
+| 3d-unet | TEST01, TEST05
+| rnnt | TEST01, TEST05
+| gpt-j | - 
+| stable-diffusion-xl | TEST01, TEST04, TEST05 
+| Llama2-70b | TEST06 
+| mixtral-8x7b | TEST06 
+|===
+
 ## Review
 
 
@@ -626,27 +644,6 @@ Each submitter is required to review at least one other submission. Required rev
 . If an odd number of reviewers, the bottom 3 in the stack rank will review each other.
 
 ### Auditing
-
-#### Training
-
-In order to reduce the burden on the submitter as well as the Submitter’s Working Group (SWG) during the review period, submitters shall ensure compliance with RCP tests ahead of the submission deadline. Submissions that need new RCPs are required to supply those RCPs at the same time as their submission, as specified in the Training Rules document. While providing new RCPs, a submitter must also include reference run logs for the SWG and reference owner to review.
-
-Submissions with failing RCP tests are rejected by default until the SWG approves the submission. Submitters shall notify the SWG in advance of a potential RCP failure, so they can prefetch requests for additional data and minimize churn during the review period.  A submitter requesting approval for a submission with failing RCP test shall provide additional explanatory data to the SWG explaining why the WG should consider the non-compliant submission a fair comparison to compliant submissions. This list will be decided by the WG for each submission individually. 
-
-A non-exhaustive list of potential requests of data is: 
-
-1. Written statement from the submitter explaining the plausible cause of deviation. This should also be supported by data from A/B experiments.
-2. Logs showing training loss of the submission vs training loss of the reference. Note that the reference run should be on reference hardware platform in FP32
-3. Model summary showing number of trainable_parameters (weights) in the model vs the same. 
-4. Debugging via comparing intermediate activations, distributions of initialization weights, and/or compliant randomization on the reference vs the submission.
-The SWG may further request additional information, not listed above, at their discretion.
-
-A submitter requesting approval for their RCP failing submission during the review period shall provide requested information in a timely manner. All evidence supporting the appeal is due at the latest by the end of Review Week 1.  For resubmissions during the review period, all appeal evidence is due at the time of resubmission.
-
-The SWG must come to majority consensus to approve a submission that fails the RCP test.  If the SWG cannot come to majority consensus to approve a submission, then potential alternatives are:
-
-1. Normalize submission run epochs to reference epochs to pass RCP test irrespective of accuracy achieved
-2. Submission is withdrawn due to non-compliance
 
 ### Filing objections
 
