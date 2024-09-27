@@ -449,6 +449,7 @@ The file <system_desc_id>.json should contain the following metadata describing 
 | submitter | Yes | Google | David Kanter | David Kanter
 | division | Yes | closed | Closed | Open
 | system_type | Yes | datacenter | datacenter | edge
+| system_type_detail | ^2^ | cloud | edge-server | edge-device
 | status | Yes | available | available | available
 |  |  |  |  |
 | system_name | Yes | tpu-v3 | 8ball | 8ball
@@ -486,6 +487,8 @@ The file <system_desc_id>.json should contain the following metadata describing 
 |===
 
 ^1^ Optional for preview system submission. These fields must be updated in the system description json upon the public availability of the processor.
+
+^2^ Optional for submitters to add more specific system type. Some possible values for `system_type_detail` are `cloud` and `on-premise` for datacenter category and `edge-server` and `edge-device` for edge category.
 
 
 In the Network division for the inference datacenter the file <system_desc_id>.json should also contain:
