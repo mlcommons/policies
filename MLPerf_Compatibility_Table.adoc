@@ -23,6 +23,7 @@ X: Change in benchmark. Submission results can be compared across rounds when th
 |RNN-T 3+|N/A |X 5+|X 2+|N/A
 |3D U-Net 3+|N/A 7+|X |N/A
 |GPT3 7+|N/A 4+|X
+|Stable Diffusionv2 8+|N/A 3+|X
 |LLama70B-LoRA 9+|N/A 2+|X
 |RGAT 9+|N/A 2+|X
 |===
