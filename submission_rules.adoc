@@ -430,10 +430,9 @@ Here is the list of mandatory files for all submissions in any division/category
 *   model-info.json
 *   <system_desc_id>.json
 
-For some models mlperf_log_accuracy.json can get very large. Because of this we truncate mlperf_log_accuracy.log in submissions
+For some models mlperf_log_accuracy.json can get very large. Because of this we truncate mlperf_log_accuracy.json in submissions
 using a tool.
-A submiter will run the tool before submitting to mlperf and ***keep*** the original mlperf_log_accuracy.log files inside their organization.
-The original files might be requested by mlperf during submission review so you need to store them.
+A submiter will run the tool before submitting to mlperf and submit the truncated mlperf_log_accuracy.json files inside their organization.
 Run the tool as follows, assuming <SOURCE> is your local subumission tree and <DEST> the location of the github submission repo:
 
 ```
