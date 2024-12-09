@@ -220,4 +220,8 @@ MLCOMMONS IS NOT RESPONSIBLE FOR ANY PRODUCTS YOU MAY CHOOSE TO PURCHASE OR CHOO
 
 MLCommons makes no representations whatsoever about any other website that you may access through the Website. MLCommons has no control over the content or claims of websites outside the MLCommons control, and does not endorse or accept any responsibility for the content of such websites.
 
+== Use of MLPerf® Client Application
+
+If you have used the MLPerf Client Application for reproducing benchmark results of configurations that have been tested by MLCommons or of configurations that have not been tested by MLCommons, please do not use these Guidelines for messaging your results. Rather, please see the MLPerf Client Application End User License Agreement included with the Application.
+
 If you have any questions regarding these Guidelines, please contact MLCommons at trademark@mlcommons.org.
