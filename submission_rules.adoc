@@ -362,7 +362,7 @@ HPC training submissions follow the above Training directory structure except fo
 
 #### Inference
 
-For MLPerf inference there is an automated way to generate the official directory structure and instructions for that can be found [here](https://docs.mlcommons.org/inference/submission/#__tabbed_1_2).
+For MLPerf inference there is an automated way to generate the official directory structure and instructions for that can be found [here](https://docs.mlcommons.org/inference/submission).
 
 * <submitting_organization>/
 ** systems/
@@ -433,7 +433,7 @@ Here is the list of mandatory files for all submissions in any division/category
 *   <system_desc_id>.json
 
 For some models mlperf_log_accuracy.json can get very large. Because of this we truncate mlperf_log_accuracy.json in submissions using a tool.
-A submiter will run the tool before submitting to mlperf (not required if you have generated the submission structure using the [MLPerf Submission Automation](https://docs.mlcommons.org/inference/submission/#__tabbed_1_2) and submit the truncated mlperf_log_accuracy.json files inside their organization.
+A submiter will run the tool before submitting to mlperf (not required if you have generated the submission structure using the [MLPerf Submission Automation](https://docs.mlcommons.org/inference/submission/)) and submit the truncated mlperf_log_accuracy.json files inside their organization.
 
 Run the tool as follows, assuming <SOURCE> is your local subumission tree and <DEST> the location of the github submission repo:
 
