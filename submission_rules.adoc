@@ -363,7 +363,7 @@ HPC training submissions follow the above Training directory structure except fo
 #### Inference
 
 For **MLPerf Inference**, there is an **automated way** to generate the official directory structure.  
-Instructions for this can be found [here](https://docs.mlcommons.org/inference/submission).
+Instructions for this can be found https://docs.mlcommons.org/inference/submission[here].
 
 
 * <submitting_organization>/
