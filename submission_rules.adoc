@@ -620,6 +620,7 @@ The following compliance tests are required for each of the folliwing benchmarks
 | Llama3.1-405b | TEST06 
 | mixtral-8x7b | TEST06 
 | rgat | TEST01
+| PointPainting | TEST01, TEST04
 |===
 
 * TEST05 is removed from Inference submissions v5.0
