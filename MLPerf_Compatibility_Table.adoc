@@ -83,7 +83,7 @@ Edge
 | BERT|N/A 10+|X
 | RNN-T|N/A 8+|X 2+|N/A
 | 3D U-Net|N/A 10+|X
-| GPT-J 7+|N/A 3+|X|N/A
+| GPT-J 7+|N/A 4+|X
 | Llama2-70b 11+|N/A
 | Stable-diffusion-xl 8+|N/A 3+|X
 | Automotive PointPainting 10+|N/A| X |
