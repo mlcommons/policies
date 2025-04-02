@@ -773,21 +773,71 @@ Any use of published results in connection with the MLPerf trademark must follow
 
 
 ### Issues discovered after publication
+#### Scope
 
-#### Scenario
-Results posted on mlperf.org have been generated from a non-compliant submission, and the fix results in >5% cumulative reduction in performance.
+An objection committee is responsible for reviewing and deciding questions of MLPerf rules compliance involving results already published by MLCommons.
 
-#### Process flow
-Any MLCommons member may raise an objection to any published results via email to any MLCommons WG chair. An objection review committee (minimally four MLPerf chairs) will screen the objection. If rejected at this stage, the committee chair will respond to the objector with the reasoning.
+#### Composition of the Objection Committee
 
-Otherwise, the committee will designate an investigator with no conflict of interest to produce a brief (e.g. 1 page) report confidential to the committee, which will include a response from the submitter of the disputed result. Based on the report, the committee will respond to the objector or start further investigation on a case-by-case basis.
+An objection committee will be formed to consider and adjudicate a claim that cannot be resolved otherwise. The committee will be composed of the individuals occupying the following positions:
 
-#### Possible investigation outcomes
+*   The MLCommons Head of MLPerf or a designated staff member who is familiar with the MLPerf rules
+*   The chair or chairs of the MLPerf Training working group
+*   The chair or chairs of the MLPerf Inference working group
+
+If any of the working group chairs specified above have a conflict of interest in a matter before the committee, they shall recuse themselves.
+
+If the size of the committee is less than three due to recusals or other attrition, then the Head of MLPerf shall designate a second staff member to act as a committee member as needed.
+
+If the committee is reviewing an objection at the time of a transition between chairs, any chairpersons participating in the committee shall continue serving until the matter at hand is decided.
+
+#### Process
+Any MLCommons member may raise an objection to any published results, initially by bringing the issue to the chairs for discussion in the working group meetings or via email to the submitter involved in the objection. If the issue cannot be resolved to the satisfaction of the complainant at this stage, it will be escalated via email to the objection committee.
+
+The email request to the objection committee must include detailed information about the issue. For example:
+
+*   Log files with runs
+*   Screenshots and links that show non-availability
+*   Statement of the specific part of the rules that has been violated and why
+
+If the issue with the result in question is performance related, the fix for the issue must result in a cumulative performance reduction of at least 5% in order to be considered. Because power and accuracy results can be more variable, objections to such results shall be reviewed by the committee at its discretion.
+
+If the objection meets these requirements, the objection committee will screen the objection. If the committee decides not to consider the objection further at this stage, the committee chair will respond to the objector with its reasoning.
+
+If the committee decides to consider the objection, the committee may pursue multiple avenues for gathering the information needed to make its decision. Some of those options include:
+
+*   Asking for more information from the company involved with the issue or the complainant. 
+*   Designating an investigator with no conflict of interest to produce a brief (e.g., one-page) report confidential to the committee, which will include a response from the submitter of the disputed result.
+*   Asking representatives of the submitter companies for the benchmark round in question to meet and provide a report to the committee with a recommendation on how to handle the objection. This measure may be particularly helpful if the committee is weighing technical questions that require engineering expertise related to the benchmarks in question.
+
+Because the submitter has produced the results and represented them as valid, the submitter will bear the burden of proving that its result is compliant with the MLPerf rules.
+
+Based on its findings, the objection committee will determine by consensus or, if needed, majority vote of the committee whether the objection is valid and will decide the appropriate remedies and penalties, if any. If the committee cannot come to a decision, then no further action will be taken.
+
+#### Possible Investigation Outcomes and Remedies
 1. The objection is not valid.
-2. The result-in-question is moved to open for noncompliance with the rules.
-3. The result-in-question is removed due to intentional cheating.
+2. The result in question is moved to a different division or availability category where it is compliant. The submitter may also choose to withdraw the result if they would prefer not to accept the committee’s decision to move the result to a different division or availability category.
+3. The result in question is invalidated.
 
+Additionally, MLCommons shall note the change to the results in a public change log section on the MLCommons website either on the results page or linked from it. This notice should include the round of the results in question, the date when the change was made, the nature of the change, and the basic reason why the change was made.
 
+The committee shall direct the submitter of results found to be in violation of the rules to make corrections to any public or published materials containing those results. If the results are invalidated, then those results should not be used in any marketing materials. If the results are modified, then any marketing materials referring to the aspects of the results that were modified shall be updated to reflect the changes.
+
+While the committee will strive for consistency and fairness in its decisions, those decisions shall not be considered binding precedents for future disputes. If in the course of deliberation the committee identifies an opportunity to improve or clarify the MLPerf rules, the committee shall notify the Head of MLPerf that a rules change should be considered.
+
+#### Potential Additional Penalties
+For more serious or repeated violations of the rules, the committee may make a recommendation to the board of directors about the best action to take. For example, the committee could recommend the revocation of results publication rights for the member in violation. The board will then decide the appropriate action to take.
+
+#### Confidentiality and Documentation
+For a given objection, the proceedings of the committee and any related information shall be kept confidential between the committee members, the objector, the submitters of the reviews in question, essential MLCommons staff, and any other participants in the proceedings.
+
+The committee will keep a history of all the issues that have been raised. This history shall be confidential to the objection committee and MLCommons staff. It shall include the following elements:
+
+*   Any results objections made and about which submitter’s results they were made.
+*   The objecting party.
+*   A concise explanation of the committee’s decision and the reasons for it.
+*   Any relevant documents, including supporting logs and other assets.
+*   The composition of the committee at the time of the decision.
 
 
 ## Appendices
