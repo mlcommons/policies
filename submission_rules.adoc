@@ -410,7 +410,7 @@ System names and implementation names may be arbitrary.
 
 All submission content should align to the above directory structure, even when not enforced by submission support tools such as submission-checker.py. Content should not reside outside of the <submitter_organization> direct sub-directories: {**systems, code, documentation, results**}.
 
-<benchmark> must be one of {**3d-unet-99, 3d-unet-99.9, dlrm-v2-99, dlrm-v2-99.9, gptj-99, gptj-99.9, llama2-70b-99, llama2-70b-99.9, llama2-70b-interactive-99, llama2-70b-interactive-99.9, llama3.1-405b, mixtral-8x7b, resnet, retinanet, rgat, stable-diffusion-xl**}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy. 
+<benchmark> must be one of the supported models configurations for the current round as listed in [submission-checker.py](https://github.com/mlcommons/inference/blob/master/tools/submission/submission_checker.py). 
 
 <scenario> must be one of {**Offline, Server, SingleStream, MultiStream or Interactive**}.
 
