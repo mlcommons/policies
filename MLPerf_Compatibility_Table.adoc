@@ -1,7 +1,9 @@
 :toc:
 :toclevels: 4
 
-An ‘X’ in a cell indicates that the corresponding model was included in the benchmark for that version, while ‘N/A’ means it was not applicable or not available for that version.
+N/A : Benchmark not present in a round
+
+X: Change in benchmark. Submission results can be compared across rounds when there has been no change in the benchmark
 
 == Training
 
