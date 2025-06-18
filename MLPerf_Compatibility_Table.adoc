@@ -116,6 +116,17 @@ Primary metrics: Latency (measured in milliseconds) (single stream), Samples/sec
 
 Note: Submission requires all benchmarks in single stream and MobileNetEdge in single stream and offline
 
+== Storage
+
+|===
+|Model |0.5 |1.0 |2.0
+|Bert |X |N/A |N/A 
+|3D-Unet |X |X |X 
+|ResNet-50 v1.5 |N/A |X |X 
+|Cosmoflow |N/A |X |X
+|===
+
+Metrics: Number of accelerators that can be supported without dropping below X% Accelerator Utilization (where X depends upon the model), Throughput (aggregate read bandwidth)
 
 == Tiny
 
