@@ -121,13 +121,13 @@ Note: Submission requires all benchmarks in single stream and MobileNetEdge in s
 |===
 |Model |0.5 |1.0 |2.0
 |Bert |X 2+|N/A
-|3D-Unet |X |X |X 
-|ResNet-50 v1.5 |N/A |X |X 
-|Cosmoflow |N/A |X |X
+|3D-Unet 3+|X 
+|ResNet-50 v1.5 |N/A 2+|X 
+|Cosmoflow |N/A 2+|X
 |Llama 3 8B Checkpoints 2+|N/A |X
 |Llama 3 70B Checkpoints 2+|N/A |X
 |Llama 3 405B Checkpoints 2+|N/A |X
-|Llama 3 1250B Checkpoints 2+|N/A |X
+|Llama 3 1.2T Checkpoints 2+|N/A |X
 |===
 
 Metrics: Number of accelerators that can be supported without dropping below X% Accelerator Utilization (where X depends upon the model), Throughput (aggregate read bandwidth)
