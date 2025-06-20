@@ -120,7 +120,7 @@ Note: Submission requires all benchmarks in single stream and MobileNetEdge in s
 
 |===
 |Model |0.5 |1.0 |2.0
-|Bert |X 2+|N/A
+|BERT |X 2+|N/A
 |3D-Unet 3+|X 
 |ResNet-50 v1.5 |N/A 2+|X 
 |Cosmoflow |N/A 2+|X
