@@ -48,45 +48,50 @@ Metrics: Time-to-train (measured in minutes) and throughput (weak scaling - meas
 Datacenter
 |===
 
-|Model | 0.5 | 0.7 | 1.0 | 1.1 | 2.0 | 2.1 | 3.0 | 3.1 | 4.0 | 4.1 | 5.0 
-|MobileNet-v1|X 10+|N/A
-|ResNet-50 v1.5 11+| X  
-|SSD-MobileNets 8+| X 3+|N/A
-|SSD-ResNet34 5+|X 6+|N/A
-|RetinaNet-ResNeXt50 5+|N/A 6+|X
-|NMT|X 10+|N/A
-|DLRM|N/A 6+|X 4+|N/A
-|DLRM-v2 7+|N/A 4+|X
-|BERT|N/A 9+|X |N/A
-|RNN-T|N/A 8+|X 2+|N/A
-|3D U-Net|N/A 10+|X
-|GPT-J 7+|N/A 4+|X
-|Llama2-70b 8+|N/A 3+|X
-|Stable-diffusion-xl 8+|N/A 3+|X
-|Mixtral-8x7b 9+|N/A 2+|X
-|Llama 3.1 405B 10+|N/A |X
-|Llama 2 70B interactive 10+|N/A |X
-|RGAT 10+|N/A |X
+|Model | 0.5 | 0.7 | 1.0 | 1.1 | 2.0 | 2.1 | 3.0 | 3.1 | 4.0 | 4.1 | 5.0 | 5.1 
+|MobileNet-v1 |X 11+|N/A
+|ResNet-50 v1.5 11+|X |N/A
+|SSD-MobileNets 8+| X 4+|N/A
+|SSD-ResNet34 5+|X 7+|N/A
+|RetinaNet-ResNeXt50 5+|N/A 7+|X
+|NMT |X 11+|N/A
+|DLRM |N/A 6+|X 5+|N/A
+|DLRM-v2 7+|N/A 5+|X
+|BERT |N/A 9+|X 2+|N/A
+|RNN-T |N/A 8+|X 3+|N/A
+|3D U-Net |N/A 10+|X |N/A
+|GPT-J 7+|N/A 4+|X |N/A
+|Llama2-70b 8+|N/A 4+|X
+|Stable-diffusion-xl 8+|N/A 4+|X
+|Mixtral-8x7b 9+|N/A 3+|X
+|Llama 3.1 405B 10+|N/A 2+|X
+|Llama 2 70B interactive 10+|N/A 2+|X
+|RGAT 10+|N/A 2+|X
+|Llama 3.1 8B 11+|N/A |X
+|Whisper 11+|N/A |X
+|DeepSeek R1 11+|N/A |X
 
 |===
 
 Edge
 |===
-| Model | 0.5 | 0.7 | 1.0 | 1.1 | 2.0 | 2.1 | 3.0 | 3.1 | 4.0 | 4.1 | 5.0 
-| MobileNet-v1 | X 10+|N/A
-| ResNet-50 v1.5 11+|X 
-| SSD-MobileNets 8+|X 3+|N/A
-| SSD-ResNet34 5+|X 6+|N/A
-| RetinaNet-ResNeXt50 5+|N/A 6+|X
-| NMT |X 10+|N/A
-| DLRM|N/A 6+|X 4+|N/A
-| DLRM-v2 7+|N/A |X 3+|N/A
-| BERT|N/A 10+|X
-| RNN-T|N/A 8+|X 2+|N/A
-| 3D U-Net|N/A 10+|X
-| GPT-J 7+|N/A 4+|X
-| Stable-diffusion-xl 8+|N/A 3+|X
-| Automotive PointPainting 10+|N/A| X |
+| Model | 0.5 | 0.7 | 1.0 | 1.1 | 2.0 | 2.1 | 3.0 | 3.1 | 4.0 | 4.1 | 5.0 | 5.1 
+| MobileNet-v1 | X 11+|N/A
+| ResNet-50 v1.5 12+|X 
+| SSD-MobileNets 8+|X 4+|N/A
+| SSD-ResNet34 5+|X 7+|N/A
+| RetinaNet-ResNeXt50 5+|N/A 7+|X
+| NMT |X 11+|N/A
+| DLRM|N/A 6+|X 6+|N/A
+| DLRM-v2 7+|N/A |X 4+|N/A
+| BERT|N/A 11+|X
+| RNN-T|N/A 8+|X 3+|N/A
+| 3D U-Net|N/A 11+|X
+| GPT-J 7+|N/A 4+|X |N/A 
+| Stable-diffusion-xl 8+|N/A 4+|X
+| Automotive PointPainting 10+|N/A 2+|X
+| Llama 3.1 8B 11+|N/A |X
+| Whisper 11+|N/A |X
 |===
 
 Metrics: Queries/second (server), Samples/second (offline),  Latency (measured in milliseconds) (single stream), Streams (multi-stream v0.5-v1.1), Latency (measured in milliseconds) (multi-stream 2.0+)
