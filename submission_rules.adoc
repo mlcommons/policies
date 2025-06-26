@@ -413,7 +413,9 @@ System names and implementation names may be arbitrary.
 
 <benchmark> must be one of {**resnet50, retinanet, rnnt, bert-99, bert-99.9, dlrm-99, dlrm-99.9, 3d-unet-99, 3d-unet-99.9**}. The postfix '-99' and '-99.9' indicate that the accuracy must be >= 99% or 99.9% of the target accuracy. 
 
-<scenario> must be one of {**Offline, Server, SingleStream, MultiStream**}. 
+<scenario> must be one of {**Offline, Server, SingleStream, MultiStream or Interactive**}.
+
+**Note:** The interactive scenario is a variation of the server scenario with stricter latency requirements. LoadGen should run the server scenario with the interactive specific latecies.
 
 <test_id> must be one of {**TEST01, TEST04, TEST05, TEST06**}.
 
