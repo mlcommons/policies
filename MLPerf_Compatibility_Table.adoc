@@ -8,25 +8,27 @@ X: Change in benchmark. Submission results can be compared across rounds when th
 == Training
 
 |===
-|Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 |2.1 |3.0 | 3.1 | 4.0 | 4.1 | 5.0
-|ResNet-50 v1.5 |X 9+|X 2+|N/A
-|SSD-ResNet34 |X 4+|X 7+|N/A 
-|RetinaNet-ResNeXt50 5+|N/A 7+|X 
-|MaskRCNN |X 8+|X 3+|N/A 
-|NCF |X 11+|N/A 
-|NMT 3+|X 9+|N/A 
-|Transformer 3+|X 9+|N/A
-|MiniGo 7+|X 5+|N/A
-|DLRM 2+|N/A 5+|X 5+|N/A
-|DLRM-dcnv2 7+|N/A 5+|X
-|BERT 3+|N/A 9+|X 
-|RNN-T 3+|N/A |X 5+|X 3+|N/A
-|3D U-Net 3+|N/A 7+|X 2+|N/A
-|GPT3 7+|N/A 4+|X |N/A
-|Stable Diffusionv2 8+|N/A 4+|X
-|LLama70B-LoRA 9+|N/A 3+|X
-|RGAT 9+|N/A 3+|X
-|Llama3.1 405b 11+|N/A |X
+|Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 |2.1 |3.0 | 3.1 | 4.0 | 4.1 | 5.0 | 5.1
+|ResNet-50 v1.5 |X 9+|X 3+|N/A
+|SSD-ResNet34 |X 4+|X 8+|N/A 
+|RetinaNet-ResNeXt50 5+|N/A 8+|X 
+|MaskRCNN |X 8+|X 4+|N/A 
+|NCF |X 12+|N/A 
+|NMT 3+|X 10+|N/A 
+|Transformer 3+|X 10+|N/A
+|MiniGo 7+|X 6+|N/A
+|DLRM 2+|N/A 5+|X 6+|N/A
+|DLRM-dcnv2 7+|N/A 6+|X
+|BERT 3+|N/A 9+|X |N/A
+|RNN-T 3+|N/A |X 5+|X 4+|N/A
+|3D U-Net 3+|N/A 7+|X 3+|N/A
+|GPT3 7+|N/A 4+|X 2+|N/A
+|Stable Diffusionv2 8+|N/A 4+|X |N/A
+|LLama70B-LoRA 9+|N/A 4+|X
+|RGAT 9+|N/A 4+|X
+|Llama3.1 405b 11+|N/A 2+|X
+|Llama3.1 8b 12+|N/A |X
+|FLUX.1 12+|N/A |X
 |===
 
 Metric: Time-to-train (measured in minutes)
