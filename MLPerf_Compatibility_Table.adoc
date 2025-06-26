@@ -28,6 +28,7 @@ X: Change in benchmark. Submission results can be compared across rounds when th
 |RGAT 9+|N/A 4+|X
 |Llama3.1 405b 11+|N/A 2+|X
 |Llama3.1 8b 12+|N/A |X
+|FLUX.1 12+|N/A |X
 |===
 
 Metric: Time-to-train (measured in minutes)
