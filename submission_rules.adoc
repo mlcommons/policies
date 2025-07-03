@@ -28,19 +28,18 @@ The MLPerf review and publication process is overseen by a review committee.
 
 The review committee consists of the following people:
 
-*   The relevant working group chairs
-*   The relevant power working group chairs
-*   Optionally, the review chair of relevant working group
-*   The executive director
-*   The president of the board
 *   Representatives of each submitter
+*   The review chairs of relevant working group
+*   The head of MLPerf
+*   The president of the board
+*   The relevant working group chairs †
+*   The relevant power working group chairs †
 
 If representatives of a single organization, its parents, subsidiaries, or
 affiliates hold multiple positions on this list, at most one such representative
 is eligible to vote in the review committee.
 
-The review committee is chaired by the relevant results working group chairs
-unless a review chair is selected.
+The review committee is setup before submission and is driven by review chairs who are selected among a group of candidates whose candidacy is approved by unanimous consent among members who indicate intent to submit in the submission survey of the relevant round. An impartial MLC staff member familiar with the rules and subject of the relavant working group can be a valid candidate. The relevant working group chair or power working group chair may be a valid candidate as well if approved by unanimous consent. If no candidates can be identified as acceptable by unanimous consent, the head of MLPerf must make best effort to appoint one, or fulfill the role themselves.
 
 ### Meetings
 
