@@ -77,7 +77,7 @@ from the following list who are able and willing to vote:
 
 If there are two outcomes, voting proceeds by simple majority. If there are more
 than two outcomes, voting proceeds by Condorcet poll with the minimax completion
-rule. Votes are initiated by the chair and are cast openly. Votes may be cast
+rule. Votes are initiated by the review chair and are cast openly. Votes may be cast
 verbally or using a shared spreadsheet or other voting software.
 
 The review committee operates on balance of interests rather than by avoiding
