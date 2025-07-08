@@ -363,6 +363,9 @@ HPC training submissions follow the above Training directory structure except fo
 #### Inference
 
 * <submitting_organization>/
+** documentation/
+*** bandwidth_requirement.md
+*** calibration.md
 ** systems/
 *** <system_desc_id>.json   # combines hardware and software stack information
 ** code/
