@@ -67,7 +67,6 @@ Datacenter
 |Stable-diffusion-xl 8+|N/A 4+|X
 |Mixtral-8x7b 9+|N/A 3+|X
 |Llama 3.1 405B 10+|N/A 2+|X
-|Llama 2 70B interactive 10+|N/A 2+|X
 |RGAT 10+|N/A 2+|X
 |Llama 3.1 8B 11+|N/A |X
 |Whisper 11+|N/A |X
