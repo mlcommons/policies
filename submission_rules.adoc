@@ -653,7 +653,7 @@ Each submitter is required to review at least one other submission. Required rev
 . If an odd number of reviewers, the bottom 3 in the stack rank will review each other.
 
 #### large scale submission review assignment (training only)
-For large scale training submissions (using 1K or more accelerators/processors), these submissions are excluded from the standard stack rank based review assignment by the number of results. Instead, submitters with the highest scale submissions will review each other, with assignments determined by stack rank on the scale of submission. 
+For large scale training submissions (using 512 or more accelerators/processors), these submissions are excluded from the standard stack rank based review assignment by the number of results. Instead, submitters with the highest scale submissions will review each other, with assignments determined by stack rank on the scale of submission. 
 
 ### Auditing
 
