@@ -28,19 +28,18 @@ The MLPerf review and publication process is overseen by a review committee.
 
 The review committee consists of the following people:
 
-*   The relevant working group chairs
-*   The relevant power working group chairs
-*   Optionally, the review chair of relevant working group
-*   The executive director
-*   The president of the board
 *   Representatives of each submitter
+*   The review chairs of relevant working group
+*   The head of MLPerf
+*   The president of the board
+*   The relevant working group chairs †
+*   The relevant power working group chairs †
 
 If representatives of a single organization, its parents, subsidiaries, or
 affiliates hold multiple positions on this list, at most one such representative
 is eligible to vote in the review committee.
 
-The review committee is chaired by the relevant results working group chairs
-unless a review chair is selected.
+The review committee is setup before submission and is driven by review chairs who are selected among a group of candidates whose candidacy is approved by unanimous consent among members who indicate intent to submit in the submission survey of the relevant round. An impartial MLC staff member familiar with the rules and subject of the relavant working group can be a valid candidate. The relevant working group chair or power working group chair may be a valid candidate as well if approved by unanimous consent. If no candidates can be identified as acceptable by unanimous consent, the head of MLPerf must make best effort to appoint one, or fulfill the role themselves.
 
 ### Meetings
 
@@ -78,7 +77,7 @@ from the following list who are able and willing to vote:
 
 If there are two outcomes, voting proceeds by simple majority. If there are more
 than two outcomes, voting proceeds by Condorcet poll with the minimax completion
-rule. Votes are initiated by the chair and are cast openly. Votes may be cast
+rule. Votes are initiated by the review chair and are cast openly. Votes may be cast
 verbally or using a shared spreadsheet or other voting software.
 
 The review committee operates on balance of interests rather than by avoiding
@@ -363,6 +362,7 @@ HPC training submissions follow the above Training directory structure except fo
 #### Inference
 
 * <submitting_organization>/
+
 ** systems/
 *** <system_desc_id>.json   # combines hardware and software stack information
 ** code/
@@ -649,9 +649,12 @@ During the review process, only certain groups are allowed to inspect results an
 
 Each submitter is required to review at least one other submission. Required reviews are assigned as follows:
 
-. Stack rank submissions by number of results.
-. Assign reviewers in pairs walking down the stack rank
+. Stack rank submissions by the number of results.
+. Assign reviewers in pairs walking down the stack rank.
 . If an odd number of reviewers, the bottom 3 in the stack rank will review each other.
+
+#### large scale submission review assignment (training only)
+For large scale training submissions (using 512 or more accelerators/processors), these submissions are excluded from the standard stack rank based review assignment by the number of results. Instead, submitters with the highest scale submissions will review each other, with assignments determined by stack rank on the scale of submission. If there is only a single large scale submission, it will be reviewed by either volunteers or the WG chairs.
 
 ### Auditing
 
@@ -746,11 +749,11 @@ An _Available_ software component must be well supported for general use. For op
 
 #### Preview Systems
 
-A _Preview_ system is a system which did not qualify as an _Available_ system as of the previous MLPerf submission date, but will qualify in the next submission after 140 days of the current submission date, or by the next MLPerf submission date, whichever is more, and which the submitter commits to submitting as an _Available_ system by that time. If it is not submitted in that submission round with equal or better performance (allowing for noise), the _Preview_ benchmark will be marked as invalid. A _Preview_ submission must include performance on at least one benchmark which will be considered _MLPerf Compatible_ (xref:MLPerf_Compatibility_Table.adoc[see the MLPerf Compatibility Table]) in the upcoming round where transition to _Available_ is made (consult SWG for Benchmark Roadmap). On each of the benchmarks that are previewed and are _Compatible_, the _Available_ submission must show equal or better performance (allowing for noise, for any changes to the benchmark definition) on all systems for Inference and across at least the smallest and the largest scale of the systems used for _Preview_ submission on that benchmark for Training (e.g. _Available_ Training submissions can be on scales smaller than the smallest and larger than the largest scale used for _Preview_ submission). For submissions accompanied by power measurements, "equal or better" must use power-normalized performance rather than absolute performance.
+A _Preview_ system is a system which did not qualify as an _Available_ system as of the previous MLPerf submission date, but will qualify in the next submission after 140 days of the current submission date, or by the next MLPerf submission date, whichever is more, and which the submitter commits to submitting and publishing results as an _Available_ system by that time. If it is not submitted, reviewed, and subsequently published in that submission round with equal or better performance (allowing for noise - upto a 2% degradation in performance will be accepted ), the _Preview_ benchmark will be marked as invalid. A _Preview_ submission must include performance on at least one benchmark which will be considered _MLPerf Compatible_ (xref:MLPerf_Compatibility_Table.adoc[see the MLPerf Compatibility Table]) in the upcoming round where transition to _Available_ is made (consult SWG for Benchmark Roadmap). On each of the benchmarks that are previewed and are _Compatible_, the _Available_ submission must show equal or better performance (allowing for up to a 2% performance degradation to account for noise) on all systems for Inference and across at least the smallest and the largest scale of the systems used for _Preview_ submission on that benchmark for Training (e.g. _Available_ Training submissions can be on scales smaller than the smallest and larger than the largest scale used for _Preview_ submission). For submissions accompanied by power measurements, "equal or better" must use power-normalized performance rather than absolute performance.
 
 * Training: For an _Available_ system that is larger than the _Preview_ system, absolute performance must be better. For an _Available_ system that is smaller than the _Preview_ system, efficiency (time-to-train * number of chips) must be better.
 
-If none of the _Preview_ benchmarks are MLPerf _Compatible_ in the upcoming round where transition to Available is made in a rare event, a submitter may get their performance validated in the upcoming round by making a submission on the old/retired benchmark to the Results WG during review period (such a submission will not show up on the Results table but will only be used by the Results WG to validate a past Preview Submission).
+If none of the _Preview_ benchmarks are MLPerf _Compatible_ in the upcoming round where transition to Available is made in a rare event, a submitter may get their performance validated in the upcoming round by making a submission across at least the smallest and the largest scale of the systems used for the Preview submission on all the old/retired benchmarks that were previously submitted as Preview results to the Results WG during review period (such a submission will not show up on the Results table but will only be used by the Results WG to validate a past Preview Submission). Note that resubmission of old preview submission logs to prove performance validity is not permitted.
 
 For a _Preview_ submission only, the "_Available_ software stack" requirement is waived for software that is necessary to support newly developed hardware component(s) that are substantial contributors to the determination of ML performance (e.g. a new ML accelerator or CPU or NIC). A "newly developed" component is one that was not _Available_ as of the submission date of the previous MLPerf submission round, and was not submitted in a _Preview_ system in that previous round. Other parts of the software stack must still meet the same _Available_ software stack requirements as an _Available_ system.  
 
