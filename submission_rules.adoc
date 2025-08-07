@@ -41,6 +41,8 @@ is eligible to vote in the review committee.
 
 The review committee is setup before submission and is driven by review chairs who are selected among a group of candidates whose candidacy is approved by unanimous consent among members who indicate intent to submit in the submission survey of the relevant round. An impartial MLC staff member familiar with the rules and subject of the relavant working group can be a valid candidate. The relevant working group chair or power working group chair may be a valid candidate as well if approved by unanimous consent. If no candidates can be identified as acceptable by unanimous consent, the head of MLPerf must make best effort to appoint one, or fulfill the role themselves.
 
+During the review period, all submission details and results are strictly confidential and are shared only with the review committee after the submission deadline. Access to these results is a privilege granted to submitters, who are expected to maintain confidentiality until the results are published. Individuals serving in roles marked by † may be from non-submitting organizations; such individuals must not share confidential results with their organization prior to publication, or may choose to recuse themselves from the review process if they prefer. If there are any concerns regarding confidentiality, they may be raised with the Head of MLPerf, who will make best efforts to address them.
+
 ### Meetings
 
 The review committee makes decisions during properly scheduled meetings. The
