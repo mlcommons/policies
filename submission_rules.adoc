@@ -133,13 +133,13 @@ MLPerf has several submission rounds each year. Each submission round follows a 
 
 The submission schedule will be set yearly, and must be approved by both the inference and training submitters meetings.  The goal is to have two Inference and two Training submissions each year, and to not have them overlap each other.  MLCommons attempts to avoid major international holidays, and accommodate relevant conferences.
 
-The MLCommons yearly calendars are located in the MLCommons Members shared drive https://drive.google.com/drive/folders/0ANHS6hvarUOUUk9PVA[here].  For example, the 2022 calendar is located in https://docs.google.com/spreadsheets/d/1cIlVR0Upec6bZ00RXhqMm4_8hSr6ackd6tT4eOnSgNo/edit?resourcekey=0-O3ZF0iDPc6vJTt0x0a-HJg#gid=538466233[this google sheet].  Access is limited to MLCommons members for now, since the calendars contain sensitive information.  We will look into making public versions of these calendars, but in the meantime, the 2022 calendar is:
+The MLCommons yearly calendars are located in the MLCommons Members shared drive https://drive.google.com/drive/folders/0ANHS6hvarUOUUk9PVA[here].  Access is limited to MLCommons members for now, since the calendars contain sensitive information.  We will look into making public versions of these calendars, but in the meantime, the latest calendar is:
 
 |===
 | Submission Round | Submision Date    | Publication Date
 
-| Inference v5.1   | July 25, 2025    | September 9, 2025
-| Training v5.1    | October 10, 2025  | November 12, 2025
+| Inference v5.1   | August 01, 2025   | September 9, 2025
+| Training v5.1    | October 10, 2025  | November 11, 2025
 |===
 
 
