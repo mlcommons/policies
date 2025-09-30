@@ -3,7 +3,7 @@
 
 :sectnums:
 
-# General MLPerf™ Submission Rules
+# General MLPerf® Submission Rules
 
 :TOC:
 
