@@ -334,8 +334,8 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 ****** run_and_time.sh (run the benchmark and produce a result)
 ****** (include any post-processing scripts used to make changes to result logs)
 ** results/
-*** <system_desc_id>/
-**** <benchmark>/
+*** <benchmark>/
+**** <system_desc_id>_<implementation_id>/
 ***** result_<i>.txt   # log file
 ***** power  # optional power logs
 ****** result_<i>
