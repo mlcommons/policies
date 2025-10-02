@@ -255,7 +255,7 @@ The submission process defines how to submit code and results for review and eve
 
 ### Registration
 
-Submitters must register with the submitters working group and begin attending meetings at least **eight weeks before the deadline. **In order to register, a submitter or their org must sign the relevant CLA and provide primary and secondary github handles and primary and secondary POC email address.
+Submitters must register with the appropriate working group (e.g. Inference, Training) and begin attending meetings at least **eight weeks before the deadline.** In order to register, a submitter or their org must sign the relevant CLA and provide primary and secondary github handles and primary and secondary POC email address.
 
 ### How to Submit
 
