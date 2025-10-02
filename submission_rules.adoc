@@ -43,6 +43,8 @@ The review committee is setup before submission and is driven by review chairs w
 
 During the review period, all submission details and results are strictly confidential and are shared only with the review committee after the submission deadline. Access to these results is a privilege granted to submitters, who are expected to maintain confidentiality until the results are published. Individuals serving in roles marked by † may be from non-submitting organizations; such individuals must not share confidential results with their organization prior to publication, or may choose to recuse themselves from the review process if they prefer. If there are any concerns regarding confidentiality, they may be raised with the Head of MLPerf, who will make best efforts to address them.
 
+If there are more than two nominees for review chair positions, they shall be elected following the company's Directors Election Policies
+
 ### Meetings
 
 The review committee makes decisions during properly scheduled meetings. The
