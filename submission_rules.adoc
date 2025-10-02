@@ -363,6 +363,10 @@ HPC training submissions follow the above Training directory structure except fo
 
 #### Inference
 
+For **MLPerf Inference**, there is an **automated way** to generate the official directory structure.  
+Instructions for this can be found https://docs.mlcommons.org/inference/submission[here].
+
+
 * <submitting_organization>/
 
 ** systems/
@@ -434,9 +438,9 @@ Here is the list of mandatory files for all submissions in any division/category
 *   model-info.json or model-info_<implementation_id>.json
 *   <system_desc_id>.json
 
-For some models mlperf_log_accuracy.json can get very large. Because of this we truncate mlperf_log_accuracy.json in submissions
-using a tool.
-A submiter will run the tool before submitting to mlperf and submit the truncated mlperf_log_accuracy.json files inside their organization.
+For some models mlperf_log_accuracy.json can get very large. Because of this we truncate mlperf_log_accuracy.json in submissions using a tool.
+A submiter will run the tool before submitting to mlperf (not required if you have generated the submission structure using the https://docs.mlcommons.org/inference/submission/[MLPerf Submission Automation]) and submit the truncated mlperf_log_accuracy.json files inside their organization.
+
 Run the tool as follows, assuming <SOURCE> is your local subumission tree and <DEST> the location of the github submission repo:
 
 ```
@@ -535,7 +539,7 @@ The file `model-info.json` or `model-info_<implementation_id>.json` should conta
 
 For Training, the results logs must be verified and stamped by the training log verification script [TODO log]. The easiest way to produce such a log is to use the 
 
-For Inference, the results logs must have been produced by the [standard load generator](https://github.com/mlperf/inference/tree/master/loadgen). Power information may be appended using the standard power information appending script [TODO link or remove].
+For Inference, the results logs must have been produced by the [standard load generator](https://github.com/mlcommons/inference/tree/master/loadgen). Power information may be appended using the standard power information appending script [TODO link or remove].
 
 
 ### Source code requirements for replication
@@ -630,7 +634,7 @@ The following compliance tests are required for each of the folliwing benchmarks
 | Whisper | TEST01
 |===
 
-* TEST05 is removed from Inference submissions v5.0
+* TEST05 is removed from Inference submissions v5.0 onwards.
 
 ## Review
 
