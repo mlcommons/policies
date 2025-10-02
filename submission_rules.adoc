@@ -823,6 +823,24 @@ This section in progress [TODO].
 ### Power
 
 This section in progress [TODO].
+#### Extra fields for Inference + Power submission in <system_desc_id>.json metadata
+|===
+| Field | Meaningful response required | Example
+| power_management | No | 
+| boot_firmware_version | No | 
+| management_firmware_version | No | 
+| other_hardware | No | 
+| number_of_type_nics_installed | No | 
+| nics_enabled_firmware | No | 
+| nics_enabled_os | No | 
+| nics_enabled_connected | No | 
+| network_speed_mbit | No |  
+| power_supply_quantity_and_rating_watts | No | 
+| power_supply_details | No | 
+| disk_drives | Yes | SSD
+| disk_controllers | Yes | NVMe 
+| system_power_only | No | True
+|===
 
 
 ### Review chair checklist
