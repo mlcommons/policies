@@ -757,14 +757,18 @@ A _Preview_ system is a system which did not qualify as an _Available_ system as
 
 If none of the _Preview_ benchmarks are MLPerf _Compatible_ in the upcoming round where transition to Available is made in a rare event, a submitter may get their performance validated in the upcoming round by making a submission across at least the smallest and the largest scale of the systems used for the Preview submission on all the old/retired benchmarks that were previously submitted as Preview results to the Results WG during review period (such a submission will not show up on the Results table but will only be used by the Results WG to validate a past Preview Submission). Note that resubmission of old preview submission logs to prove performance validity is not permitted.
 
-For a _Preview_ submission only, the "_Available_ software stack" requirement is waived for software that is necessary to support newly developed hardware component(s) that are substantial contributors to the determination of ML performance (e.g. a new ML accelerator or CPU or NIC). A "newly developed" component is one that was not _Available_ as of the submission date of the previous MLPerf submission round, and was not submitted in a _Preview_ system in that previous round. Other parts of the software stack must still meet the same _Available_ software stack requirements as an _Available_ system.  
+A _Newly Developed_ hardware component in a _Preview_ system is one that was not Available as of the submission date of the previous MLPerf round, and was not submitted in a _Preview_ system in that round. A _Preview_ system is not required to contain a _Newly Developed_ component.
+
+All software components in _Preview_ submissions must be _Available_, except for those necessary to support a Hardware Component that is _Newly Developed_ and is a substantial contributor to ML performance (e.g. a new ML accelerator or CPU or NIC).
 
 
 Examples and counterexamples:
 
-* All SKUs of a new chip can be considered "newly developed" as long as the first shipping SKU qualifies as "newly developed". Once the first shipping SKU no longer qualifies, no existing or future SKUs of the chip can be considered "newly developed".
+* All SKUs of a new chip can be considered _Newly Developed_ as long as the first shipping SKU qualifies as _Newly Developed_. Once the first shipping SKU no longer qualifies, no existing or future SKUs of the chip can be considered _Newly Developed_.
 
-* A chip that was _Available_ prior to the submission date of the previous MLPerf round but was never used before for an MLPerf submission does not qualify as "newly developed."  
+* A new SKU of a chip that was previously submitted as available can only be submitted as preview if its availability date is later than the submission date and it is submitted with an available software stack.
+
+* A chip that was _Available_ prior to the submission date of the previous MLPerf round but was never used before for an MLPerf submission does not qualify as _Newly Developed_.  
 
 * At this point in time a hardware component that is not an ML accelerator, CPU, or NIC, is presumed to not meet the "substantial contributor to the determination of ML performance" criteria. Other possible cases must be brought to the relevant working group for consideration.
 
