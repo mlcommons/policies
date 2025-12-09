@@ -138,8 +138,8 @@ The MLCommons yearly calendars are located in the MLCommons Members shared drive
 |===
 | Submission Round | Submision Date    | Publication Date
 
-| Inference v5.1   | August 01, 2025   | September 9, 2025
-| Training v5.1    | October 10, 2025  | November 11, 2025
+| Inference v6.0   | February 13, 2026   | April 1, 2026
+| Training v5.1    | May 15, 2026  | June 16, 2026
 |===
 
 
@@ -367,7 +367,7 @@ HPC training submissions follow the above Training directory structure except fo
 
 ** systems/
 *** <system_desc_id>.json   # combines hardware and software stack information
-** code/
+** src/
 *** <benchmark_name per reference>/ 
 **** <implementation_id>/
 ***** <Code interface with loadgen and other arbitrary stuff>
