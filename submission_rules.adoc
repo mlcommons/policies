@@ -139,7 +139,7 @@ The MLCommons yearly calendars are located in the MLCommons Members shared drive
 | Submission Round | Submision Date    | Publication Date
 
 | Inference v6.0   | February 13, 2026   | April 1, 2026
-| Training v5.1    | May 15, 2026  | June 16, 2026
+| Training v6.0    | May 15, 2026  | June 16, 2026
 |===
 
 
