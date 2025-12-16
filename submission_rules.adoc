@@ -655,6 +655,9 @@ Each submitter is required to review at least one other submission. Required rev
 #### large scale submission review assignment (training only)
 For large scale training submissions (using 512 or more accelerators/processors), these submissions are excluded from the standard stack rank based review assignment by the number of results. Instead, submitters with the highest scale submissions will review each other, with assignments determined by stack rank on the scale of submission. If there is only a single large scale submission, it will be reviewed by either volunteers or the WG chairs.
 
+#### Joint submissions
+For review assignments, treat each company involved in a joint submission as a separate organization. Joint submissions do not count as an extra submitting organization. For example, if Supermicro and Mangoboost submit together, both Supermicro and Mangoboost are considered as individual submitters. The joint submission is reviewed by two organizations (not just one).
+
 ### Auditing
 
 ### Filing objections
