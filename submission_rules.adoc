@@ -400,10 +400,9 @@ HPC training submissions follow the above Training directory structure except fo
 ******** compliance_accuracy.txt # only for TEST01 if accuracy check fails
 ******* verify_performance.txt
 ******* verify_accuracy.txt # for TEST01 only
-****** measurements/
-******* model-info.json or model-info_<implementation_id>.json
-******* user.conf
-******* mlperf.conf
+****** measurements.json
+****** user.conf
+****** mlperf.conf
 
 
 System names and implementation names may be arbitrary. 
