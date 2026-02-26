@@ -77,7 +77,7 @@ MLPerf results may only be compared against compatible MLPerf results. Results a
 
 MLPerf results may not be compared against non-MLPerf results. For example, an MLPerf Training v0.5 Closed ResNet-v1.5 result may not be compared against an arbitrary result not produced in accordance with MLPerf rules.
 
-Specific to MLPerf Training, "retired" division results cannot be compared to any other past MLPerf results. For example, a retired submission for Stable Diffusion v2 benchmark (retired in round v5.0) in MLPerf Training round 6.0 cannot be compared to MLPerf results for Stable Diffusion v2 in v4.1 because a submitter cannot claim victory over a competitor years after the competitor stopped submitting to the benchmark as it was retired.
+Specific to MLPerf Training, "retired" division results cannot be compared to any other MLPerf results. For example, a retired submission for Stable Diffusion v2 benchmark (v5.0 was the last round when the benchmark was in the suite) made during MLPerf Training round 6.0 cannot be compared to MLPerf results for Stable Diffusion v2 in say v4.1 because a submitter cannot claim victory over a competitor after it is retired.
 
 == When comparing MLPerf results, you must identify any submission differences
 
