@@ -29,6 +29,8 @@ X: Change in benchmark. Submission results can be compared across rounds when th
 |Llama3.1 405b 11+|N/A 3+|X
 |Llama3.1 8b 12+|N/A 2+|X
 |FLUX.1 12+|N/A 2+|X
+|DeepSeekv3 13+|N/A 1+|X
+|GPT-OSS-20B 13+|N/A 1+|X
 |===
 
 Metric: Time-to-train (measured in minutes)
