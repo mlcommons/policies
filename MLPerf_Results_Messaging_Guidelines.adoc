@@ -107,11 +107,13 @@ SmartAI Corp announced an unverified score of 0.3 on the MLPerf® Training Image
 [1] MLPerf® v0.5 Training ResNet-v1.5. Result not verified by MLCommons Association. Unverified results have not been through an MLPerf review and may use measurement methodologies and/or workload implementations that are inconsistent with the MLPerf specification for verified results. The MLPerf name and logo are registered and unregistered trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information.
 ____
 
-== Performance optimizations must not be used to disparage or diminish valid MLPerf results
+== Performance optimizations must not be used to disparage or diminish* valid MLPerf results
 
 All valid MLPerf submissions satisfy the same accuracy or quality requirements for that benchmark, regardless of the performance optimizations used. Submitters may optionally disclose details of their optimizations, including but not limited to lowest numerical precision (e.g., FP8, FP4), parallelism strategies, communication overlaps, or compiler techniques. Whether or not such disclosure is made, the following rules apply:
 
   - Submitters may not imply or state that a valid result is inferior, does not sufficiently converge, or is otherwise less valid due to the performance optimizations used.
+
+* disparage or diminish means to negatively position another submitter's results 
 
 **Non-Compliant Example**:
 
