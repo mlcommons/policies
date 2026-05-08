@@ -113,7 +113,7 @@ All valid MLPerf submissions satisfy the same accuracy or quality requirements f
 
   - Submitters may not imply or state that a valid result is inferior, does not sufficiently converge, or is otherwise less valid due to the performance optimizations used.
 
-*disparage or diminish means to negatively position another submitter's results 
+\*disparage or diminish means to negatively position another submitter's results 
 
 **Non-Compliant Example**:
 
