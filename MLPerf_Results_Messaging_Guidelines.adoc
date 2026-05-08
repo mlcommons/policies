@@ -112,12 +112,11 @@ ____
 All valid MLPerf submissions satisfy the same accuracy or quality requirements for that benchmark, regardless of the performance optimizations used. Submitters may optionally disclose details of their optimizations, including but not limited to lowest numerical precision (e.g., FP8, FP4), parallelism strategies, communication overlaps, or compiler techniques. Whether or not such disclosure is made, the following rules apply:
 
   - Submitters may not imply or state that a valid result is inferior, does not sufficiently converge, or is otherwise less valid due to the performance optimizations used.
-  - When comparing results that differ in optimization approach, submitters are encouraged to identify the differences (consistent with the requirement in the preceding section to identify submission differences).
 
 **Non-Compliant Example**:
 
 ____
-LesserSmartAI Corp will submit to and only compare against FP32 results submitted by SmartAI Corp because FP32 precision is best suited for high-accuracy training. BF16 is not yet usable for large scale production training so LesserSmartAI Corp will not compare to SmartAICorp's BF16 results.
+LesserSmartAI Corp will only compare against FP32 results submitted by SmartAI Corp because FP32 precision is best suited for high-accuracy training. BF16 is not yet usable for large scale production training so LesserSmartAI Corp will not compare to SmartAICorp's BF16 results.
 ____
 
 This violates these Guidelines because it implies that valid MLPerf results achieved using BF16 precision are less legitimate than FP32 results although both meet the same required accuracy target and are equally valid MLPerf submissions.
