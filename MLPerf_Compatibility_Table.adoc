@@ -8,29 +8,31 @@ X: Change in benchmark. Submission results can be compared across rounds when th
 == Training
 
 |===
-|Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 |2.1 |3.0 | 3.1 | 4.0 | 4.1 | 5.0 | 5.1 | 6.0
-|ResNet-50 v1.5 |X 9+|X 4+|N/A
-|SSD-ResNet34 |X 4+|X 9+|N/A 
-|RetinaNet-ResNeXt50 5+|N/A 8+|X |N/A 
-|MaskRCNN |X 8+|X 5+|N/A 
-|NCF |X 13+|N/A 
-|NMT 3+|X 11+|N/A 
-|Transformer 3+|X 11+|N/A
-|MiniGo 7+|X 7+|N/A
-|DLRM 2+|N/A 5+|X 7+|N/A
-|DLRM-dcnv2 7+|N/A 7+|X
-|BERT 3+|N/A 9+|X 2+|N/A
-|RNN-T 3+|N/A |X 5+|X 5+|N/A
-|3D U-Net 3+|N/A 7+|X 4+|N/A
-|GPT3 7+|N/A 4+|X 3+|N/A
-|Stable Diffusionv2 8+|N/A 4+|X 2+|N/A
-|LLama70B-LoRA 9+|N/A 5+|X
-|RGAT 9+|N/A 4+|X |N/A
-|Llama3.1 405b 11+|N/A 3+|X
-|Llama3.1 8b 12+|N/A 2+|X
-|FLUX.1 12+|N/A 2+|X
-|DeepSeekv3 13+|N/A 1+|X
-|GPT-OSS-20B 13+|N/A 1+|X
+|Model |0.5 |0.6 |0.7 |1.0 |1.1 |2.0 |2.1 |3.0 | 3.1 | 4.0 | 4.1 | 5.0 | 5.1 | 6.0 | 6.1
+|ResNet-50 v1.5 |X 9+|X 5+|N/A
+|SSD-ResNet34 |X 4+|X 10+|N/A
+|RetinaNet-ResNeXt50 5+|N/A 8+|X 2+|N/A
+|MaskRCNN |X 8+|X 6+|N/A
+|NCF |X 14+|N/A
+|NMT 3+|X 12+|N/A
+|Transformer 3+|X 12+|N/A
+|MiniGo 7+|X 8+|N/A
+|DLRM 2+|N/A 5+|X 8+|N/A
+|DLRM-dcnv2 7+|N/A 7+|X |N/A
+|BERT 3+|N/A 9+|X 3+|N/A
+|RNN-T 3+|N/A |X 5+|X 6+|N/A
+|3D U-Net 3+|N/A 7+|X 5+|N/A
+|GPT3 7+|N/A 4+|X 4+|N/A
+|Stable Diffusionv2 8+|N/A 4+|X 3+|N/A
+|LLama70B-LoRA 9+|N/A 6+|X
+|RGAT 9+|N/A 4+|X 2+|N/A
+|Llama3.1 405b 11+|N/A 3+|X |N/A
+|Llama3.1 8b 12+|N/A 3+|X
+|FLUX.1 12+|N/A 3+|X
+|DeepSeekv3 13+|N/A |X |X
+|GPT-OSS-20B 13+|N/A 2+|X
+|Qwen3.5-397B-GRPO 14+|N/A |X
+|DLRMv4-HSTU 14+|N/A |X
 |===
 
 Metric: Time-to-train (measured in minutes)
