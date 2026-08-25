@@ -363,46 +363,46 @@ HPC training submissions follow the above Training directory structure except fo
 
 #### Inference
 
-* <submitting_organization>/
-
-** systems/
-*** <system_desc_id>.json   # combines hardware and software stack information
-** src/
-*** <benchmark_name per reference>/ 
-**** <implementation_id>/
-***** <Code interface with loadgen and other arbitrary stuff>
-** documentation/
-*** calibration.adoc
-*** bandwidth.adoc
-*** <Any additional documentation or licensing content>
-** results/
-*** <system_desc_id>/
-**** <benchmark>/
-***** <scenario>
-****** performance/
-******* run_x/ # 1 run for all scenarios
-******** mlperf_log_summary.txt
-******** mlperf_log_detail.txt
-****** accuracy/
-******* mlperf_log_summary.txt
-******* mlperf_log_detail.txt
-******* mlperf_log_accuracy.json # truncated by truncate_accuracy_log.py if too large
-******* accuracy.txt # stdout of reference accuracy scripts
-****** <test_id> # corresponding to benchmark compliance test
+* <division>
+** <submitting_organization>/
+*** systems/
+**** <system_desc_id>.json   # combines hardware and software stack information
+*** src/
+**** <benchmark_name per reference>/ 
+***** <implementation_id>/
+****** <Code interface with loadgen and other arbitrary stuff>
+*** documentation/
+**** calibration.adoc
+**** bandwidth.adoc
+**** <Any additional documentation or licensing content>
+*** results/
+**** <system_desc_id>/
+***** <benchmark>/
+****** <scenario>
 ******* performance/
-******** run_1/ # 1 run for every scenario
+******** run_x/ # 1 run for all scenarios
 ********* mlperf_log_summary.txt
 ********* mlperf_log_detail.txt
 ******* accuracy/
-******** accuracy.txt # for TEST01 only, generated from truncate_accuracy_log.py
-******** mlperf_log_accuracy.json # only necessary for TEST01
-******** baseline_accuracy.txt # only for TEST01 if accuracy check fails
-******** compliance_accuracy.txt # only for TEST01 if accuracy check fails
-******* verify_performance.txt
-******* verify_accuracy.txt # for TEST01 only
-****** measurements.json
-****** user.conf
-****** mlperf.conf
+******** mlperf_log_summary.txt
+******** mlperf_log_detail.txt
+******** mlperf_log_accuracy.json # truncated by truncate_accuracy_log.py if too large
+******** accuracy.txt # stdout of reference accuracy scripts
+******* <test_id> # corresponding to benchmark compliance test
+******** performance/
+********* run_1/ # 1 run for every scenario
+********** mlperf_log_summary.txt
+********** mlperf_log_detail.txt
+******** accuracy/
+********* accuracy.txt # for TEST01 only, generated from truncate_accuracy_log.py
+********* mlperf_log_accuracy.json # only necessary for TEST01
+********* baseline_accuracy.txt # only for TEST01 if accuracy check fails
+********* compliance_accuracy.txt # only for TEST01 if accuracy check fails
+******** verify_performance.txt
+******** verify_accuracy.txt # for TEST01 only
+******* measurements.json
+******* user.conf
+******* mlperf.conf
 
 
 System names and implementation names may be arbitrary. 
