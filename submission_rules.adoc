@@ -327,7 +327,6 @@ A submission is for one code base for the benchmarks submitted. An org may make 
 ***** <implementation_id>/
 ****** <arbitrary stuff>
 ***** <system_desc_id>/
-****** <system_desc_id>_<implementation_id>.json
 ****** README.md
 ****** setup.sh (one-time configuration script)
 ****** init_datasets.sh (one-time dataset init script)
