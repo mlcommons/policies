@@ -6,7 +6,7 @@ MLCOMMONS® is a registered trademark of MLCommons Association in the United Sta
 
 = MLPerf® Results Messaging Guidelines
 
-The MLPerf® name and logo are trademarks of MLCommons Association (“MLCommons”) in the United States and other countries. MLCommons owns trademark registrations for the MLPERF word mark in the United States and other countries. The MLPerf name and logo are used to identify the source of MLCommons Association benchmarks. You may not use the MLPerf name or logo, except in a factual and non-trademark manner solely to accurately represent your benchmark score, in accordance with the following usage terms. Nothing in these MLPerf Results Messaging Guidelines (the “Guidelines”) grants you a license to use the MLPerf trademark or logo, or any other right or interest in or to the MLPerf trademark or logo. 
+The MLPerf® name and logo are registred trademarks of MLCommons Association (“MLCommons”) in the United States and other countries. MLCommons owns trademark registrations for the MLPERF word mark in the United States and other countries. The MLPerf name and logo are used to identify the source of MLCommons Association benchmarks. You may not use the MLPerf name or logo, except in a factual and non-trademark manner solely to accurately represent your benchmark score, in accordance with the following usage terms. Nothing in these MLPerf Results Messaging Guidelines (the “Guidelines”) grants you a license to use the MLPerf registred trademark or logo, or any other right or interest in or to the MLPerf registred trademark or logo. 
 
 == Use of MLPerf Benchmark for Non-MLCommons Reviewed Results
 
@@ -47,7 +47,7 @@ For Closed Division benchmarks, the model name may be used instead of the benchm
 
 === Required Footnote
 
-Any use of or reference to an MLPerf benchmark result must also include the following in a footnote: benchmark suite, version, and division; benchmark name and scenario if applicable; date and source of retrieval; MLPerf result ID (major-version.minor-version.entry.benchmark); and trademark ownership legend shown in Section 11.2 below. Further, if your result was not verified through MLCommons review, the footnote **must** state “_Result not verified by MLCommons Association._” If your result was verified through MLCommons review, you may choose to state “_Result verified by MLCommons Association._”
+Any use of or reference to an MLPerf benchmark result must also include the following in a footnote: benchmark suite, version, and division; benchmark name and scenario if applicable; date and source of retrieval; MLPerf result ID (major-version.minor-version.entry.benchmark); and registred trademark ownership legend shown in Section 11.2 below. Further, if your result was not verified through MLCommons review, the footnote **must** state “_Result not verified by MLCommons Association._” If your result was verified through MLCommons review, you may choose to state “_Result verified by MLCommons Association._”
 
 For all footnotes required by these Guidelines, the size and color of the footnotes must be such that they are clearly visible and legible; and where an image is accompanied by text, the footnotes must appear as text rather than as part of the image.
 
