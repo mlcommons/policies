@@ -518,11 +518,11 @@ The file `model-info.json` or `model-info_<implementation_id>.json` should conta
 
 |===
 | Field | Meaningful response required | DK_Example_1 | DK_Example_2
-| Starting weights filename? | Yes | https://zenodo.org/record/2269307/files/mobilenet_v1_1.0_224.tgz | https://zenodo.org/record/2269307/files/mobilenet_v1_1.0_224.tgz
-| Weight transformations? | Yes | No | Yes (URL_to_calibration_writeup)
-| Weight data type(s) | Yes | fp32 | bf16
-| Input data type(s) | Yes | fp32 | bf16
-| Retraining | Yes | No | Yes (URL_to_writeup)
+| starting_weights_filename | Yes | https://zenodo.org/record/2269307/files/mobilenet_v1_1.0_224.tgz | https://zenodo.org/record/2269307/files/mobilenet_v1_1.0_224.tgz
+| weight_transformations | Yes | No | Yes (URL_to_calibration_writeup)
+| weight_data_types | Yes | fp32 | bf16
+| input_data_types | Yes | fp32 | bf16
+| retraining | Yes | No | Yes (URL_to_writeup)
 | Notes | No | Run on only one GPU | DLA cores are used for the run
 |===
 
